@@ -1,6 +1,7 @@
 {
   "@context": [
     "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/context.jsonld",
+    "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/context.jsonld",
     {
       "ex": "https://example.org/data/"
     }

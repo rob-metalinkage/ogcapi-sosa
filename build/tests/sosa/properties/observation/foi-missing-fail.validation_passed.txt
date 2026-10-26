@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observation - Observation Properties
-Generated 2026-10-26T20:25:46.221532+00:00
+Generated 2026-10-26T21:24:15.601180+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -31,9 +31,9 @@ Validation result for _sources/properties/observation/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:Ne210861029d1474e961298e2c93b3e93
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N8ed12fe107cb4a90b198df4e9f87b7be
+ - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
 
 
 ** Validation error **
@@ -49,12 +49,12 @@ Validation result for _sources/properties/execution/shapes.shacl:
   	Message: Feature of interest (sosa:hasFeatureOfInterest/sosa:isFeatureOfInterestOf) is required in Collection or Execution(Observation/Actuation/Sampling)
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N8ed12fe107cb4a90b198df4e9f87b7be
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:Ne210861029d1474e961298e2c93b3e93
- - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 1
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N8ed12fe107cb4a90b198df4e9f87b7be
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:Ne210861029d1474e961298e2c93b3e93
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:Ne210861029d1474e961298e2c93b3e93
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 1
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N8ed12fe107cb4a90b198df4e9f87b7be
 
 === End SHACL ===
 

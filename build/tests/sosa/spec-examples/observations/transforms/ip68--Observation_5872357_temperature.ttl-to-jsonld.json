@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/context.jsonld",
+    "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observations/context.jsonld",
     {
       "ex": "https://example.org/data/",
       "geo": "http://www.opengis.net/ont/geosparql#",
@@ -15,13 +15,13 @@
       "geo:asWKT": {
         "@type": "geo:WktLiteral"
       },
-      "geo:alt": {
+      "geo:lat": {
         "@type": "xsd:decimal"
       },
       "geo:lon": {
         "@type": "xsd:decimal"
       },
-      "geo:lat": {
+      "geo:alt": {
         "@type": "xsd:decimal"
       }
     }

@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/context.jsonld",
+    "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observations/context.jsonld",
     {
       "cdt": "http://w3id.org/lindt/custom_datatypes#",
       "ex": "https://example.org/data/",

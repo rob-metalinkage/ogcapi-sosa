@@ -13,7 +13,6 @@
 @prefix shacl: <https://www.w3.org/TR/shacl/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <bblocks://ogc.sosa> a skos:Concept,
@@ -50,10 +49,10 @@
     rdfs:label "ActuationCollection Feature" ;
     dct:abstract "OMS alignment: `sosa:ActuationCollection` is a SOSA/SSN generalization with no direct ISO 19156 (OMS) counterpart, since actuation is outside the scope of O&M/OMS, which standardizes observation and sampling only; see the OMS alignment building block (`ogc.sosa.oms-alignment`). This building block defines the set of a GeoJSON FeatureCollection containing a SOSA ActuationCollection - a collection of one or more Actuations, whose members share a common value for one or more properties."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.actuationCollection> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/actuationCollection/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.actuationCollection> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/actuationCollection/index.md> ] ;
     dct:hasVersion "1.0" ;
@@ -68,33 +67,33 @@
         "o&m",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuationCollection/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuationCollection/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.featureCollection> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuationCollection/schema.yaml> ;
-            prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuationCollection/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:mapping ] ;
     prof:isProfileOf <bblocks://ogc.sosa.features.executionCollection> ;
     bblocks:dependsOn <bblocks://ogc.geo.json-fg.feature-lenient>,
         <bblocks://ogc.geo.json-fg.featureCollection-lenient>,
@@ -111,12 +110,12 @@
     rdfs:label "Actuator Feature" ;
     dct:abstract "OMS alignment: `sosa:Actuator` is a SOSA/SSN generalization with no direct ISO 19156 (OMS) counterpart, since actuation is outside the scope of O&M/OMS, which standardizes observation and sampling only; see the OMS alignment building block (`ogc.sosa.oms-alignment`). This building block defines a GeoJSON feature for a SOSA Actuator - a System that is used by, or implements, an Actuating Procedure that changes the state of the world. Uses the properties defined in the Actuator Properties schema."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/actuator/index.json> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.actuator> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/actuator/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.actuator> ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/actuator/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -137,15 +136,15 @@
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuator/schema.json> ;
             prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuator/schema.yaml> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuator/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:validation ] ;
     prof:isProfileOf <bblocks://ogc.sosa.features.system> ;
     bblocks:dependsOn <bblocks://ogc.sosa.features.system>,
         <bblocks://ogc.sosa.properties.actuator> ;
@@ -160,12 +159,12 @@
     rdfs:label "Deployment Feature" ;
     dct:abstract "OMS alignment: implements the ISO 19156:2023 (OGC Topic 20 / O&M 3.0) `obs-cpt/Deployment` requirement class for `sosa:Deployment`. This building block defines a GeoJSON feature containing a SOSA Deployment, using the properties defined in the Deployment Properties schema."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/deployment/index.md> ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.deployment> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/deployment/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/deployment/index.md> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/deployment/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -178,23 +177,23 @@
         "o&m",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/deployment/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/deployment/schema.yaml> ;
-            prof:hasRole role:schema ],
+    prof:hasResource [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
+            prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/deployment/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/deployment/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/deployment/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.geo.json-fg.feature-lenient>,
         <bblocks://ogc.sosa.properties.deployment> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
@@ -208,12 +207,12 @@
     rdfs:label "SOSA ObservationCollection Feature" ;
     dct:abstract "OMS alignment: implements the ISO 19156:2023 (OGC Topic 20 / O&M 3.0) `obs-basic/ObservationCollection` requirement class for `sosa:ObservationCollection`. This building blocks defines an ObservationCollection Feature according to the SOSA/SSN v1.1 specification."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-13T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.observationCollection> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/observationCollection/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/observationCollection/index.md> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/observationCollection/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.observationCollection> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn-ext/>,
@@ -226,19 +225,15 @@
         "observations",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml> ;
-            prof:hasRole role:schema ],
+    prof:hasResource [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
+            prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.featureCollection> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
@@ -247,8 +242,8 @@
             prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
@@ -257,7 +252,11 @@
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.sosa.features.executionCollection> ;
     bblocks:dependsOn <bblocks://ogc.geo.json-fg.feature-lenient>,
         <bblocks://ogc.sosa.features.executionCollection>,
@@ -276,10 +275,10 @@
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/platform/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.platform> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/platform/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/platform/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.platform> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -292,23 +291,23 @@
         "platform",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/platform/schema.yaml> ;
-            prof:hasRole role:schema ],
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/platform/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/platform/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/platform/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/platform/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.sosa.features.asset> ;
     bblocks:dependsOn <bblocks://ogc.sosa.features.asset>,
         <bblocks://ogc.sosa.properties.platform> ;
@@ -323,12 +322,12 @@
     rdfs:label "SampleCollection Feature" ;
     dct:abstract "OMS alignment: implements the ISO 19156:2023 (OGC Topic 20 / O&M 3.0) `sam-basic/SampleCollection` requirement class for `sosa:SampleCollection`. This building block defines a GeoJSON FeatureCollection containing a SOSA SampleCollection, using the properties defined in the SampleCollection Properties schema."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/sampleCollection/index.json> ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sampleCollection/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sampleCollection> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/sampleCollection/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sampleCollection> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -341,20 +340,15 @@
         "sample",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampleCollection/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.featureCollection> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl> ;
-            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampleCollection/schema.yaml> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampleCollection/context.jsonld> ;
@@ -362,7 +356,12 @@
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampleCollection/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.featureCollection> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl> ;
+            prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.geo.json-fg.feature-lenient>,
         <bblocks://ogc.geo.json-fg.featureCollection-lenient>,
         <bblocks://ogc.sosa.features.sample>,
@@ -378,10 +377,10 @@
     rdfs:label "Sampler Feature" ;
     dct:abstract "OMS alignment: implements the ISO 19156:2023 (OGC Topic 20 / O&M 3.0) `sam-cpt/Sampler` requirement class for `sosa:Sampler`. This building block defines a GeoJSON feature for a SOSA Sampler - a System that is used by, or implements, a Sampling Procedure to create or transform one or more samples. Uses the properties defined in the Sampler Properties schema."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sampler/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sampler> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sampler/index.md> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/sampler/index.json> ] ;
     dct:hasVersion "1.0" ;
@@ -396,23 +395,23 @@
         "sosa",
         "ssn",
         "system" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampler/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampler/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampler/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampler/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampler/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     prof:isProfileOf <bblocks://ogc.sosa.features.system> ;
     bblocks:dependsOn <bblocks://ogc.sosa.features.system>,
         <bblocks://ogc.sosa.properties.sampler> ;
@@ -427,10 +426,10 @@
     rdfs:label "SamplingCollection Feature" ;
     dct:abstract "OMS alignment: `sosa:SamplingCollection` is a SOSA/SSN generalization with no direct ISO 19156 (OMS) counterpart; OMS defines no dedicated sampling-collection requirement class. See the OMS alignment building block (`ogc.sosa.oms-alignment`). This building block defines the set of a GeoJSON FeatureCollection containing a SOSA SamplingCollection - a collection of one or more Samplings, whose members share a common value for one or more properties."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/samplingCollection/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.samplingCollection> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/samplingCollection/index.md> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/samplingCollection/index.json> ] ;
     dct:hasVersion "1.0" ;
@@ -445,23 +444,23 @@
         "sampling",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/context.jsonld> ;
             prof:hasRole role:mapping ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.featureCollection> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
@@ -469,8 +468,8 @@
             prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.featureCollection> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ] ;
     prof:isProfileOf <bblocks://ogc.sosa.features.executionCollection> ;
     bblocks:dependsOn <bblocks://ogc.geo.json-fg.feature-lenient>,
@@ -506,23 +505,23 @@
         "sosa",
         "ssn",
         "system" ;
-    prof:hasResource [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sensor/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sensor/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sensor/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sensor/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sensor/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.sosa.features.system> ;
     bblocks:dependsOn <bblocks://ogc.sosa.features.system>,
         <bblocks://ogc.sosa.properties.sensor> ;
@@ -537,12 +536,12 @@
     rdfs:label "Alignment with ISO 19156 (OMS)" ;
     dct:abstract "Documents, class by class, how the SOSA-based building blocks in this register realize the ISO 19156:2023 Observations, Measurements and Samples (OMS) conceptual model, and identifies which building blocks are SOSA/SSN generalizations with no direct OMS counterpart."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-10T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/oms-alignment/index.json> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/oms-alignment/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.oms-alignment> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.oms-alignment> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/oms-alignment/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://github.com/w3c/sdw-sosa-ssn/blob/gh-pages/ssn/rdf/ontology/extensions/sosa-oms.ttl>,
@@ -569,12 +568,12 @@
     rdfs:label "Tests for SOSA specification" ;
     dct:abstract "This BuildingBlock adds test cases from the SOSA specification to the base Observation properties model"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-13T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/index.md> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples> ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/index.md> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -616,11 +615,7 @@
         "observations",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/schema.yaml> ;
             prof:hasRole role:schema ],
@@ -629,6 +624,10 @@
             rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
             prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/schema.json> ;
@@ -647,10 +646,10 @@
     dct:created "2023-04-13T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/deployments/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.deployments> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/deployments/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/deployments/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.deployments> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -663,17 +662,17 @@
         "observations",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/deployments/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/deployments/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/deployments/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/deployments/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.sosa.properties.deployment> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
@@ -689,10 +688,10 @@
     dct:created "2023-04-13T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/observation-collections/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.observation-collections> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/observation-collections/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/observation-collections/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.observation-collections> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -707,18 +706,14 @@
         "ssn" ;
     prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.sosa.properties.observation> ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/schema.json> ;
-            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.sosa.properties.observation> ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl> ;
+            prof:hasRole role:validation ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/context.jsonld> ;
@@ -726,6 +721,10 @@
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.sosa.properties.observationCollection> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
@@ -739,12 +738,12 @@
     rdfs:label "SOSA specification examples: Observations" ;
     dct:abstract "Examples from the SOSA/SSN specification whose root resource is a observations resource. Each Turtle example is validated against the SHACL rules of `ogc.sosa.properties.observation`, and converted to JSON-LD by the `ttl-to-jsonld` transform, whose output is validated against the `ogc.sosa.properties.observation` building block (JSON Schema, JSON-LD context and SHACL)."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-13T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/observations/index.json> ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/observations/index.md> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.observations> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/observations/index.md> ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/observations/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -757,19 +756,19 @@
         "observations",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observations/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observations/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
             prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observations/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observations/schema.json> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.observation> ;
@@ -791,12 +790,12 @@
     rdfs:label "SOSA specification examples: Platforms" ;
     dct:abstract "Examples from the SOSA/SSN specification whose root resource is a platforms resource. Each Turtle example is validated against the SHACL rules of `ogc.sosa.properties.platform`, and converted to JSON-LD by the `ttl-to-jsonld` transform, whose output is validated against the `ogc.sosa.properties.platform` building block (JSON Schema, JSON-LD context and SHACL)."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-13T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.platforms> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/platforms/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/platforms/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/platforms/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.platforms> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -809,18 +808,18 @@
         "observations",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/platforms/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/platforms/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/platforms/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/platforms/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.sosa.properties.platform> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -833,12 +832,12 @@
     rdfs:label "SOSA specification examples: Sample Collections" ;
     dct:abstract "Examples from the SOSA/SSN specification whose root resource is a sample collections resource. Each Turtle example is validated against the SHACL rules of `ogc.sosa.properties.sampleCollection`, and converted to JSON-LD by the `ttl-to-jsonld` transform, whose output is validated against the `ogc.sosa.properties.sampleCollection` building block (JSON Schema, JSON-LD context and SHACL)."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-13T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/sample-collections/index.json> ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.sample-collections> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/sample-collections/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/sample-collections/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/sample-collections/index.md> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -851,18 +850,18 @@
         "observations",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/sample-collections/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/sample-collections/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/sample-collections/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/sample-collections/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.sosa.properties.sampleCollection> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -875,12 +874,12 @@
     rdfs:label "SOSA specification examples: Samples" ;
     dct:abstract "Examples from the SOSA/SSN specification whose root resource is a samples resource. Each Turtle example is validated against the SHACL rules of `ogc.sosa.properties.sample`, and converted to JSON-LD by the `ttl-to-jsonld` transform, whose output is validated against the `ogc.sosa.properties.sample` building block (JSON Schema, JSON-LD context and SHACL)."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-13T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/samples/index.json> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.samples> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/samples/index.md> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/samples/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/samples/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -939,6 +938,11 @@
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samplings/schema.yaml> ;
             prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
+            prof:hasRole role:validation ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samplings/context.jsonld> ;
@@ -946,12 +950,7 @@
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samplings/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.sosa.properties.sampling> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -964,12 +963,12 @@
     rdfs:label "SOSA specification examples: Systems (Sensors, Actuators, Samplers)" ;
     dct:abstract "Examples from the SOSA/SSN specification whose root resource is a systems (sensors, actuators, samplers) resource. Each Turtle example is validated against the SHACL rules of `ogc.sosa.properties.system`, and converted to JSON-LD by the `ttl-to-jsonld` transform, whose output is validated against the `ogc.sosa.properties.system` building block (JSON Schema, JSON-LD context and SHACL)."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-13T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.systems> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/systems/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/systems/index.md> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/systems/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.systems> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -986,14 +985,14 @@
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/schema.json> ;
-            prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.sosa.properties.system> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -1003,18 +1002,18 @@
 
 <https://rob-metalinkage.github.io/ogcapi-sosa/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:N666b5a42fb28461ca2a40f0c9cdee551 ;
+    prov:wasAttributedTo _:Nf39f66a396e54b15b03a484dc8de4a32 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-10-26T20:27:12.024896"^^xsd:dateTime ;
-            prov:startedAtTime "2026-10-26T20:27:11.794266"^^xsd:dateTime ;
+            prov:endedAtTime "2026-10-26T21:25:32.697112"^^xsd:dateTime ;
+            prov:startedAtTime "2026-10-26T21:25:32.361227"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:29ad54284dbdb6d00425f850286179ef370cbbbc" ;
+                    dct:hasVersion "git:b146139aaed852cb1992dd62aaee3777263ddc82" ;
                     rdfs:seeAlso <https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json> ],
                 [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:N666b5a42fb28461ca2a40f0c9cdee551 ] .
+            prov:wasAssociatedWith _:Nf39f66a396e54b15b03a484dc8de4a32 ] .
 
 <https://www.iso.org/standard/82463.html> rdfs:label "ISO 19156:2023 - Geographic information - Observations, measurements and samples" .
 
@@ -1031,12 +1030,12 @@
     rdfs:label "Actuation Feature" ;
     dct:abstract "OMS alignment: `sosa:Actuation` is a SOSA/SSN generalization with no direct ISO 19156 (OMS) counterpart, since actuation is outside the scope of O&M/OMS, which standardizes observation and sampling only; see the OMS alignment building block (`ogc.sosa.oms-alignment`). This building block defines a GeoJSON feature for a SOSA Actuation - the Act of carrying out an Actuating Procedure to change the state of the world via an Actuator. Uses the properties defined in the Actuation Properties schema."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/actuation/index.json> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/actuation/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.actuation> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.actuation> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/actuation/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -1048,24 +1047,24 @@
         "o&m",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuation/context.jsonld> ;
             prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuation/schema.yaml> ;
-            prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
             prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuation/schema.yaml> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuation/schema.json> ;
@@ -1101,32 +1100,32 @@
         "observations",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.observation> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl> ;
             prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ] ;
     prof:isProfileOf <bblocks://ogc.sosa.features.execution> ;
     bblocks:dependsOn <bblocks://ogc.sosa.features.execution>,
@@ -1160,22 +1159,22 @@
         "sosa",
         "ssn" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/schema.json> ;
             prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.geo.json-fg.feature-lenient>,
         <bblocks://ogc.sosa.properties.sample> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
@@ -1189,12 +1188,12 @@
     rdfs:label "Sampling Feature" ;
     dct:abstract "OMS alignment: implements the ISO 19156:2023 (OGC Topic 20 / O&M 3.0) `sam-cpt/Sampling` requirement class for `sosa:Sampling`. This building block defines a GeoJSON feature for a SOSA Sampling - the Act of carrying out a Sampling Procedure to create or transform one or more samples. Uses the properties defined in the Sampling Properties schema."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sampling> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/sampling/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sampling/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sampling> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sampling/index.md> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -1206,15 +1205,19 @@
         "sampling",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/schema.json> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/schema.yaml> ;
@@ -1223,11 +1226,7 @@
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:validation ] ;
     prof:isProfileOf <bblocks://ogc.sosa.features.execution> ;
     bblocks:dependsOn <bblocks://ogc.sosa.features.execution>,
         <bblocks://ogc.sosa.properties.sampling> ;
@@ -1242,12 +1241,12 @@
     rdfs:label "ActuationCollection Properties" ;
     dct:abstract "OMS alignment: `sosa:ActuationCollection` is a SOSA/SSN generalization with no direct ISO 19156 (OMS) counterpart, since actuation is outside the scope of O&M/OMS, which standardizes observation and sampling only; see the OMS alignment building block (`ogc.sosa.oms-alignment`). This building block defines the set of properties for a SOSA ActuationCollection - a collection of one or more Actuations, whose members share a common value for one or more properties."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/actuationCollection/index.json> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.actuationCollection> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/actuationCollection/index.md> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/actuationCollection/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/actuationCollection/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -1260,23 +1259,23 @@
         "o&m",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/schema.json> ;
-            prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.sosa.properties.executionCollection> ;
     bblocks:dependsOn <bblocks://ogc.ogc-utils.iri-or-curie>,
         <bblocks://ogc.sosa.properties.actuation>,
@@ -1294,10 +1293,10 @@
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.actuator> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/actuator/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/actuator/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/actuator/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/actuator/index.md> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -1310,17 +1309,17 @@
         "sosa",
         "ssn",
         "system" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuator/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuator/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuator/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuator/schema.yaml> ;
             prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.sosa.properties.system> ;
     bblocks:dependsOn <bblocks://ogc.sosa.properties.system> ;
@@ -1335,12 +1334,12 @@
     rdfs:label "Observation Properties (SOSA OWA)" ;
     dct:abstract "OMS alignment: implements the ISO 19156:2023 (OGC Topic 20 / O&M 3.0) `obs-cpt/Observation` requirement class for `sosa:Observation`, under an Open World Assumption profile. This is set of properties defined by the SOSA ontology, assuming a \"Open World Assumption\" where mandatory properties may be provided by other related objects."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-13T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/observation-owa/index.json> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.observation-owa> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/observation-owa/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.observation-owa> ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/observation-owa/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -1353,14 +1352,14 @@
         "observations",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.json> ;
             prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
@@ -1383,10 +1382,10 @@
     rdfs:label "Sampler Properties" ;
     dct:abstract "OMS alignment: implements the ISO 19156:2023 (OGC Topic 20 / O&M 3.0) `sam-cpt/Sampler` requirement class for `sosa:Sampler`. This building block defines the set of properties for a SOSA Sampler - a System that is used by, or implements, a Sampling Procedure to create or transform one or more samples."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sampler> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sampler/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sampler> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sampler/index.json> ] ;
     dct:hasVersion "1.0" ;
@@ -1402,12 +1401,12 @@
         "ssn",
         "system" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampler/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampler/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampler/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
@@ -1448,6 +1447,11 @@
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/schema.yaml> ;
             prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
+            prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/schema.json> ;
@@ -1455,12 +1459,7 @@
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:mapping ] ;
     prof:isProfileOf <bblocks://ogc.sosa.properties.executionCollection> ;
     bblocks:dependsOn <bblocks://ogc.ogc-utils.iri-or-curie>,
         <bblocks://ogc.sosa.properties.executionCollection>,
@@ -1476,12 +1475,12 @@
     rdfs:label "SOSA Sensor" ;
     dct:abstract "OMS alignment: implements the ISO 19156:2023 (OGC Topic 20 / O&M 3.0) `obs-cpt/Observer` requirement class for `sosa:Sensor` - the ISO 19156:2023 UML class is named `Observer`; SOSA keeps the name `Sensor` for backward compatibility. An identifiable entity that can generate Observations pertaining to an ObservableProperty by implementing an ObservingProcedure. Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-12-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sensor/index.json> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sensor> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sensor/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sensor> ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sensor/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -1494,16 +1493,16 @@
         "sosa",
         "ssn" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sensor/schema.yaml> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sensor/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sensor/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sensor/schema.json> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sensor/schema.yaml> ;
             prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.sosa.properties.system> ;
     bblocks:dependsOn <bblocks://ogc.sosa.properties.system> ;
@@ -1518,12 +1517,12 @@
     rdfs:label "Deployment Properties" ;
     dct:abstract "OMS alignment: implements the ISO 19156:2023 (OGC Topic 20 / O&M 3.0) `obs-cpt/Deployment` requirement class for `sosa:Deployment`. This building block defines the set of properties for a SOSA Deployment - the arrangement of one or more Assets to execute Procedures with respect to designated features of interest, typically for a period of time."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/deployment/index.json> ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/deployment/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.deployment> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/deployment/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.deployment> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -1536,17 +1535,17 @@
         "o&m",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -1559,10 +1558,10 @@
     rdfs:label "ObservationCollection Properties" ;
     dct:abstract "OMS alignment: implements the ISO 19156:2023 (OGC Topic 20 / O&M 3.0) `obs-basic/ObservationCollection` requirement class for `sosa:ObservationCollection`. This building block defines an ObservationCollection according to the SOSA/SSN v1.1 specification. It defines a set of logical rules regarding presence of mandatory properties anywhere within a potentially nested collection hierarchy. (implemented in SHACL, exploiting the semantic mapping to SOSA)"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-13T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.observationCollection> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/observationCollection/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.observationCollection> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/observationCollection/index.md> ] ;
     dct:hasVersion "1.0" ;
@@ -1576,7 +1575,11 @@
         "o&m",
         "observations",
         "sosa" ;
-    prof:hasResource [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.observation> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/_sources/properties/observation/shapes.shacl> ;
@@ -1585,19 +1588,15 @@
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.yaml> ;
             prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.json> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/_sources/properties/execution/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:validation ] ;
     prof:isProfileOf <bblocks://ogc.sosa.properties.executionCollection> ;
     bblocks:dependsOn <bblocks://ogc.ogc-utils.iri-or-curie>,
         <bblocks://ogc.sosa.properties.executionCollection>,
@@ -1613,12 +1612,12 @@
     rdfs:label "SOSA Platform" ;
     dct:abstract "OMS alignment: implements the ISO 19156:2023 (OGC Topic 20 / O&M 3.0) `obs-cpt/Host` requirement class for `sosa:Platform`. This building block defines the set of properties for an observation Platform according to the SOSA/SSN specification. These properties may be directly included into a root element of a JSON object or used in the properties container of a GeoJSON feature."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-12-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/platform/index.md> ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.platform> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/platform/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/platform/index.md> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/platform/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -1634,14 +1633,14 @@
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/platform/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/platform/context.jsonld> ;
-            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/platform/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/platform/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     prof:isProfileOf <bblocks://ogc.sosa.properties.asset> ;
     bblocks:dependsOn <bblocks://ogc.sosa.properties.asset> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
@@ -1657,10 +1656,10 @@
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sampleCollection/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sampleCollection/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sampleCollection> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sampleCollection> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sampleCollection/index.md> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -1673,14 +1672,14 @@
         "sample",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampleCollection/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampleCollection/schema.yaml> ;
             prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampleCollection/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampleCollection/schema.json> ;
@@ -1698,12 +1697,12 @@
     rdfs:label "Actuation Properties" ;
     dct:abstract "OMS alignment: `sosa:Actuation` is a SOSA/SSN generalization with no direct ISO 19156 (OMS) counterpart, since actuation is outside the scope of O&M/OMS, which standardizes observation and sampling only; see the OMS alignment building block (`ogc.sosa.oms-alignment`). This building block defines the set of properties for a SOSA Actuation - the Act of carrying out an Actuating Procedure to change the state of the world via an Actuator."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/actuation/index.md> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/actuation/index.json> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.actuation> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/actuation/index.json> ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/actuation/index.md> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -1719,15 +1718,15 @@
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/context.jsonld> ;
             prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.yaml> ;
-            prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/_sources/properties/execution/shapes.shacl> ;
             prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.yaml> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.json> ;
@@ -1745,10 +1744,10 @@
     rdfs:label "Sample Properties" ;
     dct:abstract "OMS alignment: implements the ISO 19156:2023 (OGC Topic 20 / O&M 3.0) `sam-cpt/Sample` requirement class for `sosa:Sample`. This building block defines the set of properties for a SOSA Sample - a feature which is intended to be representative of a FeatureOfInterest on which Observations may be made, typically the result of a Sampling."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sample> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sample/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sample> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sample/index.json> ] ;
     dct:hasVersion "1.0" ;
@@ -1767,12 +1766,12 @@
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -1785,12 +1784,12 @@
     rdfs:label "Sampling Properties" ;
     dct:abstract "OMS alignment: implements the ISO 19156:2023 (OGC Topic 20 / O&M 3.0) `sam-cpt/Sampling` requirement class for `sosa:Sampling`. This building block defines the set of properties for a SOSA Sampling - the Act of carrying out a Sampling Procedure to create or transform one or more samples."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sampling> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sampling/index.json> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sampling/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sampling/index.json> ] ;
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sampling> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -1802,11 +1801,7 @@
         "sampling",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/_sources/properties/execution/shapes.shacl> ;
@@ -1814,6 +1809,10 @@
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
@@ -1832,10 +1831,10 @@
     rdfs:label "Asset Feature" ;
     dct:abstract "OMS alignment: `sosa:Asset` is a SOSA/SSN generalization with no direct ISO 19156 (OMS) counterpart; the nearest OMS concept is `obs-cpt/Host`, but OMS does not generalize hosting this broadly. See the OMS alignment building block (`ogc.sosa.oms-alignment`). This building block defines a GeoJSON feature containing a SOSA Asset - the abstract physical or virtual entity that can be hosted, deployed, or host/deploy other Assets, using the properties defined in the Asset Properties schema. It generalizes the feature-level building blocks shared by System and Platform and is not intended to be used directly by itself."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/asset/index.json> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/asset/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/asset/index.json> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.asset> ] ;
     dct:hasVersion "1.0" ;
@@ -1879,12 +1878,12 @@
     rdfs:label "ExecutionCollection Feature" ;
     dct:abstract "OMS alignment: `sosa:ExecutionCollection` is a SOSA/SSN generalization with no direct ISO 19156 (OMS) counterpart, generalizing ObservationCollection, ActuationCollection and SamplingCollection, none of which OMS treats uniformly. See the OMS alignment building block (`ogc.sosa.oms-alignment`). This building block defines a GeoJSON FeatureCollection containing a SOSA ExecutionCollection - the abstract collection of Executions, using the properties defined in the ExecutionCollection Properties schema. It generalizes the feature-level building blocks shared by ObservationCollection, ActuationCollection and SamplingCollection and is not intended to be used directly by itself."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/executionCollection/index.json> ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.executionCollection> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/executionCollection/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/executionCollection/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/executionCollection/index.md> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -1897,10 +1896,11 @@
         "o&m",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/executionCollection/context.jsonld> ;
-            prof:hasRole role:mapping ],
+    prof:hasResource [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.featureCollection> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl> ;
+            prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
@@ -1911,18 +1911,17 @@
             rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.featureCollection> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/executionCollection/schema.json> ;
-            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/executionCollection/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/executionCollection/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/executionCollection/schema.json> ;
             prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.sosa.features.execution> ;
     bblocks:dependsOn <bblocks://ogc.geo.json-fg.featureCollection-lenient>,
@@ -1938,12 +1937,12 @@
     rdfs:label "Asset Properties" ;
     dct:abstract "OMS alignment: `sosa:Asset` is a SOSA/SSN generalization with no direct ISO 19156 (OMS) counterpart; the nearest OMS concept is `obs-cpt/Host`, but OMS does not generalize hosting this broadly. See the OMS alignment building block (`ogc.sosa.oms-alignment`). This building block defines the set of properties common to any SOSA Asset - the abstract physical or virtual entity that can be hosted, deployed, or host/deploy other Assets. It generalizes the properties shared by System and Platform and is not intended to be used directly by itself."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.asset> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/asset/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/asset/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/asset/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.asset> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -1955,18 +1954,18 @@
         "o&m",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -1980,10 +1979,10 @@
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/system/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/system/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.system> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.system> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/system/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -2004,14 +2003,14 @@
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/system/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/system/context.jsonld> ;
-            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/system/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/system/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     prof:isProfileOf <bblocks://ogc.sosa.features.asset> ;
     bblocks:dependsOn <bblocks://ogc.sosa.features.asset>,
         <bblocks://ogc.sosa.properties.system> ;
@@ -2044,15 +2043,20 @@
         "o&m",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
             prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/schema.yaml> ;
@@ -2060,12 +2064,7 @@
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.geo.json-fg.feature-lenient>,
         <bblocks://ogc.sosa.properties.execution> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
@@ -2079,12 +2078,12 @@
     rdfs:label "ExecutionCollection Properties" ;
     dct:abstract "OMS alignment: `sosa:ExecutionCollection` is a SOSA/SSN generalization with no direct ISO 19156 (OMS) counterpart, generalizing ObservationCollection, ActuationCollection and SamplingCollection, none of which OMS treats uniformly. See the OMS alignment building block (`ogc.sosa.oms-alignment`). This building block defines the set of properties common to any SOSA ExecutionCollection - the abstract collection of Executions (Observations, Actuations, or Samplings). It generalizes ObservationCollection, ActuationCollection and SamplingCollection and is not intended to be used directly by itself."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.executionCollection> ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/executionCollection/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/executionCollection/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.executionCollection> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/executionCollection/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -2101,19 +2100,19 @@
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/context.jsonld> ;
             prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml> ;
-            prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.json> ;
+            prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.sosa.properties.execution> ;
     bblocks:dependsOn <bblocks://ogc.sosa.properties.execution> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
@@ -2129,10 +2128,10 @@
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.system> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/system/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/system/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/system/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/system/index.md> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -2149,12 +2148,12 @@
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/schema.json> ;
             prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.sosa.properties.asset> ;
     bblocks:dependsOn <bblocks://ogc.sosa.properties.asset> ;
@@ -2169,12 +2168,12 @@
     rdfs:label "Observation Properties" ;
     dct:abstract "OMS alignment: implements the ISO 19156:2023 (OGC Topic 20 / O&M 3.0) `obs-cpt/Observation` requirement class for `sosa:Observation`. This building block defines the set of properties for an observation according to the SOSA/SSN specification. These properties may be directly included into a root element of a JSON object or used in the properties container of a GeoJSON feature."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-13T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/observation/index.md> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/observation/index.json> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.observation> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/observation/index.json> ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/observation/index.md> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -2186,28 +2185,28 @@
         "observations",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.json> ;
-            prof:hasRole role:schema ],
+    prof:hasResource [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/_sources/properties/execution/shapes.shacl> ;
+            prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/_sources/properties/execution/shapes.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.sosa.properties.observation> ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/_sources/properties/observation/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/context.jsonld> ;
             prof:hasRole role:mapping ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.sosa.properties.observation> ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/_sources/properties/observation/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.sosa.properties.execution>,
         <bblocks://ogc.sosa.properties.observation-owa> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
@@ -2221,12 +2220,12 @@
     rdfs:label "Execution Properties" ;
     dct:abstract "OMS alignment: `sosa:Execution` is a SOSA/SSN generalization with no direct ISO 19156 (OMS) counterpart; OMS has no abstract superclass unifying Observation, Actuation and Sampling. See the OMS alignment building block (`ogc.sosa.oms-alignment`). This building block defines the set of properties common to any SOSA Execution - the abstract act of carrying out a Procedure using a System. It generalizes the properties shared by Observation, Actuation and Sampling and is not intended to be used directly by itself."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-08-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/execution/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.execution> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/execution/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/execution/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/execution/index.md> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-10-26"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -2239,22 +2238,22 @@
         "o&m",
         "sosa",
         "ssn" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.sosa.properties.execution> ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -2275,8 +2274,7 @@ Each fragment allows for transparent and validatable use of JSON-LD contexts to 
 
  Each building block allows for examples transformed to RDF, which in turn allows for the use of SHACL rules to enforce the semantics of the SOSA and OMS specifications.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-10-26T20:25:21.645815"^^xsd:dateTime ;
-    void:sparqlEndpoint <https://defs-dev.opengis.net/fuseki/query> ;
+    dct:modified "2026-10-26T21:23:51.442298"^^xsd:dateTime ;
     owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:hasTopConcept <bblocks://ogc.sosa>,
         <bblocks://ogc.sosa.features.actuation>,
@@ -2326,22 +2324,22 @@ Each fragment allows for transparent and validatable use of JSON-LD contexts to 
         <bblocks://ogc.sosa.spec-examples.samplings>,
         <bblocks://ogc.sosa.spec-examples.systems> ;
     skos:prefLabel "Building Blocks - Observations (ISO 19156, OGC/W3C SOSA)" ;
-    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON format" ;
-            dct:type "application/json" ;
-            ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json> ],
-        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
             dct:type "application/ld+json" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
             ns2:hasTarget <https://rob-metalinkage.github.io/ogcapi-sosa/build/bblocks.jsonld> ],
         [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
             dct:type "text/turtle" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://rob-metalinkage.github.io/ogcapi-sosa/build/bblocks.ttl> ] ;
+            ns2:hasTarget <https://rob-metalinkage.github.io/ogcapi-sosa/build/bblocks.ttl> ],
+        [ rdfs:label "This Building Blocks Register in JSON format" ;
+            dct:type "application/json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json> ] ;
     foaf:homepage <https://rob-metalinkage.github.io/ogcapi-sosa/> ;
     bblocks:hasValidationReport <https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/report.html> .
 
-_:N666b5a42fb28461ca2a40f0c9cdee551 a prov:Agent,
+_:Nf39f66a396e54b15b03a484dc8de4a32 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.36" ;

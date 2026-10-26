@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.deployment - Deployment Properties
-Generated 2026-10-26T20:25:41.738650+00:00
+Generated 2026-10-26T21:24:12.148733+00:00
 === Files ===
 Using example_1_2.ttl from examples
 Output Turtle example_1_2.ttl created

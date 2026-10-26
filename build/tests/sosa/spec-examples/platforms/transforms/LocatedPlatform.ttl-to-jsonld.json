@@ -1,15 +1,15 @@
 {
   "@context": [
-    "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/platform/context.jsonld",
+    "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/platforms/context.jsonld",
     {
       "ex": "https://example.org/data/",
       "geo": "http://www.opengis.net/ont/geosparql#",
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-      "rdfs:label": {
-        "@type": "ex:serialNumber"
-      },
       "geo:asWKT": {
         "@type": "geo:WktLiteral"
+      },
+      "rdfs:label": {
+        "@type": "ex:serialNumber"
       }
     }
   ],

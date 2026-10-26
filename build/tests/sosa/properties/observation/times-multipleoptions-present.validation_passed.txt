@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observation - Observation Properties
-Generated 2026-10-26T20:25:46.893181+00:00
+Generated 2026-10-26T21:24:16.061459+00:00
 === Files ===
 Using times-multipleoptions-present.jsonld from test resources
 Output Turtle times-multipleoptions-present.ttl created
@@ -15,21 +15,21 @@ Validation result for _sources/properties/observation/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:Nec1914c491574540923ff53e6f156e23
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N6461d63c3c3a4fd884999ba656d7ba34
+ - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
 
 Validation result for _sources/properties/execution/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N6461d63c3c3a4fd884999ba656d7ba34
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:Nec1914c491574540923ff53e6f156e23
- - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N6461d63c3c3a4fd884999ba656d7ba34
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:Nec1914c491574540923ff53e6f156e23
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:Nec1914c491574540923ff53e6f156e23
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N6461d63c3c3a4fd884999ba656d7ba34
 
 === End SHACL ===
 

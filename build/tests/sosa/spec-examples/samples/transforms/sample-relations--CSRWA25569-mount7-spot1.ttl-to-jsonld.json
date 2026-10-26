@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/context.jsonld",
+    "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/context.jsonld",
     {
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
       "relex": "https://example.org/data/sample-relations#"

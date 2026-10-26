@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observationCollection - ObservationCollection Properties
-Generated 2026-10-26T20:25:51.460601+00:00
+Generated 2026-10-26T21:24:21.221170+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -31,21 +31,21 @@ Validation result for _sources/properties/execution/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: _:N3f859d437b6644699030d15813857a2d
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N2f22425c1ce04cc2b72aa056481415fa
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N44c0d61a65b145c0a208864c1e07d107
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: _:Nf435d068533a486eb884d22e236f3385
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N44c0d61a65b145c0a208864c1e07d107
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: _:Nf435d068533a486eb884d22e236f3385
  - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 24.1
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: _:N3f859d437b6644699030d15813857a2d
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N2f22425c1ce04cc2b72aa056481415fa
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N2f22425c1ce04cc2b72aa056481415fa
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N44c0d61a65b145c0a208864c1e07d107
 
 Validation result for _sources/properties/observation/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N2f22425c1ce04cc2b72aa056481415fa
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N44c0d61a65b145c0a208864c1e07d107
+ - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
 
 === End SHACL ===
 
