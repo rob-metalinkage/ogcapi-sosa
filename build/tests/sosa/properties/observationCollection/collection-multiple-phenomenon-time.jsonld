@@ -1,5 +1,5 @@
 {
-  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
+  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
   "comment": "SOSA collection rule 5: two phenomenonTime intervals on the collection, each member's time falls within one of them",
   "observedProperty": "http://qudt.org/vocab/quantitykind/Temperature",
   "hasFeatureOfInterest": "https://example.org/rooms/1",

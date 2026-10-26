@@ -30,31 +30,31 @@
   "highlighted": false,
   "shaclShapes": {
     "ogc.sosa.properties.execution": [
-      "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+      "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
     ],
     "ogc.sosa.properties.observation": [
-      "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+      "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
     ]
   },
   "dependsOn": [
     "ogc.sosa.properties.observationCollection"
   ],
   "schema": {
-    "application/yaml": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/schema.yaml",
-    "application/json": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/schema.json"
+    "application/yaml": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/schema.yaml",
+    "application/json": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/schema.json"
   },
-  "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/observation-collections/schema.yaml",
-  "ldContext": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/context.jsonld",
-  "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/resolvedProperties.json",
-  "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/observation-collections/",
+  "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/observation-collections/schema.yaml",
+  "ldContext": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/context.jsonld",
+  "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/resolvedProperties.json",
+  "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/observation-collections/",
   "validationPassed": true,
-  "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/observation-collections/",
+  "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/observation-collections/",
   "transforms": [
     {
       "id": "ttl-to-jsonld",
       "description": "Frames the root resource (ObservationCollection) of a SOSA Turtle example and compacts it with the `ogc.sosa.properties.observationCollection` JSON-LD context, which the output's `@context` references (plus only the example's own prefixes and literal types). The output is validated against `ogc.sosa.properties.observationCollection`.",
       "type": "python",
-      "ref": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
+      "ref": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
       "inputs": {
         "mediaTypes": [
           {
@@ -127,19 +127,19 @@
         {
           "language": "ttl",
           "ref": "https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/UOM-qudt-collection.ttl",
-          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/UOM-qudt-collection.ttl",
+          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/UOM-qudt-collection.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 1400,
-              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/UOM-qudt-collection.ttl-to-jsonld.json",
+              "sizeBytes": 1401,
+              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/UOM-qudt-collection.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.observationCollection": {
                   "result": true,
-                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
+                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/UOM-qudt-collection.ttl-to-jsonld.jsonld",
-                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/UOM-qudt-collection.ttl-to-jsonld.ttl"
+                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/UOM-qudt-collection.ttl-to-jsonld.jsonld",
+                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/UOM-qudt-collection.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -184,19 +184,19 @@
         {
           "language": "ttl",
           "ref": "https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/timeseries-oc.ttl",
-          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/timeseries-oc.ttl",
+          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/timeseries-oc.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 1913,
-              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/timeseries-oc.ttl-to-jsonld.json",
+              "sizeBytes": 1914,
+              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/timeseries-oc.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.observationCollection": {
                   "result": true,
-                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
+                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/timeseries-oc.ttl-to-jsonld.jsonld",
-                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/timeseries-oc.ttl-to-jsonld.ttl"
+                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/timeseries-oc.ttl-to-jsonld.jsonld",
+                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/timeseries-oc.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -241,19 +241,19 @@
         {
           "language": "ttl",
           "ref": "https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/tests/ObservationCollection/OCrule1.ttl",
-          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/OCrule1.ttl",
+          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/OCrule1.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 2140,
-              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/OCrule1.ttl-to-jsonld.json",
+              "sizeBytes": 2141,
+              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/OCrule1.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.observationCollection": {
                   "result": true,
-                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
+                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule1.ttl-to-jsonld.jsonld",
-                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule1.ttl-to-jsonld.ttl"
+                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule1.ttl-to-jsonld.jsonld",
+                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule1.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -298,19 +298,19 @@
         {
           "language": "ttl",
           "ref": "https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/tests/ObservationCollection/OCrule2.ttl",
-          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/OCrule2.ttl",
+          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/OCrule2.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 2242,
-              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/OCrule2.ttl-to-jsonld.json",
+              "sizeBytes": 2243,
+              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/OCrule2.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.observationCollection": {
                   "result": true,
-                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
+                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule2.ttl-to-jsonld.jsonld",
-                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule2.ttl-to-jsonld.ttl"
+                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule2.ttl-to-jsonld.jsonld",
+                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule2.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -355,19 +355,19 @@
         {
           "language": "ttl",
           "ref": "https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/tests/ObservationCollection/OCrule3.ttl",
-          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/OCrule3.ttl",
+          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/OCrule3.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 2414,
-              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/OCrule3.ttl-to-jsonld.json",
+              "sizeBytes": 2415,
+              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/OCrule3.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.observationCollection": {
                   "result": true,
-                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
+                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule3.ttl-to-jsonld.jsonld",
-                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule3.ttl-to-jsonld.ttl"
+                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule3.ttl-to-jsonld.jsonld",
+                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule3.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -412,19 +412,19 @@
         {
           "language": "ttl",
           "ref": "https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/tests/ObservationCollection/OCrule4.ttl",
-          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/OCrule4.ttl",
+          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/OCrule4.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 2617,
-              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/OCrule4.ttl-to-jsonld.json",
+              "sizeBytes": 2618,
+              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/OCrule4.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.observationCollection": {
                   "result": true,
-                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
+                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule4.ttl-to-jsonld.jsonld",
-                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule4.ttl-to-jsonld.ttl"
+                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule4.ttl-to-jsonld.jsonld",
+                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule4.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -469,19 +469,19 @@
         {
           "language": "ttl",
           "ref": "https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/tests/ObservationCollection/OCrule5.ttl",
-          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/OCrule5.ttl",
+          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/OCrule5.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 2952,
-              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/OCrule5.ttl-to-jsonld.json",
+              "sizeBytes": 2953,
+              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/OCrule5.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.observationCollection": {
                   "result": true,
-                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
+                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule5.ttl-to-jsonld.jsonld",
-                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule5.ttl-to-jsonld.ttl"
+                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule5.ttl-to-jsonld.jsonld",
+                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/OCrule5.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -526,19 +526,19 @@
         {
           "language": "ttl",
           "ref": "https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/PlannedObservationCollection.ttl",
-          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/PlannedObservationCollection.ttl",
+          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/PlannedObservationCollection.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 781,
-              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/PlannedObservationCollection.ttl-to-jsonld.json",
+              "sizeBytes": 782,
+              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/PlannedObservationCollection.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.observationCollection": {
                   "result": true,
-                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
+                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/PlannedObservationCollection.ttl-to-jsonld.jsonld",
-                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/PlannedObservationCollection.ttl-to-jsonld.ttl"
+                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/PlannedObservationCollection.ttl-to-jsonld.jsonld",
+                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/PlannedObservationCollection.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -586,19 +586,19 @@
           "shacl-closure": [
             "../closures/ex6.ttl"
           ],
-          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/ex6.ttl",
+          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/ex6.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 545,
-              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ex6.ttl-to-jsonld.json",
+              "sizeBytes": 546,
+              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ex6.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.observationCollection": {
                   "result": true,
-                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
+                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/ex6.ttl-to-jsonld.jsonld",
-                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/ex6.ttl-to-jsonld.ttl"
+                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/ex6.ttl-to-jsonld.jsonld",
+                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/ex6.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -646,19 +646,19 @@
           "shacl-closure": [
             "../closures/ex7.ttl"
           ],
-          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/ex7.ttl",
+          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/ex7.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 611,
-              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ex7.ttl-to-jsonld.json",
+              "sizeBytes": 612,
+              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ex7.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.observationCollection": {
                   "result": true,
-                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
+                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/ex7.ttl-to-jsonld.jsonld",
-                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/ex7.ttl-to-jsonld.ttl"
+                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/ex7.ttl-to-jsonld.jsonld",
+                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/ex7.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -706,19 +706,19 @@
           "shacl-closure": [
             "../closures/InkBird-IBS-TH2-survivable-conditions.ttl"
           ],
-          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/InkBird-IBS-TH2-survivable-conditions.ttl",
+          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/InkBird-IBS-TH2-survivable-conditions.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 1608,
-              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/InkBird-IBS-TH2-survivable-conditions.ttl-to-jsonld.json",
+              "sizeBytes": 1609,
+              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/InkBird-IBS-TH2-survivable-conditions.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.observationCollection": {
                   "result": true,
-                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
+                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/InkBird-IBS-TH2-survivable-conditions.ttl-to-jsonld.jsonld",
-                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/InkBird-IBS-TH2-survivable-conditions.ttl-to-jsonld.ttl"
+                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/InkBird-IBS-TH2-survivable-conditions.ttl-to-jsonld.jsonld",
+                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/InkBird-IBS-TH2-survivable-conditions.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -766,19 +766,19 @@
           "shacl-closure": [
             "../closures/IBS-TH2-PLUS-capabilities.ttl"
           ],
-          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/IBS-TH2-PLUS-capabilities.ttl",
+          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/IBS-TH2-PLUS-capabilities.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 2637,
-              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/IBS-TH2-PLUS-capabilities.ttl-to-jsonld.json",
+              "sizeBytes": 2638,
+              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/IBS-TH2-PLUS-capabilities.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.observationCollection": {
                   "result": true,
-                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
+                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/IBS-TH2-PLUS-capabilities.ttl-to-jsonld.jsonld",
-                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/IBS-TH2-PLUS-capabilities.ttl-to-jsonld.ttl"
+                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/IBS-TH2-PLUS-capabilities.ttl-to-jsonld.jsonld",
+                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/IBS-TH2-PLUS-capabilities.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -827,19 +827,19 @@
           "shacl-closure": [
             "../closures/dht22.ttl"
           ],
-          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/dht22.ttl",
+          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/dht22.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 22853,
-              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/dht22.ttl-to-jsonld.json",
+              "sizeBytes": 22854,
+              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/dht22.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.observationCollection": {
                   "result": true,
-                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
+                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/dht22.ttl-to-jsonld.jsonld",
-                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/dht22.ttl-to-jsonld.ttl"
+                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/dht22.ttl-to-jsonld.jsonld",
+                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/dht22.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -888,19 +888,19 @@
           "shacl-closure": [
             "../closures/dht22.ttl"
           ],
-          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/dht22--DHT22_4578_TemperatureSensorCapabilities.ttl",
+          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/dht22--DHT22_4578_TemperatureSensorCapabilities.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 22226,
-              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/dht22--DHT22_4578_TemperatureSensorCapabilities.ttl-to-jsonld.json",
+              "sizeBytes": 22227,
+              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/dht22--DHT22_4578_TemperatureSensorCapabilities.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.observationCollection": {
                   "result": true,
-                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
+                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/dht22--DHT22_4578_TemperatureSensorCapabilities.ttl-to-jsonld.jsonld",
-                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/dht22--DHT22_4578_TemperatureSensorCapabilities.ttl-to-jsonld.ttl"
+                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/dht22--DHT22_4578_TemperatureSensorCapabilities.ttl-to-jsonld.jsonld",
+                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/observation-collections/transforms/ogc.sosa.properties.observationCollection/dht22--DHT22_4578_TemperatureSensorCapabilities.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -964,7 +964,7 @@
     "unit": "http://qudt.org/vocab/unit/",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: SOSA specification examples conforming to ogc.sosa.properties.observationCollection\n$ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.yaml\nx-bblocks-metadata:\n  itemIdentifier: ogc.sosa.spec-examples.observation-collections\n  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json\n  version: '1.0'\n  dateOfLastChange: '2026-10-26'\n",
-  "gitRepository": "https://github.com/opengeospatial/ogcapi-sosa",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: SOSA specification examples conforming to ogc.sosa.properties.observationCollection\n$ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.yaml\nx-bblocks-metadata:\n  itemIdentifier: ogc.sosa.spec-examples.observation-collections\n  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json\n  version: '1.0'\n  dateOfLastChange: '2026-10-26'\n",
+  "gitRepository": "https://github.com/rob-metalinkage/ogcapi-sosa",
   "gitPath": "_sources/spec-examples/observation-collections"
 }

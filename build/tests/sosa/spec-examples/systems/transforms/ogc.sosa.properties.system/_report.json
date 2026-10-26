@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.sosa.properties.system - System Properties",
   "bblockName": "System Properties",
   "bblockId": "ogc.sosa.properties.system",
-  "generated": "2026-10-26T11:22:55.471322+00:00",
+  "generated": "2026-10-26T20:26:45.644507+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "TRANSFORM_OUTPUT",
         "requireFail": false,
         "filename": "build/tests/sosa/spec-examples/systems/transforms/LocatedSensor.ttl-to-jsonld.json",
-        "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/systems/transforms/LocatedSensor.ttl-to-jsonld.json",
+        "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/systems/transforms/LocatedSensor.ttl-to-jsonld.json",
         "language": "application/json",
         "transformId": "ttl-to-jsonld"
       },

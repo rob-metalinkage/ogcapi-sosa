@@ -1,5 +1,5 @@
 {
-  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/context.jsonld",
+  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/context.jsonld",
   "@id": "windowActuations",
   "madeByActuator": "closer-987",
   "hasMember": [

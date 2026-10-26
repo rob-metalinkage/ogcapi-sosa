@@ -6,7 +6,7 @@
       "description": "A Actuation Feature in a collection (mandatory properties may be provided by the collection)",
       "allOf": [
         {
-          "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/schema.json"
+          "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/schema.json"
         },
         {
           "type": "object",
@@ -14,12 +14,12 @@
             "featureType": {
               "oneOf": [
                 {
-                  "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.json#/$defs/actuationType"
+                  "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.json#/$defs/actuationType"
                 },
                 {
                   "type": "array",
                   "contains": {
-                    "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.json#/$defs/actuationType"
+                    "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.json#/$defs/actuationType"
                   }
                 }
               ],
@@ -31,7 +31,7 @@
           "type": "object",
           "properties": {
             "properties": {
-              "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.json#/$defs/member",
+              "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.json#/$defs/member",
               "x-jsonld-id": "@nest"
             }
           }
@@ -48,7 +48,7 @@
       "type": "object",
       "properties": {
         "properties": {
-          "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.json",
+          "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.json",
           "x-jsonld-id": "@nest"
         }
       }
@@ -522,7 +522,7 @@
   },
   "x-bblocks-metadata": {
     "itemIdentifier": "ogc.sosa.features.actuation",
-    "register": "https://opengeospatial.github.io/ogcapi-sosa/build/register.json",
+    "register": "https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json",
     "version": "1.0",
     "dateOfLastChange": "2026-10-26"
   }

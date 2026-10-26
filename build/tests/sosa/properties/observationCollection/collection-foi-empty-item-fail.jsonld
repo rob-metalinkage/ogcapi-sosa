@@ -1,5 +1,5 @@
 {
-  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
+  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
   "comment": "Each value in an array is as strict as a single value: no empty references",
   "observedProperty": "http://qudt.org/vocab/quantitykind/Temperature",
   "hasFeatureOfInterest": [

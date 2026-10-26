@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observation - Observation Properties
-Generated 2026-10-26T11:21:56.054678+00:00
+Generated 2026-10-26T20:25:47.414502+00:00
 === Files ===
 Using example_1_2.ttl from examples
 Output Turtle example_1_2.ttl created
@@ -14,7 +14,7 @@ Validation result for _sources/properties/observation/shapes.shacl:
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:n8ff81d493c8a4df69f45196131eadd8eb1
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:n78fb8932a4274a839308e5b8d80f28eab1
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
 
 Validation result for _sources/properties/execution/shapes.shacl:
@@ -22,12 +22,12 @@ Validation result for _sources/properties/execution/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 33
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:n8ff81d493c8a4df69f45196131eadd8eb1
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:n8ff81d493c8a4df69f45196131eadd8eb1
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:n8ff81d493c8a4df69f45196131eadd8eb1
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:n78fb8932a4274a839308e5b8d80f28eab1
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 33
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:n78fb8932a4274a839308e5b8d80f28eab1
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:n78fb8932a4274a839308e5b8d80f28eab1
 
 === End SHACL ===
 

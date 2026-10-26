@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observation - Observation Properties
-Generated 2026-10-26T11:21:55.224755+00:00
+Generated 2026-10-26T20:25:46.584308+00:00
 === Files ===
 Using phenomenon-time-instant.json from test resources
 JSON-LD context is present - uplifting
@@ -18,7 +18,7 @@ Validation result for _sources/properties/observation/shapes.shacl:
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N4ccc58c0cab14e15877e53a09982c16a
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N2f27b59a0ed245408491cc3b577c55c1
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
 
 Validation result for _sources/properties/execution/shapes.shacl:
@@ -26,12 +26,12 @@ Validation result for _sources/properties/execution/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 1
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N4ccc58c0cab14e15877e53a09982c16a
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N4ccc58c0cab14e15877e53a09982c16a
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N4ccc58c0cab14e15877e53a09982c16a
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N2f27b59a0ed245408491cc3b577c55c1
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 1
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N2f27b59a0ed245408491cc3b577c55c1
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N2f27b59a0ed245408491cc3b577c55c1
 
 === End SHACL ===
 

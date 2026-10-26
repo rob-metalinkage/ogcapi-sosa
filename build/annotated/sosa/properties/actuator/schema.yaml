@@ -1,7 +1,7 @@
 $schema: https://json-schema.org/draft/2020-12/schema
 description: SOSA Actuator
 allOf:
-- $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/schema.yaml
+- $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/schema.yaml
 - type: object
   properties:
     actsOn:
@@ -366,6 +366,6 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.properties.actuator
-  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
+  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'

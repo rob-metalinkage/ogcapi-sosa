@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/context.jsonld",
+    "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/context.jsonld",
     {
       "ex": "https://example.org/data/",
       "qudt": "http://qudt.org/schema/qudt/",

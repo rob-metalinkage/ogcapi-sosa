@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observation - Observation Properties
-Generated 2026-10-26T11:21:55.454927+00:00
+Generated 2026-10-26T20:25:46.816596+00:00
 === Files ===
 Using result-time.ttl from test resources
 === End Files ===
@@ -11,7 +11,7 @@ Validation result for _sources/properties/observation/shapes.shacl:
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:n67c8c6817cbd4f25a9242977adb8f009b1
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:n51fdc8121fbc451c8d9d9e9c71dda87cb1
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
 
 Validation result for _sources/properties/execution/shapes.shacl:
@@ -19,12 +19,12 @@ Validation result for _sources/properties/execution/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:n67c8c6817cbd4f25a9242977adb8f009b1
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:n67c8c6817cbd4f25a9242977adb8f009b1
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:n67c8c6817cbd4f25a9242977adb8f009b1
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:n51fdc8121fbc451c8d9d9e9c71dda87cb1
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:n51fdc8121fbc451c8d9d9e9c71dda87cb1
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:n51fdc8121fbc451c8d9d9e9c71dda87cb1
 
 === End SHACL ===
 

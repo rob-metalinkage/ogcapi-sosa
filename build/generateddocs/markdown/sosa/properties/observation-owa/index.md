@@ -44,7 +44,7 @@ _:a1 a sosa:Observation ;
 #### jsonld
 ```jsonld
 {
-  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/context.jsonld",
+  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/context.jsonld",
   "hasFeatureOfInterest": "https://demo.pygeoapi.io/master/collections/dutch_windmills/items/Molens.1",
   "observedProperty": "p1",
   "hasSimpleResult": 33,
@@ -72,7 +72,7 @@ _:a1 a sosa:Observation ;
 #### jsonld
 ```jsonld
 {
-  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/context.jsonld",
+  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/context.jsonld",
   "hasFeatureOfInterest": "https://demo.pygeoapi.io/master/collections/dutch_windmills/items/Molens.1",
   "observedProperty": "p1",
   "hasResult": {
@@ -124,7 +124,7 @@ _:a1 a sosa:Observation ;
 #### jsonld
 ```jsonld
 {
-  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/context.jsonld",
+  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/context.jsonld",
   "hasFeatureOfInterest": {
     "id": "https://demo.pygeoapi.io/master/collections/dutch_windmills/items/Molens.2",
     "type": "Feature",
@@ -164,15 +164,15 @@ _:a1 a sosa:Observation ;
 $schema: https://json-schema.org/draft/2020-12/schema
 description: SOSA Observation
 allOf:
-- $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml
+- $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml
 - type: object
   properties:
     observedProperty:
-      $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/reference
+      $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/reference
       x-jsonld-id: http://www.w3.org/ns/sosa/observedProperty
       x-jsonld-type: '@id'
     madeBySensor:
-      $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/reference
+      $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/reference
       x-jsonld-id: http://www.w3.org/ns/sosa/madeBySensor
       x-jsonld-type: '@id'
 x-jsonld-extra-terms:
@@ -525,7 +525,7 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.properties.observation-owa
-  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
+  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'
 
@@ -533,8 +533,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.json)
-* JSON version: [schema.json](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml)
 
 
 # JSON-LD Context
@@ -1011,7 +1011,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/context.jsonld)
+[context.jsonld](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/context.jsonld)
 
 ## Sources
 
@@ -1021,6 +1021,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/opengeospatial/ogcapi-sosa](https://github.com/opengeospatial/ogcapi-sosa)
+* URL: [https://github.com/rob-metalinkage/ogcapi-sosa](https://github.com/rob-metalinkage/ogcapi-sosa)
 * Path: `_sources/properties/observation-owa`
 

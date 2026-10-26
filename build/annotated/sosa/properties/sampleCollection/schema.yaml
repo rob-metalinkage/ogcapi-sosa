@@ -47,7 +47,7 @@ $defs:
         items:
           anyOf:
           - $ref: '#/$defs/collection'
-          - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.yaml
+          - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.yaml
           - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
         x-jsonld-id: http://www.w3.org/ns/sosa/hasMember
         x-jsonld-type: '@id'
@@ -385,6 +385,6 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.properties.sampleCollection
-  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
+  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'

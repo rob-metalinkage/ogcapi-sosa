@@ -3,7 +3,7 @@
   "description": "SOSA System",
   "allOf": [
     {
-      "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/schema.json"
+      "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/schema.json"
     },
     {
       "type": "object",
@@ -504,7 +504,7 @@
   },
   "x-bblocks-metadata": {
     "itemIdentifier": "ogc.sosa.properties.system",
-    "register": "https://opengeospatial.github.io/ogcapi-sosa/build/register.json",
+    "register": "https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json",
     "version": "1.0",
     "dateOfLastChange": "2026-10-26"
   }

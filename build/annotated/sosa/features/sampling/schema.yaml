@@ -5,20 +5,20 @@ $defs:
     description: A Sampling Feature in a collection (mandatory properties may be provided
       by the collection)
     allOf:
-    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/schema.yaml
+    - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/schema.yaml
     - type: object
       properties:
         featureType:
           oneOf:
-          - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml#/$defs/samplingType
+          - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml#/$defs/samplingType
           - type: array
             contains:
-              $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml#/$defs/samplingType
+              $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml#/$defs/samplingType
           x-jsonld-id: '@type'
     - type: object
       properties:
         properties:
-          $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml#/$defs/member
+          $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml#/$defs/member
           x-jsonld-id: '@nest'
 type: object
 allOf:
@@ -26,7 +26,7 @@ allOf:
 - type: object
   properties:
     properties:
-      $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml
+      $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml
       x-jsonld-id: '@nest'
 x-jsonld-extra-terms:
   id: '@id'
@@ -382,6 +382,6 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.features.sampling
-  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
+  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'
