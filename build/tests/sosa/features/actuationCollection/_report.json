@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.sosa.features.actuationCollection - ActuationCollection Feature",
   "bblockName": "ActuationCollection Feature",
   "bblockId": "ogc.sosa.features.actuationCollection",
-  "generated": "2026-10-26T21:25:01.897943+00:00",
+  "generated": "2026-10-26T22:06:52.710272+00:00",
   "result": true,
   "items": [
     {
@@ -72,27 +72,27 @@
             {
               "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
               "focusNodes": {
-                "geojson:GeometryShape/sh:or/rdf:first": {
-                  "nodes": []
-                },
-                "geojson:GeometryShape": {
+                "geojson:LinkShape": {
                   "nodes": []
                 },
                 "geojson:FeatureShape": {
                   "nodes": [
-                    "<https://example.org/data/open-window/A188>",
-                    "<https://example.org/data/open-window/A189>"
+                    "<https://example.org/data/open-window/A189>",
+                    "<https://example.org/data/open-window/A188>"
                   ]
+                },
+                "geojson:GeometryShape": {
+                  "nodes": []
                 },
                 "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
                 },
-                "geojson:LinkShape": {
+                "geojson:GeometryShape/sh:or/rdf:first": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:FeatureShape: <https://example.org/data/open-window/A188>,<https://example.org/data/open-window/A189>\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: <https://example.org/data/open-window/A189>,<https://example.org/data/open-window/A188>\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -104,27 +104,27 @@
             {
               "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
               "focusNodes": {
-                "geojson:GeometryShape": {
-                  "nodes": []
-                },
-                "geojson:FeatureShape": {
-                  "nodes": []
-                },
-                "geojson:GeometryShape/sh:or/rdf:first": {
-                  "nodes": []
-                },
-                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
                 "geojson:FeatureCollectionShape": {
                   "nodes": []
                 },
                 "geojson:LinkShape": {
                   "nodes": []
+                },
+                "geojson:FeatureShape": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape/sh:or/rdf:first": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureCollectionShape: *none*\n - Shape geojson:LinkShape: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:FeatureCollectionShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -136,43 +136,43 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
-                  "nodes": [
-                    "<https://example.org/data/open-window/A188>",
-                    "<https://example.org/data/open-window/A189>"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                  "nodes": [
-                    "_:N489c09e0205c4cecbc0cf809a52748c4"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
-                  "nodes": [
-                    "<https://example.org/data/open-window/A188>",
-                    "<https://example.org/data/open-window/A189>"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": [
-                    "_:N489c09e0205c4cecbc0cf809a52748c4"
-                  ]
-                },
                 "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": [
                     "<https://example.org/data/open-window/A189>/sosa:hasSimpleResult",
                     "<https://example.org/data/open-window/A188>/sosa:hasSimpleResult"
                   ]
                 },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                  "nodes": [
+                    "_:N26c3462d7a814507b5ee188cf2050872"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": [
+                    "_:N26c3462d7a814507b5ee188cf2050872"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                  "nodes": [
+                    "<https://example.org/data/open-window/A189>",
+                    "<https://example.org/data/open-window/A188>"
+                  ]
+                },
                 "<https://www.ogc.org/rules/sosa/#testResult>": {
                   "nodes": [
-                    "<https://example.org/data/open-window/A188>",
-                    "<https://example.org/data/open-window/A189>"
+                    "<https://example.org/data/open-window/A189>",
+                    "<https://example.org/data/open-window/A188>"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                  "nodes": [
+                    "<https://example.org/data/open-window/A189>",
+                    "<https://example.org/data/open-window/A188>"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: <https://example.org/data/open-window/A188>,<https://example.org/data/open-window/A189>\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: _:N489c09e0205c4cecbc0cf809a52748c4\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: <https://example.org/data/open-window/A188>,<https://example.org/data/open-window/A189>\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: _:N489c09e0205c4cecbc0cf809a52748c4\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: <https://example.org/data/open-window/A189>/sosa:hasSimpleResult,<https://example.org/data/open-window/A188>/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: <https://example.org/data/open-window/A188>,<https://example.org/data/open-window/A189>\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: <https://example.org/data/open-window/A189>/sosa:hasSimpleResult,<https://example.org/data/open-window/A188>/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: _:N26c3462d7a814507b5ee188cf2050872\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: _:N26c3462d7a814507b5ee188cf2050872\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: <https://example.org/data/open-window/A189>,<https://example.org/data/open-window/A188>\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: <https://example.org/data/open-window/A189>,<https://example.org/data/open-window/A188>\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: <https://example.org/data/open-window/A189>,<https://example.org/data/open-window/A188>\n"
             }
           ]
         }

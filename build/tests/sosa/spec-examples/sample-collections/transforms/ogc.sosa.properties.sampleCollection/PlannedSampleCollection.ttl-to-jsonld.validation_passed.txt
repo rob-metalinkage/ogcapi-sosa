@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.sampleCollection - SampleCollection Properties
-Generated 2026-10-26T21:25:10.727268+00:00
+Generated 2026-10-26T22:07:01.243156+00:00
 === Files ===
 Using PlannedSampleCollection.ttl-to-jsonld.json from transform outputs
 JSON-LD context is present - uplifting

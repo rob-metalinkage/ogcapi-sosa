@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observation - Observation Properties
-Generated 2026-10-26T21:24:15.888355+00:00
+Generated 2026-10-26T22:06:07.771188+00:00
 === Files ===
 Using result-phenomenon-time.ttl from test resources
 === End Files ===
@@ -10,21 +10,21 @@ Validation result for _sources/properties/observation/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:n411285b3da074fdda473b096954ad35eb1
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:nc8d0a681ce0544a6864ed702c6fde055b1
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
 
 Validation result for _sources/properties/execution/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:n411285b3da074fdda473b096954ad35eb1
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:n411285b3da074fdda473b096954ad35eb1
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
  - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:n411285b3da074fdda473b096954ad35eb1
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:nc8d0a681ce0544a6864ed702c6fde055b1
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:nc8d0a681ce0544a6864ed702c6fde055b1
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:nc8d0a681ce0544a6864ed702c6fde055b1
 
 === End SHACL ===
 

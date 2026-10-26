@@ -15,10 +15,10 @@
       "geo:lat": {
         "@type": "xsd:decimal"
       },
-      "geo:lon": {
+      "geo:alt": {
         "@type": "xsd:decimal"
       },
-      "geo:alt": {
+      "geo:lon": {
         "@type": "xsd:decimal"
       }
     }

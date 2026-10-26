@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observationCollection - ObservationCollection Properties
-Generated 2026-10-26T21:24:22.509675+00:00
+Generated 2026-10-26T22:06:13.969213+00:00
 === Files ===
 Using collection-multiple-phenomenon-time.json from test resources
 JSON-LD context is present - uplifting
@@ -17,21 +17,21 @@ Validation result for _sources/properties/execution/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N63b93a7f22314fa7875395d77909b614,_:N56127445578e4f9bb97862843241687d
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: _:Nf16af39f1f214084a8b11dd924e91380
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N63b93a7f22314fa7875395d77909b614,_:N56127445578e4f9bb97862843241687d
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: _:Nf16af39f1f214084a8b11dd924e91380
- - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 24.1,27.3
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N63b93a7f22314fa7875395d77909b614,_:N56127445578e4f9bb97862843241687d
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 27.3,24.1
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: _:Ndb9bf24daa52404eb8d2bba7a8e15783
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: _:Ndb9bf24daa52404eb8d2bba7a8e15783
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N1cc57ceccbd8409b800fa726215bcdea,_:N70ac3ba01b9345a993a19da111dc0497
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N1cc57ceccbd8409b800fa726215bcdea,_:N70ac3ba01b9345a993a19da111dc0497
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N1cc57ceccbd8409b800fa726215bcdea,_:N70ac3ba01b9345a993a19da111dc0497
 
 Validation result for _sources/properties/observation/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N63b93a7f22314fa7875395d77909b614,_:N56127445578e4f9bb97862843241687d
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N1cc57ceccbd8409b800fa726215bcdea,_:N70ac3ba01b9345a993a19da111dc0497
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
 
 === End SHACL ===
 

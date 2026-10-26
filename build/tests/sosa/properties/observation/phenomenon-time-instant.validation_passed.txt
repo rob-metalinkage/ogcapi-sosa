@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observation - Observation Properties
-Generated 2026-10-26T21:24:15.833340+00:00
+Generated 2026-10-26T22:06:07.725741+00:00
 === Files ===
 Using phenomenon-time-instant.json from test resources
 JSON-LD context is present - uplifting
@@ -17,21 +17,21 @@ Validation result for _sources/properties/observation/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:Nb36823e0aeff4c05a73897ed095bf3c3
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N6c8a63099cc34b94b955838554e8634c
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
 
 Validation result for _sources/properties/execution/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:Nb36823e0aeff4c05a73897ed095bf3c3
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:Nb36823e0aeff4c05a73897ed095bf3c3
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
  - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 1
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:Nb36823e0aeff4c05a73897ed095bf3c3
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N6c8a63099cc34b94b955838554e8634c
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N6c8a63099cc34b94b955838554e8634c
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N6c8a63099cc34b94b955838554e8634c
 
 === End SHACL ===
 

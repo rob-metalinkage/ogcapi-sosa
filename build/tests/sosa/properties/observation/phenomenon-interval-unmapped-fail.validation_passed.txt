@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observation - Observation Properties
-Generated 2026-10-26T21:24:15.719517+00:00
+Generated 2026-10-26T22:06:07.632576+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -51,21 +51,21 @@ Validation result for _sources/properties/observation/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:Nf3e293ed05d44f77bcfee5649460b6bd
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N276fa25f759944a18f22c6697564e289
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
 
 Validation result for _sources/properties/execution/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:Nf3e293ed05d44f77bcfee5649460b6bd
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:Nf3e293ed05d44f77bcfee5649460b6bd
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
  - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 1
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:Nf3e293ed05d44f77bcfee5649460b6bd
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N276fa25f759944a18f22c6697564e289
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N276fa25f759944a18f22c6697564e289
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N276fa25f759944a18f22c6697564e289
 
 === End SHACL ===
 
