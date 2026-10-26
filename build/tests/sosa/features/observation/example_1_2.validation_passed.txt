@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.features.observation - SOSA Observation Feature
-Generated 2026-10-26T11:22:26.798674+00:00
+Generated 2026-10-26T20:26:17.592517+00:00
 === Files ===
 Using example_1_2.ttl from examples
 Output Turtle example_1_2.ttl created
@@ -11,23 +11,23 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: _:nea740c0919024a15a67a7e8e14c18607b1
- - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: _:n312e3ccc607f4777963f9c16841bb397b1
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
 
 Validation result for _sources/properties/execution/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 33
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:nea740c0919024a15a67a7e8e14c18607b1
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:nea740c0919024a15a67a7e8e14c18607b1
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:nea740c0919024a15a67a7e8e14c18607b1
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:n312e3ccc607f4777963f9c16841bb397b1
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 33
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:n312e3ccc607f4777963f9c16841bb397b1
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:n312e3ccc607f4777963f9c16841bb397b1
 
 Validation result for _sources/properties/observation/shapes.shacl:
   Validation Report
@@ -35,7 +35,7 @@ Validation result for _sources/properties/observation/shapes.shacl:
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:nea740c0919024a15a67a7e8e14c18607b1
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:n312e3ccc607f4777963f9c16841bb397b1
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
 
 === End SHACL ===

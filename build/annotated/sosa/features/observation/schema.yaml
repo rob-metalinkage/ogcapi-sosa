@@ -5,12 +5,12 @@ $defs:
     description: A Observation Feature in a collection (mandatory properties may be
       provided by the collection)
     allOf:
-    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/schema.yaml
-    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml#/$defs/featureType
+    - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/schema.yaml
+    - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml#/$defs/featureType
     - type: object
       properties:
         properties:
-          $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml#/$defs/member
+          $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml#/$defs/member
           x-jsonld-id: '@nest'
 type: object
 allOf:
@@ -18,7 +18,7 @@ allOf:
 - type: object
   properties:
     properties:
-      $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml
+      $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml
       x-jsonld-id: '@nest'
 x-jsonld-extra-terms:
   id: '@id'
@@ -375,6 +375,6 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.features.observation
-  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
+  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'

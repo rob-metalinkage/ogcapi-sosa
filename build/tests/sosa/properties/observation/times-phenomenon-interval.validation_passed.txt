@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observation - Observation Properties
-Generated 2026-10-26T11:21:55.666761+00:00
+Generated 2026-10-26T20:25:47.024518+00:00
 === Files ===
 Using times-phenomenon-interval.json from test resources
 JSON-LD context is present - uplifting
@@ -18,7 +18,7 @@ Validation result for _sources/properties/observation/shapes.shacl:
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N50e0dff15c1a40b781197e95cbe92c36
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:Ndb50d6eb376e40e7b8df7a40703ec38a
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
 
 Validation result for _sources/properties/execution/shapes.shacl:
@@ -26,12 +26,12 @@ Validation result for _sources/properties/execution/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N50e0dff15c1a40b781197e95cbe92c36
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N50e0dff15c1a40b781197e95cbe92c36
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N50e0dff15c1a40b781197e95cbe92c36
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:Ndb50d6eb376e40e7b8df7a40703ec38a
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:Ndb50d6eb376e40e7b8df7a40703ec38a
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:Ndb50d6eb376e40e7b8df7a40703ec38a
 
 === End SHACL ===
 

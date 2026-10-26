@@ -53,10 +53,10 @@ ex:serialNumber a rdfs:Datatype ;
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
 description: SOSA specification examples conforming to ogc.sosa.properties.system
-$ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/schema.yaml
+$ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/schema.yaml
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.spec-examples.systems
-  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
+  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'
 
@@ -64,8 +64,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/schema.json)
-* JSON version: [schema.json](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/schema.yaml)
 
 
 # JSON-LD Context
@@ -542,7 +542,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/context.jsonld)
+[context.jsonld](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/context.jsonld)
 
 ## Sources
 
@@ -552,6 +552,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/opengeospatial/ogcapi-sosa](https://github.com/opengeospatial/ogcapi-sosa)
+* URL: [https://github.com/rob-metalinkage/ogcapi-sosa](https://github.com/rob-metalinkage/ogcapi-sosa)
 * Path: `_sources/spec-examples/systems`
 

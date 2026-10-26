@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observation - Observation Properties
-Generated 2026-10-26T11:21:55.300145+00:00
+Generated 2026-10-26T20:25:46.660630+00:00
 === Files ===
 Using result-phenomenon-time.ttl from test resources
 === End Files ===
@@ -11,7 +11,7 @@ Validation result for _sources/properties/observation/shapes.shacl:
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:nd7f54ece6dad41f6a8fe85bfc474596fb1
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:n37d7943463bb41a5a1b8a3a3872c18f6b1
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
 
 Validation result for _sources/properties/execution/shapes.shacl:
@@ -19,12 +19,12 @@ Validation result for _sources/properties/execution/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:nd7f54ece6dad41f6a8fe85bfc474596fb1
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:nd7f54ece6dad41f6a8fe85bfc474596fb1
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:nd7f54ece6dad41f6a8fe85bfc474596fb1
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:n37d7943463bb41a5a1b8a3a3872c18f6b1
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:n37d7943463bb41a5a1b8a3a3872c18f6b1
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:n37d7943463bb41a5a1b8a3a3872c18f6b1
 
 === End SHACL ===
 

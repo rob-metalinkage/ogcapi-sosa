@@ -13,7 +13,7 @@
       "description": "A Sampling in a SamplingCollection: feature of interest and time may be provided by the collection (checked by SHACL), the result (the Sample) may not.",
       "allOf": [
         {
-          "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.json"
+          "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.json"
         },
         {
           "type": "object",
@@ -33,14 +33,14 @@
               "x-jsonld-id": "@type"
             },
             "madeBySampler": {
-              "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.json#/$defs/reference",
+              "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.json#/$defs/reference",
               "x-jsonld-id": "http://www.w3.org/ns/sosa/madeBySampler",
               "x-jsonld-type": "@id"
             }
           }
         },
         {
-          "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.json#/$defs/result"
+          "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.json#/$defs/result"
         }
       ]
     }
@@ -51,7 +51,7 @@
       "$ref": "#/$defs/member"
     },
     {
-      "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.json#/$defs/required"
+      "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.json#/$defs/required"
     }
   ],
   "x-jsonld-extra-terms": {
@@ -519,7 +519,7 @@
   },
   "x-bblocks-metadata": {
     "itemIdentifier": "ogc.sosa.properties.sampling",
-    "register": "https://opengeospatial.github.io/ogcapi-sosa/build/register.json",
+    "register": "https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json",
     "version": "1.0",
     "dateOfLastChange": "2026-10-26"
   }

@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.spec-examples.observations - SOSA specification examples: Observations
-Generated 2026-10-26T11:22:13.853388+00:00
+Generated 2026-10-26T20:26:05.100922+00:00
 === Files ===
 Using https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/paleo-atmosphere.ttl from examples
 Output Turtle paleo-atmosphere.ttl created
@@ -16,7 +16,7 @@ Validation result for _sources/properties/observation/shapes.shacl:
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:Ob873t2,ex:Ob873c4,ex:Oatc349
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:Ob873c4,ex:Oatc349,ex:Ob873t2
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
 
 Validation result for _sources/properties/execution/shapes.shacl:
@@ -24,12 +24,12 @@ Validation result for _sources/properties/execution/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:Ob873t2,ex:Ob873c4,ex:Oatc349
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:Ob873t2,ex:Ob873c4,ex:Oatc349
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:Ob873t2,ex:Ob873c4,ex:Oatc349
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:Ob873c4,ex:Oatc349,ex:Ob873t2
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:Ob873c4,ex:Oatc349,ex:Ob873t2
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:Ob873c4,ex:Oatc349,ex:Ob873t2
 
 === End SHACL ===
 

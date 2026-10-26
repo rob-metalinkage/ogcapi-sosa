@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.sosa.spec-examples.samplings - SOSA specification examples: Samplings",
   "bblockName": "SOSA specification examples: Samplings",
   "bblockId": "ogc.sosa.spec-examples.samplings",
-  "generated": "2026-10-26T11:21:57.176523+00:00",
+  "generated": "2026-10-26T20:25:48.487984+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/sosa/spec-examples/samplings/bubble-provenance.ttl",
-        "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samplings/bubble-provenance.ttl",
+        "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samplings/bubble-provenance.ttl",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "text/turtle",
@@ -60,20 +60,8 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                  "nodes": []
-                },
                 "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
                   "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
-                  "nodes": [
-                    "ex:WellDrilling4578",
-                    "ex:CoreEx1923"
-                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testResult>": {
                   "nodes": [
@@ -81,7 +69,19 @@
                     "ex:CoreEx1923"
                   ]
                 },
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": []
+                },
                 "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                  "nodes": [
+                    "ex:WellDrilling4578",
+                    "ex:CoreEx1923"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
                     "ex:WellDrilling4578",
                     "ex:CoreEx1923"
@@ -89,7 +89,7 @@
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:WellDrilling4578,ex:CoreEx1923\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:WellDrilling4578,ex:CoreEx1923\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:WellDrilling4578,ex:CoreEx1923\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:WellDrilling4578,ex:CoreEx1923\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:WellDrilling4578,ex:CoreEx1923\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:WellDrilling4578,ex:CoreEx1923\n"
             }
           ]
         }
@@ -100,7 +100,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/sosa/spec-examples/samplings/bubble-provenance--WellDrilling4578.ttl",
-        "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samplings/bubble-provenance--WellDrilling4578.ttl",
+        "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samplings/bubble-provenance--WellDrilling4578.ttl",
         "exampleIndex": 2,
         "snippetIndex": 1,
         "language": "text/turtle",
@@ -150,20 +150,8 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                  "nodes": []
-                },
                 "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
                   "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
-                  "nodes": [
-                    "ex:WellDrilling4578",
-                    "ex:CoreEx1923"
-                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testResult>": {
                   "nodes": [
@@ -171,7 +159,19 @@
                     "ex:CoreEx1923"
                   ]
                 },
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": []
+                },
                 "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                  "nodes": [
+                    "ex:WellDrilling4578",
+                    "ex:CoreEx1923"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
                     "ex:WellDrilling4578",
                     "ex:CoreEx1923"
@@ -179,7 +179,7 @@
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:WellDrilling4578,ex:CoreEx1923\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:WellDrilling4578,ex:CoreEx1923\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:WellDrilling4578,ex:CoreEx1923\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:WellDrilling4578,ex:CoreEx1923\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:WellDrilling4578,ex:CoreEx1923\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:WellDrilling4578,ex:CoreEx1923\n"
             }
           ]
         }
@@ -190,7 +190,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/sosa/spec-examples/samplings/LocatedSampling.ttl",
-        "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samplings/LocatedSampling.ttl",
+        "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samplings/LocatedSampling.ttl",
         "exampleIndex": 3,
         "snippetIndex": 1,
         "language": "text/turtle",
@@ -244,33 +244,33 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                  "nodes": []
-                },
                 "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
                   "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
-                  "nodes": [
-                    "ex:AirSampling_StE"
-                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testResult>": {
                   "nodes": [
                     "ex:AirSampling_StE"
                   ]
                 },
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": []
+                },
                 "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                  "nodes": [
+                    "ex:AirSampling_StE"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
                     "ex:AirSampling_StE"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:AirSampling_StE\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:AirSampling_StE\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:AirSampling_StE\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:AirSampling_StE\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:AirSampling_StE\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:AirSampling_StE\n"
             }
           ]
         }

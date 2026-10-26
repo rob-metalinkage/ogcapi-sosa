@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.system - System Properties
-Generated 2026-10-26T11:22:55.470897+00:00
+Generated 2026-10-26T20:26:45.644087+00:00
 === Files ===
 Using LocatedSensor.ttl-to-jsonld.json from transform outputs
 JSON-LD context is present - uplifting

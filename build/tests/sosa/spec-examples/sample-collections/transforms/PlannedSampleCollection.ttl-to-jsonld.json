@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampleCollection/context.jsonld",
+    "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampleCollection/context.jsonld",
     {
       "ex": "https://example.org/data/"
     }

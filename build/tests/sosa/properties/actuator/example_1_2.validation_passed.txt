@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.actuator - Actuator Properties
-Generated 2026-10-26T11:21:51.316337+00:00
+Generated 2026-10-26T20:25:42.650278+00:00
 === Files ===
 Using example_1_2.ttl from examples
 Output Turtle example_1_2.ttl created

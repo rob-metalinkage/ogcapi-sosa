@@ -1,5 +1,5 @@
 {
-  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
+  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
   "comment": "An array value may not be empty",
   "observedProperty": "http://qudt.org/vocab/quantitykind/Temperature",
   "hasFeatureOfInterest": [],

@@ -1,5 +1,5 @@
 {
-  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
+  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
   "comment": "SOSA collection rule 3: several features of interest on the collection, each member has one of them",
   "observedProperty": "http://qudt.org/vocab/quantitykind/Temperature",
   "madeBySensor": "https://example.org/sensors/T56",

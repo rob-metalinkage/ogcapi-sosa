@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observation - Observation Properties
-Generated 2026-10-26T11:21:55.380633+00:00
+Generated 2026-10-26T20:25:46.741826+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -27,7 +27,7 @@ On instance['resultTime']:
 === JSON-LD ===
 
 ** Validation error **
-Error found when uplifting JSON-LD: Failed to convert Literal lexical form to value. Datatype=http://www.w3.org/2001/XMLSchema#dateTime, Converter=<function parse_datetime at 0x7f081ae15580>
+Error found when uplifting JSON-LD: Failed to convert Literal lexical form to value. Datatype=http://www.w3.org/2001/XMLSchema#dateTime, Converter=<function parse_datetime at 0x7f2f6969d580>
 Traceback (most recent call last):
   File "/venv/lib/python3.12/site-packages/isodate/isodatetime.py", line 51, in parse_datetime
     datestring, timestring = datetimestring.split('T')

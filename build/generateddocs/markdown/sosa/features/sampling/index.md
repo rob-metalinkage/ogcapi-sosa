@@ -39,7 +39,7 @@ From the SOSA/SSN specification's "LocatedSampling" example, as a GeoJSON featur
 #### jsonld
 ```jsonld
 {
-  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/context.jsonld",
+  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/context.jsonld",
   "@id": "AirSampling_StE",
   "type": "Feature",
   "geometry": {
@@ -84,20 +84,20 @@ $defs:
     description: A Sampling Feature in a collection (mandatory properties may be provided
       by the collection)
     allOf:
-    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/schema.yaml
+    - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/schema.yaml
     - type: object
       properties:
         featureType:
           oneOf:
-          - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml#/$defs/samplingType
+          - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml#/$defs/samplingType
           - type: array
             contains:
-              $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml#/$defs/samplingType
+              $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml#/$defs/samplingType
           x-jsonld-id: '@type'
     - type: object
       properties:
         properties:
-          $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml#/$defs/member
+          $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml#/$defs/member
           x-jsonld-id: '@nest'
 type: object
 allOf:
@@ -105,7 +105,7 @@ allOf:
 - type: object
   properties:
     properties:
-      $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml
+      $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml
       x-jsonld-id: '@nest'
 x-jsonld-extra-terms:
   id: '@id'
@@ -461,7 +461,7 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.features.sampling
-  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
+  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'
 
@@ -469,8 +469,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/schema.json)
-* JSON version: [schema.json](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/schema.yaml)
 
 
 # JSON-LD Context
@@ -1031,7 +1031,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/context.jsonld)
+[context.jsonld](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/context.jsonld)
 
 ## Sources
 
@@ -1041,6 +1041,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/opengeospatial/ogcapi-sosa](https://github.com/opengeospatial/ogcapi-sosa)
+* URL: [https://github.com/rob-metalinkage/ogcapi-sosa](https://github.com/rob-metalinkage/ogcapi-sosa)
 * Path: `_sources/features/sampling`
 
