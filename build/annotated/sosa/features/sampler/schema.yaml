@@ -2,11 +2,11 @@ $schema: https://json-schema.org/draft/2020-12/schema
 description: SOSA Sampler Feature
 type: object
 allOf:
-- $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/system/schema.yaml
+- $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/system/schema.yaml
 - type: object
   properties:
     properties:
-      $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampler/schema.yaml
+      $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampler/schema.yaml
       x-jsonld-id: '@nest'
 x-jsonld-extra-terms:
   id: '@id'
@@ -363,6 +363,6 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.features.sampler
-  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
+  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'

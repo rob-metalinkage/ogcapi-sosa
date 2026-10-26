@@ -21,13 +21,13 @@ $defs:
       observed property and time may be provided by the collection (checked by SHACL),
       the result may not.'
     allOf:
-    - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml
     - $ref: '#/$defs/featureType'
-    - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/result
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/result
 type: object
 allOf:
 - $ref: '#/$defs/member'
-- $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/required
+- $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/required
 - required:
   - observedProperty
 x-jsonld-extra-terms:
@@ -386,6 +386,6 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.properties.observation
-  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
+  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'

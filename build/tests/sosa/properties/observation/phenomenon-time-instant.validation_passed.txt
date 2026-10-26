@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observation - Observation Properties
-Generated 2026-10-26T11:22:45.333865+00:00
+Generated 2026-10-26T11:21:55.224755+00:00
 === Files ===
 Using phenomenon-time-instant.json from test resources
 JSON-LD context is present - uplifting
@@ -17,8 +17,8 @@ Validation result for _sources/properties/observation/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N109ad0237bbf47d8b55e7a6c4efbea6c
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N4ccc58c0cab14e15877e53a09982c16a
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
 
 Validation result for _sources/properties/execution/shapes.shacl:
@@ -28,10 +28,10 @@ Validation result for _sources/properties/execution/shapes.shacl:
 Focus nodes for _sources/properties/execution/shapes.shacl:
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
  - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 1
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N109ad0237bbf47d8b55e7a6c4efbea6c
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N109ad0237bbf47d8b55e7a6c4efbea6c
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N109ad0237bbf47d8b55e7a6c4efbea6c
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N4ccc58c0cab14e15877e53a09982c16a
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N4ccc58c0cab14e15877e53a09982c16a
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N4ccc58c0cab14e15877e53a09982c16a
 
 === End SHACL ===
 

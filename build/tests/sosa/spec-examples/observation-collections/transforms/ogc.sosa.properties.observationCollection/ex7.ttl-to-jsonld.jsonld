@@ -1,5 +1,5 @@
 {
-  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
+  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
   "id": "https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/moreSpecificTemperatureSensorOperatingRange",
   "featureType": "ObservationCollection",
   "hasMember": [

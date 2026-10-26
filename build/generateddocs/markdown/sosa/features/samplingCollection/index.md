@@ -48,7 +48,7 @@ rather than the `features` array, to avoid an ambiguous match.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/context.jsonld",
+  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/context.jsonld",
   "type": "FeatureCollection",
   "properties": {
     "hasFeatureOfInterest": "EarthAtmosphere",
@@ -100,19 +100,19 @@ allOf:
 - type: object
   properties:
     properties:
-      $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/schema.yaml
+      $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/schema.yaml
       x-jsonld-id: '@nest'
     features:
       type: array
       items:
         oneOf:
-        - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/schema.yaml#/$defs/member
+        - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/schema.yaml#/$defs/member
         - allOf:
           - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml
           - type: object
             properties:
               properties:
-                $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/schema.yaml
+                $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/schema.yaml
                 x-jsonld-id: '@nest'
         - type: string
       x-jsonld-id: http://www.w3.org/ns/sosa/hasMember
@@ -469,7 +469,7 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.features.samplingCollection
-  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
+  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'
 
@@ -477,8 +477,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/schema.json)
-* JSON version: [schema.json](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/schema.yaml)
+* YAML version: [schema.yaml](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/schema.json)
+* JSON version: [schema.json](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/schema.yaml)
 
 
 # JSON-LD Context
@@ -1079,7 +1079,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/context.jsonld)
+[context.jsonld](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/context.jsonld)
 
 ## Sources
 
@@ -1089,6 +1089,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/rob-metalinkage/ogcapi-sosa](https://github.com/rob-metalinkage/ogcapi-sosa)
+* URL: [https://github.com/opengeospatial/ogcapi-sosa](https://github.com/opengeospatial/ogcapi-sosa)
 * Path: `_sources/features/samplingCollection`
 

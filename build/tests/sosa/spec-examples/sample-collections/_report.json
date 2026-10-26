@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.sosa.spec-examples.sample-collections - SOSA specification examples: Sample Collections",
   "bblockName": "SOSA specification examples: Sample Collections",
   "bblockId": "ogc.sosa.spec-examples.sample-collections",
-  "generated": "2026-10-26T11:22:46.991616+00:00",
+  "generated": "2026-10-26T11:21:57.199665+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/sosa/spec-examples/sample-collections/PlannedDeployment.ttl",
-        "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/sample-collections/PlannedDeployment.ttl",
+        "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/sample-collections/PlannedDeployment.ttl",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "text/turtle",
@@ -53,7 +53,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/sosa/spec-examples/sample-collections/PlannedSampleCollection.ttl",
-        "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/sample-collections/PlannedSampleCollection.ttl",
+        "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/sample-collections/PlannedSampleCollection.ttl",
         "exampleIndex": 2,
         "snippetIndex": 1,
         "language": "text/turtle",

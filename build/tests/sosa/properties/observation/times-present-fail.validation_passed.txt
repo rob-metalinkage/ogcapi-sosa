@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observation - Observation Properties
-Generated 2026-10-26T11:22:45.771018+00:00
+Generated 2026-10-26T11:21:55.745517+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -46,8 +46,8 @@ Validation result for _sources/properties/observation/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N147d843c31b940b8bd1871a992eceeea
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:Nf7d668ddb3ed411580c182f0860651dc
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
 
 
@@ -82,10 +82,10 @@ Validation result for _sources/properties/execution/shapes.shacl:
 Focus nodes for _sources/properties/execution/shapes.shacl:
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
  - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: frogginess
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N147d843c31b940b8bd1871a992eceeea
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N147d843c31b940b8bd1871a992eceeea
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N147d843c31b940b8bd1871a992eceeea
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:Nf7d668ddb3ed411580c182f0860651dc
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:Nf7d668ddb3ed411580c182f0860651dc
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:Nf7d668ddb3ed411580c182f0860651dc
 
 === End SHACL ===
 

@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/context.jsonld",
+    "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/context.jsonld",
     {
       "ex": "https://example.org/data/",
       "qk": "http://qudt.org/vocab/quantitykind/",

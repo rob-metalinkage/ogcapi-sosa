@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.sosa.properties.deployment - Deployment Properties",
   "bblockName": "Deployment Properties",
   "bblockId": "ogc.sosa.properties.deployment",
-  "generated": "2026-10-26T11:23:41.595668+00:00",
+  "generated": "2026-10-26T11:22:54.779179+00:00",
   "result": false,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "TRANSFORM_OUTPUT",
         "requireFail": false,
         "filename": "build/tests/sosa/spec-examples/deployments/transforms/LocatedDeployment.ttl-to-jsonld.json",
-        "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/deployments/transforms/LocatedDeployment.ttl-to-jsonld.json",
+        "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/deployments/transforms/LocatedDeployment.ttl-to-jsonld.json",
         "language": "application/json",
         "transformId": "ttl-to-jsonld"
       },
@@ -64,7 +64,7 @@
         "type": "TRANSFORM_OUTPUT",
         "requireFail": false,
         "filename": "build/tests/sosa/spec-examples/deployments/transforms/dht22-deployment.ttl-to-jsonld.json",
-        "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/deployments/transforms/dht22-deployment.ttl-to-jsonld.json",
+        "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/deployments/transforms/dht22-deployment.ttl-to-jsonld.json",
         "language": "application/json",
         "transformId": "ttl-to-jsonld"
       },
@@ -120,7 +120,7 @@
         "type": "TRANSFORM_OUTPUT",
         "requireFail": false,
         "filename": "build/tests/sosa/spec-examples/deployments/transforms/dht22-deployment--Room245Deployment.ttl-to-jsonld.json",
-        "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/deployments/transforms/dht22-deployment--Room245Deployment.ttl-to-jsonld.json",
+        "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/deployments/transforms/dht22-deployment--Room245Deployment.ttl-to-jsonld.json",
         "language": "application/json",
         "transformId": "ttl-to-jsonld"
       },

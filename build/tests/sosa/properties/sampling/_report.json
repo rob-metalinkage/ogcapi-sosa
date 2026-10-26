@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.sosa.properties.sampling - Sampling Properties",
   "bblockName": "Sampling Properties",
   "bblockId": "ogc.sosa.properties.sampling",
-  "generated": "2026-10-26T11:22:41.907693+00:00",
+  "generated": "2026-10-26T11:21:51.231690+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "TEST_RESOURCE",
         "requireFail": false,
         "filename": "_sources/properties/sampling/tests/result-is-result-of.ttl",
-        "url": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/sampling/tests/result-is-result-of.ttl",
+        "url": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/sampling/tests/result-is-result-of.ttl",
         "language": "ttl"
       },
       "result": true,
@@ -45,18 +45,18 @@
                 "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": []
                 },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
-                  "nodes": [
-                    "ex:s1"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                  "nodes": []
                 },
                 "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
                     "ex:s1"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testResult>": {
+                  "nodes": [
+                    "ex:s1"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
@@ -65,7 +65,7 @@
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:s1\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:s1\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:s1\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:s1\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:s1\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:s1\n"
             }
           ]
         }
@@ -76,7 +76,7 @@
         "type": "TEST_RESOURCE",
         "requireFail": true,
         "filename": "_sources/properties/sampling/tests/result-two-results-fail.ttl",
-        "url": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/sampling/tests/result-two-results-fail.ttl",
+        "url": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/sampling/tests/result-two-results-fail.ttl",
         "language": "ttl"
       },
       "result": true,
@@ -122,18 +122,18 @@
                 "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": []
                 },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
-                  "nodes": [
-                    "ex:s1"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                  "nodes": []
                 },
                 "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
                     "ex:s1"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testResult>": {
+                  "nodes": [
+                    "ex:s1"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
@@ -142,7 +142,7 @@
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:s1\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:s1\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:s1\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:s1\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:s1\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:s1\n"
             }
           ]
         }
@@ -153,7 +153,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/sosa/properties/sampling/example_1_1.json",
-        "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/properties/sampling/example_1_1.json",
+        "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/properties/sampling/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "application/json"
@@ -221,18 +221,18 @@
                 "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": []
                 },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
-                  "nodes": [
-                    "<https://example.org/data/AirSampling_StE>"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                  "nodes": []
                 },
                 "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
                     "<https://example.org/data/AirSampling_StE>"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testResult>": {
+                  "nodes": [
+                    "<https://example.org/data/AirSampling_StE>"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
@@ -241,7 +241,7 @@
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: <https://example.org/data/AirSampling_StE>\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: <https://example.org/data/AirSampling_StE>\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: <https://example.org/data/AirSampling_StE>\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: <https://example.org/data/AirSampling_StE>\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: <https://example.org/data/AirSampling_StE>\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: <https://example.org/data/AirSampling_StE>\n"
             }
           ]
         }
@@ -252,7 +252,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/sosa/properties/sampling/example_1_2.ttl",
-        "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/properties/sampling/example_1_2.ttl",
+        "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/properties/sampling/example_1_2.ttl",
         "exampleIndex": 1,
         "snippetIndex": 2,
         "language": "text/turtle"
@@ -297,18 +297,18 @@
                 "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": []
                 },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
-                  "nodes": [
-                    "ex:AirSampling_StE"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                  "nodes": []
                 },
                 "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
                     "ex:AirSampling_StE"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testResult>": {
+                  "nodes": [
+                    "ex:AirSampling_StE"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
@@ -317,7 +317,7 @@
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:AirSampling_StE\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:AirSampling_StE\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:AirSampling_StE\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:AirSampling_StE\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:AirSampling_StE\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:AirSampling_StE\n"
             }
           ]
         }

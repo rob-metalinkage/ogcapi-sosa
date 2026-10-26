@@ -36,7 +36,7 @@ From the SOSA/SSN specification's "LocatedSample" example, as a GeoJSON feature.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/context.jsonld",
+  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/context.jsonld",
   "@id": "EarthAtmosphere_StE",
   "type": "Feature",
   "geometry": {
@@ -80,7 +80,7 @@ allOf:
 - type: object
   properties:
     properties:
-      $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.yaml
+      $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.yaml
       x-jsonld-id: '@nest'
 x-jsonld-extra-terms:
   id: '@id'
@@ -437,7 +437,7 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.features.sample
-  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
+  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'
 
@@ -445,8 +445,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/schema.json)
-* JSON version: [schema.json](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/schema.yaml)
+* YAML version: [schema.yaml](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/schema.json)
+* JSON version: [schema.json](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/schema.yaml)
 
 
 # JSON-LD Context
@@ -1008,7 +1008,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/context.jsonld)
+[context.jsonld](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/context.jsonld)
 
 ## Sources
 
@@ -1018,6 +1018,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/rob-metalinkage/ogcapi-sosa](https://github.com/rob-metalinkage/ogcapi-sosa)
+* URL: [https://github.com/opengeospatial/ogcapi-sosa](https://github.com/opengeospatial/ogcapi-sosa)
 * Path: `_sources/features/sample`
 

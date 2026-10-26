@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "SOSA Platform",
-  "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/schema.json",
+  "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/schema.json",
   "x-jsonld-extra-terms": {
     "id": "@id",
     "properties": "@nest",
@@ -472,7 +472,7 @@
   },
   "x-bblocks-metadata": {
     "itemIdentifier": "ogc.sosa.properties.platform",
-    "register": "https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json",
+    "register": "https://opengeospatial.github.io/ogcapi-sosa/build/register.json",
     "version": "1.0",
     "dateOfLastChange": "2026-10-26"
   }

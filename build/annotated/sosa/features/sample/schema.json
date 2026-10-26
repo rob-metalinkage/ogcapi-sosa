@@ -10,7 +10,7 @@
       "type": "object",
       "properties": {
         "properties": {
-          "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.json",
+          "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.json",
           "x-jsonld-id": "@nest"
         }
       }
@@ -485,7 +485,7 @@
   },
   "x-bblocks-metadata": {
     "itemIdentifier": "ogc.sosa.features.sample",
-    "register": "https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json",
+    "register": "https://opengeospatial.github.io/ogcapi-sosa/build/register.json",
     "version": "1.0",
     "dateOfLastChange": "2026-10-26"
   }

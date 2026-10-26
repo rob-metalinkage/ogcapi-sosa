@@ -5,18 +5,18 @@
     "collection": {
       "allOf": [
         {
-          "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.json"
+          "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.json"
         },
         {
           "type": "object",
           "properties": {
             "actsOnProperty": {
-              "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.json#/$defs/references",
+              "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.json#/$defs/references",
               "x-jsonld-id": "http://www.w3.org/ns/sosa/actsOnProperty",
               "x-jsonld-type": "@id"
             },
             "madeByActuator": {
-              "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.json#/$defs/references",
+              "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.json#/$defs/references",
               "x-jsonld-id": "http://www.w3.org/ns/sosa/madeByActuator",
               "x-jsonld-type": "@id"
             },
@@ -28,7 +28,7 @@
                     "$ref": "#/$defs/collection"
                   },
                   {
-                    "$ref": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.json#/$defs/member"
+                    "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.json#/$defs/member"
                   },
                   {
                     "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json"
@@ -522,7 +522,7 @@
   },
   "x-bblocks-metadata": {
     "itemIdentifier": "ogc.sosa.properties.actuationCollection",
-    "register": "https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json",
+    "register": "https://opengeospatial.github.io/ogcapi-sosa/build/register.json",
     "version": "1.0",
     "dateOfLastChange": "2026-10-26"
   }

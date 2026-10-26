@@ -59,10 +59,10 @@ ex:A188 rdf:type sosa:Actuation ;
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
 description: SOSA specification examples conforming to ogc.sosa.properties.actuation
-$ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.yaml
+$ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.yaml
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.spec-examples.actuations
-  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
+  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'
 
@@ -70,8 +70,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/schema.json)
-* JSON version: [schema.json](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/schema.yaml)
+* YAML version: [schema.yaml](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/schema.json)
+* JSON version: [schema.json](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/schema.yaml)
 
 
 # JSON-LD Context
@@ -548,7 +548,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/context.jsonld)
+[context.jsonld](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/context.jsonld)
 
 ## Sources
 
@@ -558,6 +558,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/rob-metalinkage/ogcapi-sosa](https://github.com/rob-metalinkage/ogcapi-sosa)
+* URL: [https://github.com/opengeospatial/ogcapi-sosa](https://github.com/opengeospatial/ogcapi-sosa)
 * Path: `_sources/spec-examples/actuations`
 

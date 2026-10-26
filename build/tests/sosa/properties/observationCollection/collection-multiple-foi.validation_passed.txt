@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observationCollection - ObservationCollection Properties
-Generated 2026-10-26T11:22:51.776056+00:00
+Generated 2026-10-26T11:22:01.477261+00:00
 === Files ===
 Using collection-multiple-foi.json from test resources
 JSON-LD context is present - uplifting
@@ -17,20 +17,20 @@ Validation result for _sources/properties/execution/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: _:Nf3bc5fee2dd54656bf5902eef493ebf5
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: _:N22e89dff4db94bdfa64091fb784e773e
  - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 27.3,24.1
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:Nd8f6daff8dea4b4bba6cca4c5597cb35,_:N097148f1be8c408b8a8a8a8dc22a6e92
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:Nd8f6daff8dea4b4bba6cca4c5597cb35,_:N097148f1be8c408b8a8a8a8dc22a6e92
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: _:Nf3bc5fee2dd54656bf5902eef493ebf5
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:Nd8f6daff8dea4b4bba6cca4c5597cb35,_:N097148f1be8c408b8a8a8a8dc22a6e92
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: _:N22e89dff4db94bdfa64091fb784e773e
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:Ncaca2b5ef2db461695c1c6eb729274b7,_:N562a2503ebaa4295818065dc055da27b
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:Ncaca2b5ef2db461695c1c6eb729274b7,_:N562a2503ebaa4295818065dc055da27b
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:Ncaca2b5ef2db461695c1c6eb729274b7,_:N562a2503ebaa4295818065dc055da27b
 
 Validation result for _sources/properties/observation/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:Nd8f6daff8dea4b4bba6cca4c5597cb35,_:N097148f1be8c408b8a8a8a8dc22a6e92
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:Ncaca2b5ef2db461695c1c6eb729274b7,_:N562a2503ebaa4295818065dc055da27b
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
 
 === End SHACL ===

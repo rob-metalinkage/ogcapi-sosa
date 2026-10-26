@@ -49,7 +49,7 @@ Actuator, to demonstrate collection-level property inheritance.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/context.jsonld",
+  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/context.jsonld",
   "@id": "windowActuations",
   "madeByActuator": "closer-987",
   "hasMember": [
@@ -105,15 +105,15 @@ description: SOSA ActuationCollection
 $defs:
   collection:
     allOf:
-    - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml
     - type: object
       properties:
         actsOnProperty:
-          $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml#/$defs/references
+          $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml#/$defs/references
           x-jsonld-id: http://www.w3.org/ns/sosa/actsOnProperty
           x-jsonld-type: '@id'
         madeByActuator:
-          $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml#/$defs/references
+          $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml#/$defs/references
           x-jsonld-id: http://www.w3.org/ns/sosa/madeByActuator
           x-jsonld-type: '@id'
         hasMember:
@@ -121,7 +121,7 @@ $defs:
           items:
             anyOf:
             - $ref: '#/$defs/collection'
-            - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.yaml#/$defs/member
+            - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.yaml#/$defs/member
             - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
           x-jsonld-id: http://www.w3.org/ns/sosa/hasMember
           x-jsonld-type: '@id'
@@ -480,7 +480,7 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.properties.actuationCollection
-  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
+  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'
 
@@ -488,8 +488,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/schema.json)
-* JSON version: [schema.json](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/schema.yaml)
+* YAML version: [schema.yaml](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/schema.json)
+* JSON version: [schema.json](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/schema.yaml)
 
 
 # JSON-LD Context
@@ -966,7 +966,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/context.jsonld)
+[context.jsonld](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/context.jsonld)
 
 ## Sources
 
@@ -976,6 +976,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/rob-metalinkage/ogcapi-sosa](https://github.com/rob-metalinkage/ogcapi-sosa)
+* URL: [https://github.com/opengeospatial/ogcapi-sosa](https://github.com/opengeospatial/ogcapi-sosa)
 * Path: `_sources/properties/actuationCollection`
 

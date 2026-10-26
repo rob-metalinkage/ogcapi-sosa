@@ -3,25 +3,25 @@ description: SOSA ExecutionCollection
 $defs:
   references:
     oneOf:
-    - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/reference
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/reference
     - type: array
       minItems: 1
       items:
-        $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/reference
+        $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/reference
   dateTimes:
     oneOf:
-    - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/dateTime
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/dateTime
     - type: array
       minItems: 1
       items:
-        $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/dateTime
+        $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/dateTime
   temporalEntities:
     oneOf:
-    - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/temporalEntity
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/temporalEntity
     - type: array
       minItems: 1
       items:
-        $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/temporalEntity
+        $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/temporalEntity
 type: object
 properties:
   resultTime:
@@ -390,6 +390,6 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.properties.executionCollection
-  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
+  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'

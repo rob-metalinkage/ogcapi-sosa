@@ -617,6 +617,6 @@ qk:Temperature a iop:Property ;
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/rob-metalinkage/ogcapi-sosa](https://github.com/rob-metalinkage/ogcapi-sosa)
+* URL: [https://github.com/opengeospatial/ogcapi-sosa](https://github.com/opengeospatial/ogcapi-sosa)
 * Path: `_sources/spec-examples`
 

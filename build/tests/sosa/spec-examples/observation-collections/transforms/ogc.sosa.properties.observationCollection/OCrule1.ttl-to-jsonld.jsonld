@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
+    "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
     {
       "ex": "https://example.org/sosa/collection-rule-1/",
       "qk": "http://qudt.org/vocab/quantitykind/",

@@ -33,21 +33,21 @@
     "ogc.sosa.properties.sample"
   ],
   "schema": {
-    "application/yaml": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/schema.yaml",
-    "application/json": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/schema.json"
+    "application/yaml": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/schema.yaml",
+    "application/json": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/schema.json"
   },
-  "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/samples/schema.yaml",
-  "ldContext": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/context.jsonld",
-  "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/resolvedProperties.json",
-  "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/samples/",
+  "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/samples/schema.yaml",
+  "ldContext": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/context.jsonld",
+  "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/resolvedProperties.json",
+  "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/samples/",
   "validationPassed": true,
-  "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/samples/",
+  "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/samples/",
   "transforms": [
     {
       "id": "ttl-to-jsonld",
       "description": "Frames the root resource (Sample, MaterialSample) of a SOSA Turtle example and compacts it with the `ogc.sosa.properties.sample` JSON-LD context, which the output's `@context` references (plus only the example's own prefixes and literal types). The output is validated against `ogc.sosa.properties.sample`.",
       "type": "python",
-      "ref": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
+      "ref": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
       "inputs": {
         "mediaTypes": [
           {
@@ -128,19 +128,19 @@
         {
           "language": "ttl",
           "ref": "https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/LocatedSample.ttl",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/LocatedSample.ttl",
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/LocatedSample.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 763,
-              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/LocatedSample.ttl-to-jsonld.json",
+              "sizeBytes": 762,
+              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/LocatedSample.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.sample": {
                   "result": true,
-                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/_report.json",
+                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/LocatedSample.ttl-to-jsonld.jsonld",
-                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/LocatedSample.ttl-to-jsonld.ttl"
+                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/LocatedSample.ttl-to-jsonld.jsonld",
+                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/LocatedSample.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -186,19 +186,19 @@
         {
           "language": "ttl",
           "ref": "https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/sample-relations.ttl",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/sample-relations.ttl",
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/sample-relations.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 479,
-              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/sample-relations.ttl-to-jsonld.json",
+              "sizeBytes": 478,
+              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/sample-relations.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.sample": {
                   "result": true,
-                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/_report.json",
+                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/sample-relations.ttl-to-jsonld.jsonld",
-                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/sample-relations.ttl-to-jsonld.ttl"
+                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/sample-relations.ttl-to-jsonld.jsonld",
+                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/sample-relations.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -244,19 +244,19 @@
         {
           "language": "ttl",
           "ref": "https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/sample-relations.ttl",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/sample-relations--CSRWA25569-mount7-spot1.ttl",
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/sample-relations--CSRWA25569-mount7-spot1.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 911,
-              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/sample-relations--CSRWA25569-mount7-spot1.ttl-to-jsonld.json",
+              "sizeBytes": 910,
+              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/sample-relations--CSRWA25569-mount7-spot1.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.sample": {
                   "result": true,
-                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/_report.json",
+                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/sample-relations--CSRWA25569-mount7-spot1.ttl-to-jsonld.jsonld",
-                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/sample-relations--CSRWA25569-mount7-spot1.ttl-to-jsonld.ttl"
+                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/sample-relations--CSRWA25569-mount7-spot1.ttl-to-jsonld.jsonld",
+                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/samples/transforms/ogc.sosa.properties.sample/sample-relations--CSRWA25569-mount7-spot1.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -320,7 +320,7 @@
     "unit": "http://qudt.org/vocab/unit/",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: SOSA specification examples conforming to ogc.sosa.properties.sample\n$ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.yaml\nx-bblocks-metadata:\n  itemIdentifier: ogc.sosa.spec-examples.samples\n  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json\n  version: '1.0'\n  dateOfLastChange: '2026-10-26'\n",
-  "gitRepository": "https://github.com/rob-metalinkage/ogcapi-sosa",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: SOSA specification examples conforming to ogc.sosa.properties.sample\n$ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.yaml\nx-bblocks-metadata:\n  itemIdentifier: ogc.sosa.spec-examples.samples\n  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json\n  version: '1.0'\n  dateOfLastChange: '2026-10-26'\n",
+  "gitRepository": "https://github.com/opengeospatial/ogcapi-sosa",
   "gitPath": "_sources/spec-examples/samples"
 }

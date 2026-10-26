@@ -59,7 +59,7 @@ ex:IBS-TH2-56
 #### jsonld
 ```jsonld
 {
-  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/context.jsonld",
+  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/context.jsonld",
   "@id": "TH2-56-2024",
   "deployedSystem": "IBS-TH2-56",
   "deployedOnPlatform": "Room31C",
@@ -447,7 +447,7 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.properties.deployment
-  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
+  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'
 
@@ -455,8 +455,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/schema.json)
-* JSON version: [schema.json](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/schema.yaml)
+* YAML version: [schema.yaml](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/schema.json)
+* JSON version: [schema.json](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/schema.yaml)
 
 
 # JSON-LD Context
@@ -933,7 +933,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/context.jsonld)
+[context.jsonld](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/context.jsonld)
 
 ## Sources
 
@@ -943,6 +943,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/rob-metalinkage/ogcapi-sosa](https://github.com/rob-metalinkage/ogcapi-sosa)
+* URL: [https://github.com/opengeospatial/ogcapi-sosa](https://github.com/opengeospatial/ogcapi-sosa)
 * Path: `_sources/properties/deployment`
 

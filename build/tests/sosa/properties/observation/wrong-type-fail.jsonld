@@ -1,5 +1,5 @@
 {
-  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/context.jsonld",
+  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/context.jsonld",
   "featureType": "Sampling",
   "hasFeatureOfInterest": "http://something.org/1",
   "observedProperty": "something",

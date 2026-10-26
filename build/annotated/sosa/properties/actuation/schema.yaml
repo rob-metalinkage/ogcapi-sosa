@@ -10,7 +10,7 @@ $defs:
     description: 'An Actuation in an ActuationCollection: feature of interest and
       time may be provided by the collection (checked by SHACL), the result may not.'
     allOf:
-    - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml
     - type: object
       properties:
         featureType:
@@ -21,18 +21,18 @@ $defs:
               $ref: '#/$defs/actuationType'
           x-jsonld-id: '@type'
         actsOnProperty:
-          $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/reference
+          $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/reference
           x-jsonld-id: http://www.w3.org/ns/sosa/actsOnProperty
           x-jsonld-type: '@id'
         madeByActuator:
-          $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/reference
+          $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/reference
           x-jsonld-id: http://www.w3.org/ns/sosa/madeByActuator
           x-jsonld-type: '@id'
-    - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/result
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/result
 type: object
 allOf:
 - $ref: '#/$defs/member'
-- $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/required
+- $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml#/$defs/required
 x-jsonld-extra-terms:
   id: '@id'
   properties: '@nest'
@@ -382,6 +382,6 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.properties.actuation
-  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
+  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'

@@ -37,7 +37,7 @@ Collection of one or more observations, whose members share a common value for o
 #### jsonld
 ```jsonld
 {
-  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
+  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
   "id": "myObsCollection",
   "observedProperty": "p1",
   "resultTime": "2022-05-01T22:33:44Z",
@@ -155,7 +155,7 @@ across all descendants, while each inner sub-collection declares its own
 #### jsonld
 ```jsonld
 {
-  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
+  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
   "resultTime": "2022-05-01T22:33:44Z",
   "hasFeatureOfInterest": "https://demo.pygeoapi.io/master/collections/dutch_windmills/items/Molens.1",
   "hasMember": [
@@ -250,15 +250,15 @@ description: SOSA ObservationCollection
 $defs:
   collection:
     allOf:
-    - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml
     - type: object
       properties:
         observedProperty:
-          $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml#/$defs/references
+          $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml#/$defs/references
           x-jsonld-id: http://www.w3.org/ns/sosa/observedProperty
           x-jsonld-type: '@id'
         madeBySensor:
-          $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml#/$defs/references
+          $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml#/$defs/references
           x-jsonld-id: http://www.w3.org/ns/sosa/madeBySensor
           x-jsonld-type: '@id'
         hasMember:
@@ -266,7 +266,7 @@ $defs:
           items:
             anyOf:
             - $ref: '#/$defs/collection'
-            - $ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml#/$defs/member
+            - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml#/$defs/member
             - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
           x-jsonld-id: http://www.w3.org/ns/sosa/hasMember
           x-jsonld-type: '@id'
@@ -625,7 +625,7 @@ x-jsonld-prefixes:
   ssn: http://www.w3.org/ns/ssn/
 x-bblocks-metadata:
   itemIdentifier: ogc.sosa.properties.observationCollection
-  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json
+  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-10-26'
 
@@ -633,8 +633,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.json)
-* JSON version: [schema.json](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.yaml)
+* YAML version: [schema.yaml](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.json)
+* JSON version: [schema.json](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.yaml)
 
 
 # JSON-LD Context
@@ -1111,7 +1111,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld)
+[context.jsonld](https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld)
 
 ## Sources
 
@@ -1121,6 +1121,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/rob-metalinkage/ogcapi-sosa](https://github.com/rob-metalinkage/ogcapi-sosa)
+* URL: [https://github.com/opengeospatial/ogcapi-sosa](https://github.com/opengeospatial/ogcapi-sosa)
 * Path: `_sources/properties/observationCollection`
 

@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://rob-metalinkage.github.io/ogcapi-sosa"
+      "@base": "https://opengeospatial.github.io/ogcapi-sosa"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -213,7 +213,8 @@
   "name": "Building Blocks - Observations (ISO 19156, OGC/W3C SOSA)",
   "abstract": "Building blocks for implementation of OGC Observations Measurements and Samples (ISO 19156 aka OMS) using the OGC API Features schema and the OGC/W3C SOSA ontology",
   "description": "Each building block defines a reusable JSON schema that is mapped to the equivalent SOSA concept (and transitively mapped to OMS requirements via SOSA).\n\nEach fragment allows for transparent and validatable use of JSON-LD contexts to map schema elements to equivalent terms from the SOSA ontology. \n\n _These components are under review by the OMS SWG as candidate canonical implementations._ \n\n Each building block allows for examples transformed to RDF, which in turn allows for the use of SHACL rules to enforce the semantics of the SOSA and OMS specifications.\n",
-  "modified": "2026-10-26T11:22:18.614623",
+  "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
+  "modified": "2026-10-26T11:21:31.827188",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"f95ba4022243650aa74a2266e366ed583fc21d30",
@@ -221,32 +222,32 @@
       "date": "2026-10-26T09:56:22+00:00\""
     }
   },
-  "gitRepository": "https://github.com/rob-metalinkage/ogcapi-sosa",
-  "gitHubRepository": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/",
-  "baseURL": "https://rob-metalinkage.github.io/ogcapi-sosa/",
-  "viewerURL": "https://rob-metalinkage.github.io/ogcapi-sosa/",
-  "validationReport": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/report.html",
-  "validationReportJson": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/report.json",
+  "gitRepository": "https://github.com/opengeospatial/ogcapi-sosa",
+  "gitHubRepository": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/",
+  "baseURL": "https://opengeospatial.github.io/ogcapi-sosa/",
+  "viewerURL": "https://opengeospatial.github.io/ogcapi-sosa/",
+  "validationReport": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/report.html",
+  "validationReportJson": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/report.json",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
-  "remoteCacheDir": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/_cache",
+  "remoteCacheDir": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/_cache",
   "links": [
     {
       "rel": "self",
-      "href": "https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json",
+      "href": "https://opengeospatial.github.io/ogcapi-sosa/build/register.json",
       "type": "application/json",
       "title": "This Building Blocks Register in JSON format"
     },
     {
       "rel": "self",
-      "href": "https://rob-metalinkage.github.io/ogcapi-sosa/build/bblocks.ttl",
+      "href": "https://opengeospatial.github.io/ogcapi-sosa/build/bblocks.ttl",
       "type": "text/turtle",
       "title": "This Building Blocks Register in RDF Turtle format"
     },
     {
       "rel": "self",
-      "href": "https://rob-metalinkage.github.io/ogcapi-sosa/build/bblocks.jsonld",
+      "href": "https://opengeospatial.github.io/ogcapi-sosa/build/bblocks.jsonld",
       "type": "application/ld+json",
       "title": "This Building Blocks Register in JSON-LD format"
     }
@@ -285,20 +286,20 @@
       "superBBlock": true,
       "group": "SOSA",
       "shaclShapes": null,
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa"
         }
       },
       "@id": "bblocks://ogc.sosa",
@@ -317,7 +318,7 @@
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -352,40 +353,40 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/asset/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/asset/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/asset/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/asset/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/asset/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/asset/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/asset/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/asset/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/asset/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.asset"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.asset"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.asset",
@@ -402,7 +403,7 @@
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -438,41 +439,41 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/deployment/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/deployment/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/deployment/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/deployment/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/deployment/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/properties/deployment/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/properties/deployment/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/deployment/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/deployment/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/deployment/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/deployment/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.deployment"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.deployment"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.deployment",
@@ -489,7 +490,7 @@
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -525,7 +526,7 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -535,40 +536,40 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/execution/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/execution/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/execution/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/execution/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/execution/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.execution"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.execution"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.execution",
@@ -585,7 +586,7 @@
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -620,41 +621,41 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/sample/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/sample/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/sample/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sample/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/sample/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/properties/sample/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/properties/sample/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sample/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sample/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sample/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sample/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sample"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sample"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.sample",
@@ -671,7 +672,7 @@
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -715,20 +716,20 @@
       "group": "Documentation",
       "highlighted": true,
       "shaclShapes": null,
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/oms-alignment/",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/oms-alignment/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/oms-alignment/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/oms-alignment/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/oms-alignment/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/oms-alignment/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.oms-alignment"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.oms-alignment"
         }
       },
       "@id": "bblocks://ogc.sosa.oms-alignment",
@@ -747,7 +748,7 @@
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -779,21 +780,21 @@
       "group": "Spec Examples",
       "highlighted": false,
       "shaclShapes": null,
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples"
         }
       },
       "@id": "bblocks://ogc.sosa.spec-examples",
@@ -812,7 +813,7 @@
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -850,41 +851,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/platform/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/platform/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/platform/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/platform/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/platform/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/platform/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/platform/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/platform/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/platform/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/platform/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/platform/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/platform/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/properties/platform/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/properties/platform/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/platform/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/platform/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/platform/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/platform/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.platform"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.platform"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.platform",
@@ -899,7 +900,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -940,40 +941,40 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/system/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/system/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/system/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/system/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/system/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/system/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/system/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/system/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/system/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.system"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.system"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.system",
@@ -988,7 +989,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -1025,35 +1026,35 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/deployments/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/deployments/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/deployments/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/deployments/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/deployments/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/deployments/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/deployments/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/deployments/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/deployments/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/deployments/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/deployments/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/deployments/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/deployments/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/deployments/",
       "transforms": [
         {
           "id": "ttl-to-jsonld",
           "description": "Frames the root resource (Deployment) of a SOSA Turtle example and compacts it with the `ogc.sosa.properties.deployment` JSON-LD context, which the output's `@context` references (plus only the example's own prefixes and literal types). The output is validated against `ogc.sosa.properties.deployment`.",
           "type": "python",
-          "ref": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
+          "ref": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
           "inputs": {
             "mediaTypes": [
               {
@@ -1124,15 +1125,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/deployments/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/deployments/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/deployments/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/deployments/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.deployments"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.deployments"
         }
       },
       "@id": "bblocks://ogc.sosa.spec-examples.deployments",
@@ -1148,7 +1149,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -1199,41 +1200,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/actuation/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/actuation/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/actuation/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/actuation/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/properties/actuation/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/properties/actuation/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/actuation/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/actuation/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/actuation/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/actuation/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.actuation"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.actuation"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.actuation",
@@ -1248,7 +1249,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -1287,7 +1288,7 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -1300,40 +1301,40 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/executionCollection/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/executionCollection/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/executionCollection/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/executionCollection/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/executionCollection/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/executionCollection/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/executionCollection/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/executionCollection/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/executionCollection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.executionCollection"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.executionCollection"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.executionCollection",
@@ -1348,7 +1349,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -1385,7 +1386,7 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -1398,41 +1399,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/observation-owa/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation-owa/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/observation-owa/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation-owa/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/properties/observation-owa/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/properties/observation-owa/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/observation-owa/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/observation-owa/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/observation-owa/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/observation-owa/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.observation-owa"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.observation-owa"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.observation-owa",
@@ -1447,7 +1448,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -1498,41 +1499,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/sampling/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/sampling/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/sampling/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampling/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/sampling/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/properties/sampling/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/properties/sampling/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sampling/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sampling/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sampling/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sampling/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sampling"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sampling"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.sampling",
@@ -1547,7 +1548,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -1587,41 +1588,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampleCollection/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampleCollection/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampleCollection/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampleCollection/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/sampleCollection/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/sampleCollection/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampleCollection/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampleCollection/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampleCollection/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/sampleCollection/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampleCollection/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/sampleCollection/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/properties/sampleCollection/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/properties/sampleCollection/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sampleCollection/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sampleCollection/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sampleCollection/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sampleCollection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sampleCollection"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sampleCollection"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.sampleCollection",
@@ -1637,7 +1638,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -1674,35 +1675,35 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/samples/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/samples/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/samples/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samples/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/samples/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/samples/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/samples/",
       "transforms": [
         {
           "id": "ttl-to-jsonld",
           "description": "Frames the root resource (Sample, MaterialSample) of a SOSA Turtle example and compacts it with the `ogc.sosa.properties.sample` JSON-LD context, which the output's `@context` references (plus only the example's own prefixes and literal types). The output is validated against `ogc.sosa.properties.sample`.",
           "type": "python",
-          "ref": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
+          "ref": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
           "inputs": {
             "mediaTypes": [
               {
@@ -1776,15 +1777,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/samples/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/samples/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/samples/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/samples/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.samples"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.samples"
         }
       },
       "@id": "bblocks://ogc.sosa.spec-examples.samples",
@@ -1800,7 +1801,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -1837,35 +1838,35 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/platforms/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/platforms/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/platforms/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/platforms/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/platforms/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/platforms/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/platforms/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/platforms/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/platforms/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/platforms/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/platforms/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/platforms/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/platforms/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/platforms/",
       "transforms": [
         {
           "id": "ttl-to-jsonld",
           "description": "Frames the root resource (Platform) of a SOSA Turtle example and compacts it with the `ogc.sosa.properties.platform` JSON-LD context, which the output's `@context` references (plus only the example's own prefixes and literal types). The output is validated against `ogc.sosa.properties.platform`.",
           "type": "python",
-          "ref": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
+          "ref": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
           "inputs": {
             "mediaTypes": [
               {
@@ -1939,15 +1940,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/platforms/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/platforms/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/platforms/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/platforms/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.platforms"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.platforms"
         }
       },
       "@id": "bblocks://ogc.sosa.spec-examples.platforms",
@@ -1963,7 +1964,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -2005,41 +2006,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuator/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuator/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuator/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuator/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/actuator/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/actuator/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuator/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuator/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuator/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/actuator/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuator/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/actuator/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/properties/actuator/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/properties/actuator/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/actuator/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/actuator/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/actuator/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/actuator/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.actuator"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.actuator"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.actuator",
@@ -2054,7 +2055,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -2096,41 +2097,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampler/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampler/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampler/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampler/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/sampler/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/sampler/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampler/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampler/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampler/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/sampler/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sampler/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/sampler/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/properties/sampler/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/properties/sampler/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sampler/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sampler/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sampler/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sampler/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sampler"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sampler"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.sampler",
@@ -2145,7 +2146,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -2183,41 +2184,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sensor/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sensor/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sensor/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sensor/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/sensor/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/sensor/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sensor/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sensor/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/sensor/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/sensor/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/sensor/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/sensor/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/properties/sensor/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/properties/sensor/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sensor/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/sensor/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sensor/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/sensor/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sensor"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.sensor"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.sensor",
@@ -2232,7 +2233,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -2269,35 +2270,35 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/systems/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/systems/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/systems/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/systems/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/systems/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/systems/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/systems/",
       "transforms": [
         {
           "id": "ttl-to-jsonld",
           "description": "Frames the root resource (Sensor, Actuator, Sampler, System) of a SOSA Turtle example and compacts it with the `ogc.sosa.properties.system` JSON-LD context, which the output's `@context` references (plus only the example's own prefixes and literal types). The output is validated against `ogc.sosa.properties.system`.",
           "type": "python",
-          "ref": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
+          "ref": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
           "inputs": {
             "mediaTypes": [
               {
@@ -2378,15 +2379,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/systems/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/systems/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/systems/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/systems/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.systems"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.systems"
         }
       },
       "@id": "bblocks://ogc.sosa.spec-examples.systems",
@@ -2402,7 +2403,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -2436,7 +2437,7 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -2449,35 +2450,35 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/actuations/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/actuations/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/actuations/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/actuations/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/actuations/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/actuations/",
       "transforms": [
         {
           "id": "ttl-to-jsonld",
           "description": "Frames the root resource (Actuation) of a SOSA Turtle example and compacts it with the `ogc.sosa.properties.actuation` JSON-LD context, which the output's `@context` references (plus only the example's own prefixes and literal types). The output is validated against `ogc.sosa.properties.actuation`.",
           "type": "python",
-          "ref": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
+          "ref": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
           "inputs": {
             "mediaTypes": [
               {
@@ -2547,15 +2548,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/actuations/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/actuations/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/actuations/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/actuations/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.actuations"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.actuations"
         }
       },
       "@id": "bblocks://ogc.sosa.spec-examples.actuations",
@@ -2571,7 +2572,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -2610,7 +2611,7 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -2625,41 +2626,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/actuationCollection/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/actuationCollection/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/actuationCollection/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuationCollection/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/actuationCollection/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/properties/actuationCollection/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/properties/actuationCollection/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/actuationCollection/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/actuationCollection/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/actuationCollection/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/actuationCollection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.actuationCollection"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.actuationCollection"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.actuationCollection",
@@ -2674,7 +2675,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -2730,41 +2731,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/observation/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/observation/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/properties/observation/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/properties/observation/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/observation/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/observation/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/observation/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/observation/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.observation"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.observation"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.observation",
@@ -2780,7 +2781,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -2819,7 +2820,7 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -2834,41 +2835,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/samplingCollection/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/samplingCollection/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/samplingCollection/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/samplingCollection/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/samplingCollection/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/properties/samplingCollection/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/properties/samplingCollection/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/samplingCollection/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/samplingCollection/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/samplingCollection/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/samplingCollection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.samplingCollection"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.samplingCollection"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.samplingCollection",
@@ -2883,7 +2884,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -2917,7 +2918,7 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -2930,35 +2931,35 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samplings/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samplings/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samplings/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samplings/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/samplings/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/samplings/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samplings/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samplings/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samplings/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/samplings/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/samplings/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/samplings/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/samplings/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/samplings/",
       "transforms": [
         {
           "id": "ttl-to-jsonld",
           "description": "Frames the root resource (Sampling) of a SOSA Turtle example and compacts it with the `ogc.sosa.properties.sampling` JSON-LD context, which the output's `@context` references (plus only the example's own prefixes and literal types). The output is validated against `ogc.sosa.properties.sampling`.",
           "type": "python",
-          "ref": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
+          "ref": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
           "inputs": {
             "mediaTypes": [
               {
@@ -3027,15 +3028,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/samplings/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/samplings/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/samplings/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/samplings/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.samplings"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.samplings"
         }
       },
       "@id": "bblocks://ogc.sosa.spec-examples.samplings",
@@ -3051,7 +3052,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -3088,35 +3089,35 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/sample-collections/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/sample-collections/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/sample-collections/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/sample-collections/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/sample-collections/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/sample-collections/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/sample-collections/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/sample-collections/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/sample-collections/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/sample-collections/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/sample-collections/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/sample-collections/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/sample-collections/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/sample-collections/",
       "transforms": [
         {
           "id": "ttl-to-jsonld",
           "description": "Frames the root resource (SampleCollection) of a SOSA Turtle example and compacts it with the `ogc.sosa.properties.sampleCollection` JSON-LD context, which the output's `@context` references (plus only the example's own prefixes and literal types). The output is validated against `ogc.sosa.properties.sampleCollection`.",
           "type": "python",
-          "ref": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
+          "ref": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
           "inputs": {
             "mediaTypes": [
               {
@@ -3183,15 +3184,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/sample-collections/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/sample-collections/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/sample-collections/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/sample-collections/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.sample-collections"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.sample-collections"
         }
       },
       "@id": "bblocks://ogc.sosa.spec-examples.sample-collections",
@@ -3207,7 +3208,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -3256,40 +3257,40 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/asset/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/asset/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/asset/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/asset/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/asset/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/asset/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/asset/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/asset/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/asset/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/asset/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/asset/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/asset/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/asset/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/asset/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/asset/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/asset/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.asset"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.asset"
         }
       },
       "@id": "bblocks://ogc.sosa.features.asset",
@@ -3305,7 +3306,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -3355,41 +3356,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/deployment/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/deployment/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/deployment/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/deployment/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/deployment/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/deployment/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/deployment/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/deployment/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/deployment/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/deployment/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/deployment/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/deployment/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/features/deployment/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/features/deployment/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/deployment/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/deployment/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/deployment/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/deployment/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.deployment"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.deployment"
         }
       },
       "@id": "bblocks://ogc.sosa.features.deployment",
@@ -3405,7 +3406,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -3450,7 +3451,7 @@
         },
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -3464,40 +3465,40 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/execution/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/execution/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/execution/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/execution/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/execution/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/execution/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/execution/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/execution/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/execution/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.execution"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.execution"
         }
       },
       "@id": "bblocks://ogc.sosa.features.execution",
@@ -3513,7 +3514,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -3562,41 +3563,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/sample/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/sample/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/sample/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sample/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/sample/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/features/sample/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/features/sample/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sample/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sample/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/sample/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/sample/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sample"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sample"
         }
       },
       "@id": "bblocks://ogc.sosa.features.sample",
@@ -3612,7 +3613,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -3672,41 +3673,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/observationCollection/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observationCollection/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/observationCollection/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observationCollection/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/properties/observationCollection/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/properties/observationCollection/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/observationCollection/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/properties/observationCollection/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/observationCollection/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/properties/observationCollection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.observationCollection"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.properties.observationCollection"
         }
       },
       "@id": "bblocks://ogc.sosa.properties.observationCollection",
@@ -3721,7 +3722,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -3755,7 +3756,7 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.observation",
           "prof:hasRole": "role:validation",
@@ -3764,7 +3765,7 @@
         },
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -3777,35 +3778,35 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observations/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observations/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observations/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observations/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/observations/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/observations/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observations/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observations/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observations/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/observations/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observations/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/observations/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/observations/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/observations/",
       "transforms": [
         {
           "id": "ttl-to-jsonld",
           "description": "Frames the root resource (Observation) of a SOSA Turtle example and compacts it with the `ogc.sosa.properties.observation` JSON-LD context, which the output's `@context` references (plus only the example's own prefixes and literal types). The output is validated against `ogc.sosa.properties.observation`.",
           "type": "python",
-          "ref": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
+          "ref": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
           "inputs": {
             "mediaTypes": [
               {
@@ -3873,15 +3874,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/observations/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/observations/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/observations/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/observations/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.observations"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.observations"
         }
       },
       "@id": "bblocks://ogc.sosa.spec-examples.observations",
@@ -3897,7 +3898,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -3954,7 +3955,7 @@
         },
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -3968,40 +3969,40 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/executionCollection/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/executionCollection/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/executionCollection/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/executionCollection/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/executionCollection/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/executionCollection/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/executionCollection/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/executionCollection/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/executionCollection/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/executionCollection/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/executionCollection/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/executionCollection/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/executionCollection/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/executionCollection/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/executionCollection/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/executionCollection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.executionCollection"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.executionCollection"
         }
       },
       "@id": "bblocks://ogc.sosa.features.executionCollection",
@@ -4016,7 +4017,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -4069,41 +4070,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/platform/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/platform/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/platform/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/platform/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/platform/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/platform/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/platform/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/platform/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/platform/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/platform/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/platform/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/platform/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/features/platform/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/features/platform/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/platform/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/platform/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/platform/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/platform/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.platform"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.platform"
         }
       },
       "@id": "bblocks://ogc.sosa.features.platform",
@@ -4118,7 +4119,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -4170,40 +4171,40 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/system/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/system/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/system/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/system/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/system/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/system/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/system/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/system/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/system/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/system/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/system/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/system/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/system/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/system/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/system/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/system/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.system"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.system"
         }
       },
       "@id": "bblocks://ogc.sosa.features.system",
@@ -4218,7 +4219,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -4265,7 +4266,7 @@
         },
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -4279,41 +4280,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuation/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/actuation/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuation/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/actuation/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/actuation/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/actuation/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuation/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/actuation/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuation/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/actuation/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/actuation/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/actuation/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/features/actuation/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/features/actuation/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/actuation/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/actuation/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/actuation/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/actuation/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.actuation"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.actuation"
         }
       },
       "@id": "bblocks://ogc.sosa.features.actuation",
@@ -4328,7 +4329,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -4377,7 +4378,7 @@
         },
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -4386,7 +4387,7 @@
         },
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.observation",
           "prof:hasRole": "role:validation",
@@ -4396,29 +4397,29 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/observation/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/observation/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/observation/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/observation/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/features/observation/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/features/observation/",
       "semanticUplift": {
         "additionalSteps": [
           {
@@ -4432,15 +4433,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/observation/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/observation/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/observation/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/observation/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.observation"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.observation"
         }
       },
       "@id": "bblocks://ogc.sosa.features.observation",
@@ -4455,7 +4456,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -4502,7 +4503,7 @@
         },
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -4516,41 +4517,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/sampling/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/sampling/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/sampling/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampling/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/sampling/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/features/sampling/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/features/sampling/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sampling/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sampling/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/sampling/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/sampling/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sampling"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sampling"
         }
       },
       "@id": "bblocks://ogc.sosa.features.sampling",
@@ -4565,7 +4566,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -4626,41 +4627,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampleCollection/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampleCollection/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampleCollection/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampleCollection/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/sampleCollection/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/sampleCollection/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampleCollection/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampleCollection/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampleCollection/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/sampleCollection/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampleCollection/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/sampleCollection/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/features/sampleCollection/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/features/sampleCollection/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sampleCollection/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sampleCollection/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/sampleCollection/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/sampleCollection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sampleCollection"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sampleCollection"
         }
       },
       "@id": "bblocks://ogc.sosa.features.sampleCollection",
@@ -4676,7 +4677,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -4710,7 +4711,7 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -4719,7 +4720,7 @@
         },
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.observation",
           "prof:hasRole": "role:validation",
@@ -4732,35 +4733,35 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/observation-collections/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/observation-collections/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/observation-collections/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/observation-collections/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/observation-collections/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/observation-collections/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/observation-collections/",
       "transforms": [
         {
           "id": "ttl-to-jsonld",
           "description": "Frames the root resource (ObservationCollection) of a SOSA Turtle example and compacts it with the `ogc.sosa.properties.observationCollection` JSON-LD context, which the output's `@context` references (plus only the example's own prefixes and literal types). The output is validated against `ogc.sosa.properties.observationCollection`.",
           "type": "python",
-          "ref": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
+          "ref": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
           "inputs": {
             "mediaTypes": [
               {
@@ -4826,15 +4827,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/observation-collections/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/spec-examples/observation-collections/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/observation-collections/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/spec-examples/observation-collections/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.observation-collections"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.spec-examples.observation-collections"
         }
       },
       "@id": "bblocks://ogc.sosa.spec-examples.observation-collections",
@@ -4850,7 +4851,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -4903,41 +4904,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuator/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/actuator/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuator/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/actuator/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/actuator/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/actuator/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuator/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/actuator/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuator/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/actuator/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/actuator/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/actuator/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/features/actuator/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/features/actuator/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/actuator/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/actuator/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/actuator/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/actuator/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.actuator"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.actuator"
         }
       },
       "@id": "bblocks://ogc.sosa.features.actuator",
@@ -4952,7 +4953,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -5005,41 +5006,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampler/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampler/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampler/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampler/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/sampler/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/sampler/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampler/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampler/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sampler/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/sampler/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sampler/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/sampler/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/features/sampler/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/features/sampler/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sampler/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sampler/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/sampler/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/sampler/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sampler"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sampler"
         }
       },
       "@id": "bblocks://ogc.sosa.features.sampler",
@@ -5054,7 +5055,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -5107,41 +5108,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sensor/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sensor/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sensor/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sensor/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/sensor/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/sensor/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sensor/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sensor/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/sensor/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/sensor/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/sensor/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/sensor/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/features/sensor/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/features/sensor/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sensor/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/sensor/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/sensor/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/sensor/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sensor"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.sensor"
         }
       },
       "@id": "bblocks://ogc.sosa.features.sensor",
@@ -5156,7 +5157,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -5213,7 +5214,7 @@
         },
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -5229,41 +5230,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuationCollection/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/actuationCollection/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuationCollection/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/actuationCollection/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/actuationCollection/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/actuationCollection/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuationCollection/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/actuationCollection/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuationCollection/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/actuationCollection/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/actuationCollection/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/actuationCollection/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/features/actuationCollection/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/features/actuationCollection/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/actuationCollection/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/actuationCollection/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/actuationCollection/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/actuationCollection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.actuationCollection"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.actuationCollection"
         }
       },
       "@id": "bblocks://ogc.sosa.features.actuationCollection",
@@ -5278,7 +5279,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -5336,7 +5337,7 @@
         },
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -5345,7 +5346,7 @@
         },
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.observation",
           "prof:hasRole": "role:validation",
@@ -5361,29 +5362,29 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/observationCollection/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/observationCollection/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/observationCollection/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/observationCollection/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/features/observationCollection/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/features/observationCollection/",
       "transforms": [
         {
           "id": "flatten-observations",
@@ -5407,7 +5408,7 @@
               }
             ]
           },
-          "ref": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/observationCollection/transformers/flatten-observations.py",
+          "ref": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/observationCollection/transformers/flatten-observations.py",
           "code": "# Transform: flatten-observations\n#\n# Flattens a (possibly nested) SOSA ObservationCollection GeoJSON document into a\n# plain GeoJSON FeatureCollection of Observation Features. Each output Feature's\n# `properties` merges in every property inherited from its containing\n# ObservationCollection(s) - the nearest collection wins on conflicting keys. If a\n# Feature has no geometry of its own, one is taken from the `geometry` of its own\n# `hasFeatureOfInterest`, or - failing that - from the nearest ancestor collection's\n# `hasFeatureOfInterest` that carries a geometry.\n#\n# Executed as a bblocks `python` transform: receives `input_data` (the source JSON\n# text) and must assign the result to `output_data`.\n\nimport json\n\n_MISSING = object()\n\n_COLLECTION_MARKERS = (\"ObservationCollection\",)\n\n\ndef _has_collection_marker(node):\n    for key in (\"featureType\", \"@type\", \"type\"):\n        value = node.get(key)\n        if isinstance(value, str) and any(m in value for m in _COLLECTION_MARKERS):\n            return True\n        if isinstance(value, list) and any(\n            isinstance(v, str) and any(m in v for m in _COLLECTION_MARKERS)\n            for v in value\n        ):\n            return True\n    return False\n\n\ndef _node_kind(node):\n    if isinstance(node, str):\n        return \"ref\"\n    if isinstance(node, dict):\n        if \"properties\" in node or node.get(\"type\") in (\"Feature\", \"FeatureCollection\"):\n            return \"wrapped\"\n        return \"raw\"\n    return \"unknown\"\n\n\ndef _own_id(node):\n    return node.get(\"@id\", node.get(\"id\"))\n\n\ndef _decompose(node):\n    \"\"\"\n    Break a member down into (own_id, own_geometry, own_properties, sub_members,\n    is_collection). `own_geometry` is `_MISSING` when the node carries no\n    `geometry` key at all (as opposed to an explicit `null`).\n    \"\"\"\n    kind = _node_kind(node)\n\n    if kind == \"ref\":\n        # A bare IRI/CURIE reference - no embedded data, only inherited properties apply.\n        return node, _MISSING, {}, [], False\n\n    if kind == \"wrapped\":\n        # A GeoJSON Feature (or FeatureCollection): SOSA properties live under `properties`,\n        # members under `features` and/or `properties.hasMember`.\n        props = node.get(\"properties\") or {}\n        sub_members = list(node.get(\"features\") or []) + list(props.get(\"hasMember\") or [])\n        own_properties = {k: v for k, v in props.items() if k != \"hasMember\"}\n        own_geometry = node[\"geometry\"] if \"geometry\" in node else _MISSING\n        is_collection = bool(sub_members) or _has_collection_marker(node)\n        return _own_id(node), own_geometry, own_properties, sub_members, is_collection\n\n    if kind == \"raw\":\n        # A bare SOSA property object (no GeoJSON wrapper), as found inside `hasMember`.\n        sub_members = list(node.get(\"hasMember\") or [])\n        own_properties = {k: v for k, v in node.items() if k not in (\"hasMember\", \"@id\", \"id\")}\n        is_collection = bool(sub_members) or _has_collection_marker(node)\n        return _own_id(node), _MISSING, own_properties, sub_members, is_collection\n\n    return None, _MISSING, {}, [], False\n\n\ndef _geometry_from_foi_chain(foi_chain):\n    \"\"\"First non-null geometry carried by a featureOfInterest object, nearest first.\"\"\"\n    for foi in foi_chain:\n        if isinstance(foi, dict):\n            geometry = foi.get(\"geometry\")\n            if geometry is not None:\n                return geometry\n    return None\n\n\ndef _flatten(node, inherited_properties, foi_chain, output_features):\n    own_id, own_geometry, own_properties, sub_members, is_collection = _decompose(node)\n\n    effective_properties = dict(inherited_properties)\n    effective_properties.update(own_properties)\n\n    own_foi = own_properties.get(\"hasFeatureOfInterest\")\n    current_foi_chain = ([own_foi] if own_foi is not None else []) + foi_chain\n\n    if is_collection:\n        for member in sub_members:\n            _flatten(member, effective_properties, current_foi_chain, output_features)\n        return\n\n    geometry = own_geometry\n    if geometry is _MISSING or geometry is None:\n        geometry = _geometry_from_foi_chain(current_foi_chain)\n\n    feature = {\"type\": \"Feature\"}\n    if own_id is not None:\n        feature[\"@id\"] = own_id\n    feature[\"geometry\"] = geometry\n    feature[\"properties\"] = effective_properties\n    output_features.append(feature)\n\n\n_data = json.loads(input_data)\n\n_flattened_features = []\n_flatten(_data, {}, [], _flattened_features)\n\n_result = {\n    \"type\": \"FeatureCollection\",\n    \"features\": _flattened_features,\n}\n\noutput_data = json.dumps(_result, indent=2, ensure_ascii=False)\n"
         }
       ],
@@ -5424,15 +5425,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/observationCollection/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/observationCollection/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/observationCollection/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/observationCollection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.observationCollection"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.observationCollection"
         }
       },
       "@id": "bblocks://ogc.sosa.features.observationCollection",
@@ -5447,7 +5448,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     },
     {
@@ -5504,7 +5505,7 @@
         },
         {
           "prof:hasArtifact": [
-            "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.execution",
           "prof:hasRole": "role:validation",
@@ -5520,41 +5521,41 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/samplingCollection/schema.yaml",
+      "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/samplingCollection/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/resolvedProperties.json",
-      "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/features/samplingCollection/",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/samplingCollection/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/features/samplingCollection/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/features/samplingCollection/",
+      "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/features/samplingCollection/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/samplingCollection/index.md"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/markdown/sosa/features/samplingCollection/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/samplingCollection/index.json"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/generateddocs/json-full/sosa/features/samplingCollection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/bblock/ogc.sosa.features.samplingCollection"
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/bblock/ogc.sosa.features.samplingCollection"
         }
       },
       "@id": "bblocks://ogc.sosa.features.samplingCollection",
@@ -5569,7 +5570,7 @@
       "ontology": null,
       "rdfData": [],
       "skos:topConceptOf": {
-        "@id": "https://rob-metalinkage.github.io/ogcapi-sosa/"
+        "@id": "https://opengeospatial.github.io/ogcapi-sosa/"
       }
     }
   ],

@@ -30,28 +30,28 @@
   "highlighted": false,
   "shaclShapes": {
     "ogc.sosa.properties.execution": [
-      "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
+      "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
     ]
   },
   "dependsOn": [
     "ogc.sosa.properties.actuation"
   ],
   "schema": {
-    "application/yaml": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/schema.yaml",
-    "application/json": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/schema.json"
+    "application/yaml": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/schema.yaml",
+    "application/json": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/schema.json"
   },
-  "sourceSchema": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/actuations/schema.yaml",
-  "ldContext": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/context.jsonld",
-  "resolvedSchemaProperties": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/resolvedProperties.json",
-  "sourceFiles": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/actuations/",
+  "sourceSchema": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/actuations/schema.yaml",
+  "ldContext": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/context.jsonld",
+  "resolvedSchemaProperties": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/spec-examples/actuations/resolvedProperties.json",
+  "sourceFiles": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/actuations/",
   "validationPassed": true,
-  "testOutputs": "https://github.com/rob-metalinkage/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/actuations/",
+  "testOutputs": "https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/tests/sosa/spec-examples/actuations/",
   "transforms": [
     {
       "id": "ttl-to-jsonld",
       "description": "Frames the root resource (Actuation) of a SOSA Turtle example and compacts it with the `ogc.sosa.properties.actuation` JSON-LD context, which the output's `@context` references (plus only the example's own prefixes and literal types). The output is validated against `ogc.sosa.properties.actuation`.",
       "type": "python",
-      "ref": "https://rob-metalinkage.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
+      "ref": "https://opengeospatial.github.io/ogcapi-sosa/_sources/spec-examples/transforms/ttl_to_sosa_json.py",
       "inputs": {
         "mediaTypes": [
           {
@@ -128,19 +128,19 @@
         {
           "language": "ttl",
           "ref": "https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/open-window.ttl",
-          "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/actuations/open-window.ttl",
+          "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/actuations/open-window.ttl",
           "transformResults": {
             "ttl-to-jsonld": {
               "success": true,
-              "sizeBytes": 685,
-              "url": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/actuations/transforms/open-window.ttl-to-jsonld.json",
+              "sizeBytes": 684,
+              "url": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/actuations/transforms/open-window.ttl-to-jsonld.json",
               "profilesValidation": {
                 "ogc.sosa.properties.actuation": {
                   "result": true,
-                  "report": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/actuations/transforms/ogc.sosa.properties.actuation/_report.json",
+                  "report": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/actuations/transforms/ogc.sosa.properties.actuation/_report.json",
                   "upliftedFiles": {
-                    "jsonld": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/actuations/transforms/ogc.sosa.properties.actuation/open-window.ttl-to-jsonld.jsonld",
-                    "ttl": "https://rob-metalinkage.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/actuations/transforms/ogc.sosa.properties.actuation/open-window.ttl-to-jsonld.ttl"
+                    "jsonld": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/actuations/transforms/ogc.sosa.properties.actuation/open-window.ttl-to-jsonld.jsonld",
+                    "ttl": "https://opengeospatial.github.io/ogcapi-sosa/build/tests/sosa/spec-examples/actuations/transforms/ogc.sosa.properties.actuation/open-window.ttl-to-jsonld.ttl"
                   }
                 }
               }
@@ -204,7 +204,7 @@
     "unit": "http://qudt.org/vocab/unit/",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: SOSA specification examples conforming to ogc.sosa.properties.actuation\n$ref: https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.yaml\nx-bblocks-metadata:\n  itemIdentifier: ogc.sosa.spec-examples.actuations\n  register: https://rob-metalinkage.github.io/ogcapi-sosa/build/register.json\n  version: '1.0'\n  dateOfLastChange: '2026-10-26'\n",
-  "gitRepository": "https://github.com/rob-metalinkage/ogcapi-sosa",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: SOSA specification examples conforming to ogc.sosa.properties.actuation\n$ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/actuation/schema.yaml\nx-bblocks-metadata:\n  itemIdentifier: ogc.sosa.spec-examples.actuations\n  register: https://opengeospatial.github.io/ogcapi-sosa/build/register.json\n  version: '1.0'\n  dateOfLastChange: '2026-10-26'\n",
+  "gitRepository": "https://github.com/opengeospatial/ogcapi-sosa",
   "gitPath": "_sources/spec-examples/actuations"
 }

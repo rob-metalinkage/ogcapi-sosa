@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observationCollection - ObservationCollection Properties
-Generated 2026-10-26T11:22:56.172745+00:00
+Generated 2026-10-26T11:22:06.759177+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -64,9 +64,9 @@ Validation result for _sources/properties/execution/shapes.shacl:
 Focus nodes for _sources/properties/execution/shapes.shacl:
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:c
  - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:o1/sosa:hasSimpleResult
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:o1
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:o1
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:c
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:o1
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:o1
  - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:o1
 
 Validation result for _sources/properties/observation/shapes.shacl:
@@ -74,8 +74,8 @@ Validation result for _sources/properties/observation/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/observation/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:o1
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:o1
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:c
 
 === End SHACL ===

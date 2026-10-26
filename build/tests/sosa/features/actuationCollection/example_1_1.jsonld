@@ -1,5 +1,5 @@
 {
-  "@context": "https://rob-metalinkage.github.io/ogcapi-sosa/build/annotated/sosa/features/actuationCollection/context.jsonld",
+  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/actuationCollection/context.jsonld",
   "type": "FeatureCollection",
   "properties": {
     "madeByActuator": "closer-987"
