@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.sampler - Sampler Properties
-Generated 2026-10-26T22:06:05.183339+00:00
+Generated 2026-10-28T04:52:47.609738+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

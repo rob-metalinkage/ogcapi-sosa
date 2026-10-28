@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.sosa.properties.observationCollection - ObservationCollection Properties",
   "bblockName": "ObservationCollection Properties",
   "bblockId": "ogc.sosa.properties.observationCollection",
-  "generated": "2026-10-26T22:07:20.815490+00:00",
+  "generated": "2026-10-28T04:54:29.883719+00:00",
   "result": true,
   "items": [
     {
@@ -71,16 +71,25 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
-                    "ex:OCa134t3/sosa:hasSimpleResult",
-                    "ex:OCa134t2/sosa:hasSimpleResult",
-                    "ex:OCa134t1/sosa:hasSimpleResult"
+                    "ex:OCa134t3",
+                    "ex:OCa134t2",
+                    "ex:OCa134t1"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                "<https://www.ogc.org/rules/sosa/#testResult>": {
                   "nodes": [
-                    "ex:OCa134"
+                    "ex:OCa134t3",
+                    "ex:OCa134t2",
+                    "ex:OCa134t1"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                  "nodes": [
+                    "ex:OCa134t3",
+                    "ex:OCa134t2",
+                    "ex:OCa134t1"
                   ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
@@ -88,30 +97,21 @@
                     "ex:OCa134"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": [
-                    "ex:OCa134t3",
-                    "ex:OCa134t1",
-                    "ex:OCa134t2"
+                    "ex:OCa134t2/sosa:hasSimpleResult",
+                    "ex:OCa134t3/sosa:hasSimpleResult",
+                    "ex:OCa134t1/sosa:hasSimpleResult"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
                   "nodes": [
-                    "ex:OCa134t3",
-                    "ex:OCa134t1",
-                    "ex:OCa134t2"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
-                  "nodes": [
-                    "ex:OCa134t3",
-                    "ex:OCa134t1",
-                    "ex:OCa134t2"
+                    "ex:OCa134"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:OCa134t3/sosa:hasSimpleResult,ex:OCa134t2/sosa:hasSimpleResult,ex:OCa134t1/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:OCa134\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:OCa134\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:OCa134t3,ex:OCa134t1,ex:OCa134t2\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:OCa134t3,ex:OCa134t1,ex:OCa134t2\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:OCa134t3,ex:OCa134t1,ex:OCa134t2\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:OCa134t3,ex:OCa134t2,ex:OCa134t1\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:OCa134t3,ex:OCa134t2,ex:OCa134t1\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:OCa134t3,ex:OCa134t2,ex:OCa134t1\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:OCa134\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:OCa134t2/sosa:hasSimpleResult,ex:OCa134t3/sosa:hasSimpleResult,ex:OCa134t1/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:OCa134\n"
             },
             {
               "op": "shacl-report",
@@ -123,24 +123,24 @@
             {
               "shaclFile": "_sources/properties/observation/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
-                  "nodes": [
-                    "ex:OCa134t3",
-                    "ex:OCa134t1",
-                    "ex:OCa134t2"
-                  ]
-                },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
                   "nodes": [
                     "ex:OCa134"
                   ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
+                  "nodes": [
+                    "ex:OCa134t3",
+                    "ex:OCa134t2",
+                    "ex:OCa134t1"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:OCa134t3,ex:OCa134t1,ex:OCa134t2\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:OCa134\n"
+              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:OCa134\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:OCa134t3,ex:OCa134t2,ex:OCa134t1\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         }
@@ -212,24 +212,7 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                  "nodes": [
-                    "ex:t1/sosa:hasSimpleResult",
-                    "ex:t3/sosa:hasSimpleResult",
-                    "ex:t2/sosa:hasSimpleResult"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                  "nodes": [
-                    "ex:ts159c"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": [
-                    "ex:ts159c"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
                     "ex:t2",
                     "ex:t4",
@@ -245,17 +228,34 @@
                     "ex:t3"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
                     "ex:t2",
                     "ex:t4",
                     "ex:t1",
                     "ex:t3"
                   ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": [
+                    "ex:ts159c"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                  "nodes": [
+                    "ex:t3/sosa:hasSimpleResult",
+                    "ex:t2/sosa:hasSimpleResult",
+                    "ex:t1/sosa:hasSimpleResult"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                  "nodes": [
+                    "ex:ts159c"
+                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:t1/sosa:hasSimpleResult,ex:t3/sosa:hasSimpleResult,ex:t2/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:ts159c\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:ts159c\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:t2,ex:t4,ex:t1,ex:t3\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:t2,ex:t4,ex:t1,ex:t3\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:t2,ex:t4,ex:t1,ex:t3\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:t2,ex:t4,ex:t1,ex:t3\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:t2,ex:t4,ex:t1,ex:t3\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:t2,ex:t4,ex:t1,ex:t3\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:ts159c\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:t3/sosa:hasSimpleResult,ex:t2/sosa:hasSimpleResult,ex:t1/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:ts159c\n"
             },
             {
               "op": "shacl-report",
@@ -267,8 +267,10 @@
             {
               "shaclFile": "_sources/properties/observation/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
+                  "nodes": [
+                    "ex:ts159c"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
                   "nodes": [
@@ -278,14 +280,12 @@
                     "ex:t3"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
-                  "nodes": [
-                    "ex:ts159c"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:t2,ex:t4,ex:t1,ex:t3\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:ts159c\n"
+              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:ts159c\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:t2,ex:t4,ex:t1,ex:t3\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         }
@@ -357,23 +357,7 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                  "nodes": [
-                    "ex:a11/sosa:hasSimpleResult",
-                    "ex:a12/sosa:hasSimpleResult"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                  "nodes": [
-                    "ex:oc1"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": [
-                    "ex:oc1"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
                     "ex:a11",
                     "ex:a12"
@@ -385,15 +369,31 @@
                     "ex:a12"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
                     "ex:a11",
                     "ex:a12"
                   ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": [
+                    "ex:oc1"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                  "nodes": [
+                    "ex:a11/sosa:hasSimpleResult",
+                    "ex:a12/sosa:hasSimpleResult"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                  "nodes": [
+                    "ex:oc1"
+                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:a11/sosa:hasSimpleResult,ex:a12/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:oc1\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:oc1\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:a11,ex:a12\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:a11,ex:a12\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:a11,ex:a12\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:a11,ex:a12\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:a11,ex:a12\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:a11,ex:a12\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:oc1\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:a11/sosa:hasSimpleResult,ex:a12/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:oc1\n"
             },
             {
               "op": "shacl-report",
@@ -405,8 +405,10 @@
             {
               "shaclFile": "_sources/properties/observation/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
+                  "nodes": [
+                    "ex:oc1"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
                   "nodes": [
@@ -414,14 +416,12 @@
                     "ex:a12"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
-                  "nodes": [
-                    "ex:oc1"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:a11,ex:a12\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:oc1\n"
+              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:oc1\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:a11,ex:a12\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         }
@@ -493,23 +493,7 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                  "nodes": [
-                    "ex:a21/sosa:hasSimpleResult",
-                    "ex:a22/sosa:hasSimpleResult"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                  "nodes": [
-                    "ex:oc2"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": [
-                    "ex:oc2"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
                     "ex:a22",
                     "ex:a21"
@@ -521,15 +505,31 @@
                     "ex:a21"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
                     "ex:a22",
                     "ex:a21"
                   ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": [
+                    "ex:oc2"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                  "nodes": [
+                    "ex:a21/sosa:hasSimpleResult",
+                    "ex:a22/sosa:hasSimpleResult"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                  "nodes": [
+                    "ex:oc2"
+                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:a21/sosa:hasSimpleResult,ex:a22/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:oc2\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:oc2\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:a22,ex:a21\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:a22,ex:a21\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:a22,ex:a21\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:a22,ex:a21\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:a22,ex:a21\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:a22,ex:a21\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:oc2\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:a21/sosa:hasSimpleResult,ex:a22/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:oc2\n"
             },
             {
               "op": "shacl-report",
@@ -541,8 +541,10 @@
             {
               "shaclFile": "_sources/properties/observation/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
+                  "nodes": [
+                    "ex:oc2"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
                   "nodes": [
@@ -550,14 +552,12 @@
                     "ex:a21"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
-                  "nodes": [
-                    "ex:oc2"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:a22,ex:a21\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:oc2\n"
+              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:oc2\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:a22,ex:a21\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         }
@@ -629,23 +629,7 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                  "nodes": [
-                    "ex:a31/sosa:hasSimpleResult",
-                    "ex:a32/sosa:hasSimpleResult"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                  "nodes": [
-                    "ex:oc3"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": [
-                    "ex:oc3"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
                     "ex:a31",
                     "ex:a32"
@@ -657,15 +641,31 @@
                     "ex:a32"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
                     "ex:a31",
                     "ex:a32"
                   ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": [
+                    "ex:oc3"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                  "nodes": [
+                    "ex:a31/sosa:hasSimpleResult",
+                    "ex:a32/sosa:hasSimpleResult"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                  "nodes": [
+                    "ex:oc3"
+                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:a31/sosa:hasSimpleResult,ex:a32/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:oc3\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:oc3\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:a31,ex:a32\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:a31,ex:a32\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:a31,ex:a32\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:a31,ex:a32\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:a31,ex:a32\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:a31,ex:a32\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:oc3\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:a31/sosa:hasSimpleResult,ex:a32/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:oc3\n"
             },
             {
               "op": "shacl-report",
@@ -677,8 +677,10 @@
             {
               "shaclFile": "_sources/properties/observation/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
+                  "nodes": [
+                    "ex:oc3"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
                   "nodes": [
@@ -686,14 +688,12 @@
                     "ex:a32"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
-                  "nodes": [
-                    "ex:oc3"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:a31,ex:a32\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:oc3\n"
+              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:oc3\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:a31,ex:a32\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         }
@@ -765,23 +765,7 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                  "nodes": [
-                    "ex:a41/sosa:hasSimpleResult",
-                    "ex:a42/sosa:hasSimpleResult"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                  "nodes": [
-                    "ex:oc4"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": [
-                    "ex:oc4"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
                     "ex:a41",
                     "ex:a42"
@@ -793,15 +777,31 @@
                     "ex:a42"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
                     "ex:a41",
                     "ex:a42"
                   ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": [
+                    "ex:oc4"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                  "nodes": [
+                    "ex:a41/sosa:hasSimpleResult",
+                    "ex:a42/sosa:hasSimpleResult"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                  "nodes": [
+                    "ex:oc4"
+                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:a41/sosa:hasSimpleResult,ex:a42/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:oc4\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:oc4\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:a41,ex:a42\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:a41,ex:a42\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:a41,ex:a42\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:a41,ex:a42\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:a41,ex:a42\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:a41,ex:a42\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:oc4\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:a41/sosa:hasSimpleResult,ex:a42/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:oc4\n"
             },
             {
               "op": "shacl-report",
@@ -813,8 +813,10 @@
             {
               "shaclFile": "_sources/properties/observation/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
+                  "nodes": [
+                    "ex:oc4"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
                   "nodes": [
@@ -822,14 +824,12 @@
                     "ex:a42"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
-                  "nodes": [
-                    "ex:oc4"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:a41,ex:a42\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:oc4\n"
+              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:oc4\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:a41,ex:a42\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         }
@@ -901,23 +901,7 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                  "nodes": [
-                    "ex:a51/sosa:hasSimpleResult",
-                    "ex:a52/sosa:hasSimpleResult"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                  "nodes": [
-                    "ex:oc5"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": [
-                    "ex:oc5"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
                     "ex:a52",
                     "ex:a51"
@@ -929,15 +913,31 @@
                     "ex:a51"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
                     "ex:a52",
                     "ex:a51"
                   ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": [
+                    "ex:oc5"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                  "nodes": [
+                    "ex:a51/sosa:hasSimpleResult",
+                    "ex:a52/sosa:hasSimpleResult"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                  "nodes": [
+                    "ex:oc5"
+                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:a51/sosa:hasSimpleResult,ex:a52/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:oc5\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:oc5\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:a52,ex:a51\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:a52,ex:a51\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:a52,ex:a51\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:a52,ex:a51\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:a52,ex:a51\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:a52,ex:a51\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:oc5\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:a51/sosa:hasSimpleResult,ex:a52/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:oc5\n"
             },
             {
               "op": "shacl-report",
@@ -949,8 +949,10 @@
             {
               "shaclFile": "_sources/properties/observation/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
+                  "nodes": [
+                    "ex:oc5"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
                   "nodes": [
@@ -958,14 +960,12 @@
                     "ex:a51"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
-                  "nodes": [
-                    "ex:oc5"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:a52,ex:a51\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:oc5\n"
+              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:oc5\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:a52,ex:a51\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         }
@@ -1037,6 +1037,20 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testResult>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": [
+                    "ex:ObsColpH"
+                  ]
+                },
                 "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": []
                 },
@@ -1044,24 +1058,10 @@
                   "nodes": [
                     "ex:ObsColpH"
                   ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": [
-                    "ex:ObsColpH"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
-                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:ObsColpH\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:ObsColpH\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:ObsColpH\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:ObsColpH\n"
             },
             {
               "op": "shacl-report",
@@ -1073,20 +1073,20 @@
             {
               "shaclFile": "_sources/properties/observation/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
-                  "nodes": []
-                },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
                   "nodes": [
                     "ex:ObsColpH"
                   ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:ObsColpH\n"
+              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:ObsColpH\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         }
@@ -1162,6 +1162,20 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testResult>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": [
+                    "ex:TemperatureSensorOperatingRange"
+                  ]
+                },
                 "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": []
                 },
@@ -1169,24 +1183,10 @@
                   "nodes": [
                     "ex:TemperatureSensorOperatingRange"
                   ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": [
-                    "ex:TemperatureSensorOperatingRange"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
-                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:TemperatureSensorOperatingRange\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:TemperatureSensorOperatingRange\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:TemperatureSensorOperatingRange\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:TemperatureSensorOperatingRange\n"
             },
             {
               "op": "shacl-report",
@@ -1198,20 +1198,20 @@
             {
               "shaclFile": "_sources/properties/observation/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
-                  "nodes": []
-                },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
                   "nodes": [
                     "ex:TemperatureSensorOperatingRange"
                   ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:TemperatureSensorOperatingRange\n"
+              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:TemperatureSensorOperatingRange\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         }
@@ -1287,6 +1287,20 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testResult>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": [
+                    "<https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/moreSpecificTemperatureSensorOperatingRange>"
+                  ]
+                },
                 "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": []
                 },
@@ -1294,24 +1308,10 @@
                   "nodes": [
                     "<https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/moreSpecificTemperatureSensorOperatingRange>"
                   ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": [
-                    "<https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/moreSpecificTemperatureSensorOperatingRange>"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
-                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: <https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/moreSpecificTemperatureSensorOperatingRange>\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: <https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/moreSpecificTemperatureSensorOperatingRange>\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: <https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/moreSpecificTemperatureSensorOperatingRange>\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: <https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/moreSpecificTemperatureSensorOperatingRange>\n"
             },
             {
               "op": "shacl-report",
@@ -1323,20 +1323,20 @@
             {
               "shaclFile": "_sources/properties/observation/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
-                  "nodes": []
-                },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
                   "nodes": [
                     "<https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/moreSpecificTemperatureSensorOperatingRange>"
                   ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: <https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/moreSpecificTemperatureSensorOperatingRange>\n"
+              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: <https://w3c.github.io/sdw-sosa-ssn/ssn/rdf/examples/moreSpecificTemperatureSensorOperatingRange>\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         }
@@ -1412,20 +1412,7 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                  "nodes": [
-                    "ex:IBSTH2SurvivalRange"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": [
-                    "ex:IBSTH2SurvivalRange"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
                     "ex:IBSTH2SurvivalRange/sosa:hasMember",
                     "ex:IBSTH2SurvivalRange/sosa:hasMember"
@@ -1437,15 +1424,28 @@
                     "ex:IBSTH2SurvivalRange/sosa:hasMember"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
                     "ex:IBSTH2SurvivalRange/sosa:hasMember",
                     "ex:IBSTH2SurvivalRange/sosa:hasMember"
                   ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": [
+                    "ex:IBSTH2SurvivalRange"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                  "nodes": [
+                    "ex:IBSTH2SurvivalRange"
+                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:IBSTH2SurvivalRange\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:IBSTH2SurvivalRange\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:IBSTH2SurvivalRange/sosa:hasMember,ex:IBSTH2SurvivalRange/sosa:hasMember\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:IBSTH2SurvivalRange/sosa:hasMember,ex:IBSTH2SurvivalRange/sosa:hasMember\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:IBSTH2SurvivalRange/sosa:hasMember,ex:IBSTH2SurvivalRange/sosa:hasMember\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:IBSTH2SurvivalRange/sosa:hasMember,ex:IBSTH2SurvivalRange/sosa:hasMember\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:IBSTH2SurvivalRange/sosa:hasMember,ex:IBSTH2SurvivalRange/sosa:hasMember\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:IBSTH2SurvivalRange/sosa:hasMember,ex:IBSTH2SurvivalRange/sosa:hasMember\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:IBSTH2SurvivalRange\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:IBSTH2SurvivalRange\n"
             },
             {
               "op": "shacl-report",
@@ -1457,8 +1457,10 @@
             {
               "shaclFile": "_sources/properties/observation/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
+                  "nodes": [
+                    "ex:IBSTH2SurvivalRange"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
                   "nodes": [
@@ -1466,14 +1468,12 @@
                     "ex:IBSTH2SurvivalRange/sosa:hasMember"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
-                  "nodes": [
-                    "ex:IBSTH2SurvivalRange"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:IBSTH2SurvivalRange/sosa:hasMember,ex:IBSTH2SurvivalRange/sosa:hasMember\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:IBSTH2SurvivalRange\n"
+              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:IBSTH2SurvivalRange\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:IBSTH2SurvivalRange/sosa:hasMember,ex:IBSTH2SurvivalRange/sosa:hasMember\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         }
@@ -1549,25 +1549,10 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
-                    "sensor:IBS-TH2-Plus-T-normalHumidityConditions",
-                    "sensor:IBS-TH2-Plus-T-systemCapability"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                  "nodes": [
-                    "sensor:IBS-TH2-Plus-T-normalHumidityConditions",
-                    "sensor:IBS-TH2-Plus-T-systemCapability"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
-                  "nodes": [
-                    "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember",
+                    "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember"
@@ -1575,25 +1560,40 @@
                 },
                 "<https://www.ogc.org/rules/sosa/#testResult>": {
                   "nodes": [
-                    "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember",
+                    "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
-                    "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember",
+                    "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember"
                   ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": [
+                    "sensor:IBS-TH2-Plus-T-systemCapability",
+                    "sensor:IBS-TH2-Plus-T-normalHumidityConditions"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                  "nodes": [
+                    "sensor:IBS-TH2-Plus-T-systemCapability",
+                    "sensor:IBS-TH2-Plus-T-normalHumidityConditions"
+                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: sensor:IBS-TH2-Plus-T-normalHumidityConditions,sensor:IBS-TH2-Plus-T-systemCapability\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: sensor:IBS-TH2-Plus-T-normalHumidityConditions,sensor:IBS-TH2-Plus-T-systemCapability\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: sensor:IBS-TH2-Plus-T-systemCapability,sensor:IBS-TH2-Plus-T-normalHumidityConditions\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: sensor:IBS-TH2-Plus-T-systemCapability,sensor:IBS-TH2-Plus-T-normalHumidityConditions\n"
             },
             {
               "op": "shacl-report",
@@ -1605,27 +1605,27 @@
             {
               "shaclFile": "_sources/properties/observation/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
+                  "nodes": [
+                    "sensor:IBS-TH2-Plus-T-systemCapability",
+                    "sensor:IBS-TH2-Plus-T-normalHumidityConditions"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
                   "nodes": [
-                    "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember",
+                    "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember",
                     "sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
-                  "nodes": [
-                    "sensor:IBS-TH2-Plus-T-normalHumidityConditions",
-                    "sensor:IBS-TH2-Plus-T-systemCapability"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: sensor:IBS-TH2-Plus-T-normalHumidityConditions,sensor:IBS-TH2-Plus-T-systemCapability\n"
+              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: sensor:IBS-TH2-Plus-T-systemCapability,sensor:IBS-TH2-Plus-T-normalHumidityConditions\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember,sensor:IBS-TH2-Plus-T-normalHumidityConditions/sosa:hasMember,sensor:IBS-TH2-Plus-T-systemCapability/sosa:hasMember\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         }
@@ -1701,90 +1701,90 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
-                    "ex:mimimalOperatingInputVoltage/sosa:hasSimpleResult",
-                    "ex:DHT22_4578_minimumMeasureableTemperature/sosa:hasSimpleResult",
-                    "ex:nominalOperatingInputVoltage/sosa:hasSimpleResult",
-                    "ex:maximumOperatingInputVoltage/sosa:hasSimpleResult"
+                    "ex:maximumOperatingInputVoltage",
+                    "ex:DHT22_4578_minimumMeasureableTemperature",
+                    "ex:mimimalOperatingInputVoltage",
+                    "ex:minimumOperatingTemperature",
+                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
+                    "ex:minimumOperatingHumidity",
+                    "ex:DHT22_4578_maximumMeasureableTemperature",
+                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
+                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
+                    "ex:nominalOperatingInputVoltage",
+                    "ex:DHT22_4578_minimumMeasureableRelativeHumidity",
+                    "ex:DHT22_4578_TemperatureMeasurementFrequency",
+                    "ex:DHT22_4578_RelativeHumidityFrequency",
+                    "ex:maximumOperatingTemperature",
+                    "ex:maximumOperatingHumidity"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                "<https://www.ogc.org/rules/sosa/#testResult>": {
                   "nodes": [
-                    "ex:DHT22_4578_TemperatureSensorNormalOperatingConditions",
-                    "ex:DHT22_4578_HumiditySensorCapabilities",
-                    "ex:DHT22_4578_HumiditySensorNormalOperatingConditions",
-                    "ex:DHT22_4578_TemperatureSensorCapabilities"
+                    "ex:maximumOperatingInputVoltage",
+                    "ex:DHT22_4578_minimumMeasureableTemperature",
+                    "ex:mimimalOperatingInputVoltage",
+                    "ex:minimumOperatingTemperature",
+                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
+                    "ex:minimumOperatingHumidity",
+                    "ex:DHT22_4578_maximumMeasureableTemperature",
+                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
+                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
+                    "ex:nominalOperatingInputVoltage",
+                    "ex:DHT22_4578_minimumMeasureableRelativeHumidity",
+                    "ex:DHT22_4578_TemperatureMeasurementFrequency",
+                    "ex:DHT22_4578_RelativeHumidityFrequency",
+                    "ex:maximumOperatingTemperature",
+                    "ex:maximumOperatingHumidity"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                  "nodes": [
+                    "ex:maximumOperatingInputVoltage",
+                    "ex:DHT22_4578_minimumMeasureableTemperature",
+                    "ex:mimimalOperatingInputVoltage",
+                    "ex:minimumOperatingTemperature",
+                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
+                    "ex:minimumOperatingHumidity",
+                    "ex:DHT22_4578_maximumMeasureableTemperature",
+                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
+                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
+                    "ex:nominalOperatingInputVoltage",
+                    "ex:DHT22_4578_minimumMeasureableRelativeHumidity",
+                    "ex:DHT22_4578_TemperatureMeasurementFrequency",
+                    "ex:DHT22_4578_RelativeHumidityFrequency",
+                    "ex:maximumOperatingTemperature",
+                    "ex:maximumOperatingHumidity"
                   ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
                   "nodes": [
                     "ex:DHT22_4578_TemperatureSensorNormalOperatingConditions",
-                    "ex:DHT22_4578_HumiditySensorCapabilities",
                     "ex:DHT22_4578_HumiditySensorNormalOperatingConditions",
-                    "ex:DHT22_4578_TemperatureSensorCapabilities"
+                    "ex:DHT22_4578_TemperatureSensorCapabilities",
+                    "ex:DHT22_4578_HumiditySensorCapabilities"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": [
-                    "ex:nominalOperatingInputVoltage",
-                    "ex:minimumOperatingTemperature",
-                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
-                    "ex:mimimalOperatingInputVoltage",
-                    "ex:maximumOperatingHumidity",
-                    "ex:minimumOperatingHumidity",
-                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
-                    "ex:maximumOperatingInputVoltage",
-                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
-                    "ex:maximumOperatingTemperature",
-                    "ex:DHT22_4578_maximumMeasureableTemperature",
-                    "ex:DHT22_4578_RelativeHumidityFrequency",
-                    "ex:DHT22_4578_minimumMeasureableTemperature",
-                    "ex:DHT22_4578_minimumMeasureableRelativeHumidity",
-                    "ex:DHT22_4578_TemperatureMeasurementFrequency"
+                    "ex:nominalOperatingInputVoltage/sosa:hasSimpleResult",
+                    "ex:mimimalOperatingInputVoltage/sosa:hasSimpleResult",
+                    "ex:maximumOperatingInputVoltage/sosa:hasSimpleResult",
+                    "ex:DHT22_4578_minimumMeasureableTemperature/sosa:hasSimpleResult"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
                   "nodes": [
-                    "ex:nominalOperatingInputVoltage",
-                    "ex:minimumOperatingTemperature",
-                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
-                    "ex:mimimalOperatingInputVoltage",
-                    "ex:maximumOperatingHumidity",
-                    "ex:minimumOperatingHumidity",
-                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
-                    "ex:maximumOperatingInputVoltage",
-                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
-                    "ex:maximumOperatingTemperature",
-                    "ex:DHT22_4578_maximumMeasureableTemperature",
-                    "ex:DHT22_4578_RelativeHumidityFrequency",
-                    "ex:DHT22_4578_minimumMeasureableTemperature",
-                    "ex:DHT22_4578_minimumMeasureableRelativeHumidity",
-                    "ex:DHT22_4578_TemperatureMeasurementFrequency"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
-                  "nodes": [
-                    "ex:nominalOperatingInputVoltage",
-                    "ex:minimumOperatingTemperature",
-                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
-                    "ex:mimimalOperatingInputVoltage",
-                    "ex:maximumOperatingHumidity",
-                    "ex:minimumOperatingHumidity",
-                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
-                    "ex:maximumOperatingInputVoltage",
-                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
-                    "ex:maximumOperatingTemperature",
-                    "ex:DHT22_4578_maximumMeasureableTemperature",
-                    "ex:DHT22_4578_RelativeHumidityFrequency",
-                    "ex:DHT22_4578_minimumMeasureableTemperature",
-                    "ex:DHT22_4578_minimumMeasureableRelativeHumidity",
-                    "ex:DHT22_4578_TemperatureMeasurementFrequency"
+                    "ex:DHT22_4578_TemperatureSensorNormalOperatingConditions",
+                    "ex:DHT22_4578_HumiditySensorNormalOperatingConditions",
+                    "ex:DHT22_4578_TemperatureSensorCapabilities",
+                    "ex:DHT22_4578_HumiditySensorCapabilities"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:mimimalOperatingInputVoltage/sosa:hasSimpleResult,ex:DHT22_4578_minimumMeasureableTemperature/sosa:hasSimpleResult,ex:nominalOperatingInputVoltage/sosa:hasSimpleResult,ex:maximumOperatingInputVoltage/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:DHT22_4578_TemperatureSensorNormalOperatingConditions,ex:DHT22_4578_HumiditySensorCapabilities,ex:DHT22_4578_HumiditySensorNormalOperatingConditions,ex:DHT22_4578_TemperatureSensorCapabilities\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:DHT22_4578_TemperatureSensorNormalOperatingConditions,ex:DHT22_4578_HumiditySensorCapabilities,ex:DHT22_4578_HumiditySensorNormalOperatingConditions,ex:DHT22_4578_TemperatureSensorCapabilities\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:nominalOperatingInputVoltage,ex:minimumOperatingTemperature,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:mimimalOperatingInputVoltage,ex:maximumOperatingHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:maximumOperatingInputVoltage,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:maximumOperatingTemperature,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_RelativeHumidityFrequency,ex:DHT22_4578_minimumMeasureableTemperature,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:nominalOperatingInputVoltage,ex:minimumOperatingTemperature,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:mimimalOperatingInputVoltage,ex:maximumOperatingHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:maximumOperatingInputVoltage,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:maximumOperatingTemperature,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_RelativeHumidityFrequency,ex:DHT22_4578_minimumMeasureableTemperature,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:nominalOperatingInputVoltage,ex:minimumOperatingTemperature,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:mimimalOperatingInputVoltage,ex:maximumOperatingHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:maximumOperatingInputVoltage,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:maximumOperatingTemperature,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_RelativeHumidityFrequency,ex:DHT22_4578_minimumMeasureableTemperature,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:maximumOperatingInputVoltage,ex:DHT22_4578_minimumMeasureableTemperature,ex:mimimalOperatingInputVoltage,ex:minimumOperatingTemperature,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:nominalOperatingInputVoltage,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency,ex:DHT22_4578_RelativeHumidityFrequency,ex:maximumOperatingTemperature,ex:maximumOperatingHumidity\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:maximumOperatingInputVoltage,ex:DHT22_4578_minimumMeasureableTemperature,ex:mimimalOperatingInputVoltage,ex:minimumOperatingTemperature,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:nominalOperatingInputVoltage,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency,ex:DHT22_4578_RelativeHumidityFrequency,ex:maximumOperatingTemperature,ex:maximumOperatingHumidity\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:maximumOperatingInputVoltage,ex:DHT22_4578_minimumMeasureableTemperature,ex:mimimalOperatingInputVoltage,ex:minimumOperatingTemperature,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:nominalOperatingInputVoltage,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency,ex:DHT22_4578_RelativeHumidityFrequency,ex:maximumOperatingTemperature,ex:maximumOperatingHumidity\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:DHT22_4578_TemperatureSensorNormalOperatingConditions,ex:DHT22_4578_HumiditySensorNormalOperatingConditions,ex:DHT22_4578_TemperatureSensorCapabilities,ex:DHT22_4578_HumiditySensorCapabilities\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:nominalOperatingInputVoltage/sosa:hasSimpleResult,ex:mimimalOperatingInputVoltage/sosa:hasSimpleResult,ex:maximumOperatingInputVoltage/sosa:hasSimpleResult,ex:DHT22_4578_minimumMeasureableTemperature/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:DHT22_4578_TemperatureSensorNormalOperatingConditions,ex:DHT22_4578_HumiditySensorNormalOperatingConditions,ex:DHT22_4578_TemperatureSensorCapabilities,ex:DHT22_4578_HumiditySensorCapabilities\n"
             },
             {
               "op": "shacl-report",
@@ -1796,39 +1796,39 @@
             {
               "shaclFile": "_sources/properties/observation/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
+                  "nodes": [
+                    "ex:DHT22_4578_TemperatureSensorCapabilities",
+                    "ex:DHT22_4578_TemperatureSensorNormalOperatingConditions",
+                    "ex:DHT22_4578_HumiditySensorCapabilities",
+                    "ex:DHT22_4578_HumiditySensorNormalOperatingConditions"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
                   "nodes": [
-                    "ex:nominalOperatingInputVoltage",
-                    "ex:minimumOperatingTemperature",
-                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
-                    "ex:mimimalOperatingInputVoltage",
-                    "ex:maximumOperatingHumidity",
-                    "ex:minimumOperatingHumidity",
-                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
                     "ex:maximumOperatingInputVoltage",
-                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
-                    "ex:maximumOperatingTemperature",
-                    "ex:DHT22_4578_maximumMeasureableTemperature",
-                    "ex:DHT22_4578_RelativeHumidityFrequency",
                     "ex:DHT22_4578_minimumMeasureableTemperature",
+                    "ex:mimimalOperatingInputVoltage",
+                    "ex:minimumOperatingTemperature",
+                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
+                    "ex:minimumOperatingHumidity",
+                    "ex:DHT22_4578_maximumMeasureableTemperature",
+                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
+                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
+                    "ex:nominalOperatingInputVoltage",
                     "ex:DHT22_4578_minimumMeasureableRelativeHumidity",
-                    "ex:DHT22_4578_TemperatureMeasurementFrequency"
+                    "ex:DHT22_4578_TemperatureMeasurementFrequency",
+                    "ex:DHT22_4578_RelativeHumidityFrequency",
+                    "ex:maximumOperatingTemperature",
+                    "ex:maximumOperatingHumidity"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
-                  "nodes": [
-                    "ex:DHT22_4578_TemperatureSensorNormalOperatingConditions",
-                    "ex:DHT22_4578_HumiditySensorCapabilities",
-                    "ex:DHT22_4578_TemperatureSensorCapabilities",
-                    "ex:DHT22_4578_HumiditySensorNormalOperatingConditions"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:nominalOperatingInputVoltage,ex:minimumOperatingTemperature,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:mimimalOperatingInputVoltage,ex:maximumOperatingHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:maximumOperatingInputVoltage,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:maximumOperatingTemperature,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_RelativeHumidityFrequency,ex:DHT22_4578_minimumMeasureableTemperature,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:DHT22_4578_TemperatureSensorNormalOperatingConditions,ex:DHT22_4578_HumiditySensorCapabilities,ex:DHT22_4578_TemperatureSensorCapabilities,ex:DHT22_4578_HumiditySensorNormalOperatingConditions\n"
+              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:DHT22_4578_TemperatureSensorCapabilities,ex:DHT22_4578_TemperatureSensorNormalOperatingConditions,ex:DHT22_4578_HumiditySensorCapabilities,ex:DHT22_4578_HumiditySensorNormalOperatingConditions\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:maximumOperatingInputVoltage,ex:DHT22_4578_minimumMeasureableTemperature,ex:mimimalOperatingInputVoltage,ex:minimumOperatingTemperature,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:nominalOperatingInputVoltage,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency,ex:DHT22_4578_RelativeHumidityFrequency,ex:maximumOperatingTemperature,ex:maximumOperatingHumidity\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         }
@@ -1904,90 +1904,90 @@
             {
               "shaclFile": "_sources/properties/execution/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
-                    "ex:mimimalOperatingInputVoltage/sosa:hasSimpleResult",
-                    "ex:minimumOperatingTemperature/sosa:hasSimpleResult",
-                    "ex:nominalOperatingInputVoltage/sosa:hasSimpleResult",
-                    "ex:maximumOperatingInputVoltage/sosa:hasSimpleResult"
+                    "ex:DHT22_4578_minimumMeasureableTemperature",
+                    "ex:maximumOperatingInputVoltage",
+                    "ex:minimumOperatingTemperature",
+                    "ex:mimimalOperatingInputVoltage",
+                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
+                    "ex:minimumOperatingHumidity",
+                    "ex:DHT22_4578_maximumMeasureableTemperature",
+                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
+                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
+                    "ex:nominalOperatingInputVoltage",
+                    "ex:DHT22_4578_minimumMeasureableRelativeHumidity",
+                    "ex:DHT22_4578_TemperatureMeasurementFrequency",
+                    "ex:DHT22_4578_RelativeHumidityFrequency",
+                    "ex:maximumOperatingTemperature",
+                    "ex:maximumOperatingHumidity"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                "<https://www.ogc.org/rules/sosa/#testResult>": {
                   "nodes": [
-                    "ex:DHT22_4578_TemperatureSensorNormalOperatingConditions",
-                    "ex:DHT22_4578_HumiditySensorNormalOperatingConditions",
-                    "ex:DHT22_4578_HumiditySensorCapabilities",
-                    "ex:DHT22_4578_TemperatureSensorCapabilities"
+                    "ex:DHT22_4578_minimumMeasureableTemperature",
+                    "ex:maximumOperatingInputVoltage",
+                    "ex:minimumOperatingTemperature",
+                    "ex:mimimalOperatingInputVoltage",
+                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
+                    "ex:minimumOperatingHumidity",
+                    "ex:DHT22_4578_maximumMeasureableTemperature",
+                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
+                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
+                    "ex:nominalOperatingInputVoltage",
+                    "ex:DHT22_4578_minimumMeasureableRelativeHumidity",
+                    "ex:DHT22_4578_TemperatureMeasurementFrequency",
+                    "ex:DHT22_4578_RelativeHumidityFrequency",
+                    "ex:maximumOperatingTemperature",
+                    "ex:maximumOperatingHumidity"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                  "nodes": [
+                    "ex:DHT22_4578_minimumMeasureableTemperature",
+                    "ex:maximumOperatingInputVoltage",
+                    "ex:minimumOperatingTemperature",
+                    "ex:mimimalOperatingInputVoltage",
+                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
+                    "ex:minimumOperatingHumidity",
+                    "ex:DHT22_4578_maximumMeasureableTemperature",
+                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
+                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
+                    "ex:nominalOperatingInputVoltage",
+                    "ex:DHT22_4578_minimumMeasureableRelativeHumidity",
+                    "ex:DHT22_4578_TemperatureMeasurementFrequency",
+                    "ex:DHT22_4578_RelativeHumidityFrequency",
+                    "ex:maximumOperatingTemperature",
+                    "ex:maximumOperatingHumidity"
                   ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
                   "nodes": [
                     "ex:DHT22_4578_TemperatureSensorNormalOperatingConditions",
                     "ex:DHT22_4578_HumiditySensorNormalOperatingConditions",
-                    "ex:DHT22_4578_HumiditySensorCapabilities",
-                    "ex:DHT22_4578_TemperatureSensorCapabilities"
+                    "ex:DHT22_4578_TemperatureSensorCapabilities",
+                    "ex:DHT22_4578_HumiditySensorCapabilities"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": [
-                    "ex:nominalOperatingInputVoltage",
-                    "ex:minimumOperatingTemperature",
-                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
-                    "ex:mimimalOperatingInputVoltage",
-                    "ex:maximumOperatingHumidity",
-                    "ex:minimumOperatingHumidity",
-                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
-                    "ex:maximumOperatingInputVoltage",
-                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
-                    "ex:maximumOperatingTemperature",
-                    "ex:DHT22_4578_RelativeHumidityFrequency",
-                    "ex:DHT22_4578_maximumMeasureableTemperature",
-                    "ex:DHT22_4578_minimumMeasureableTemperature",
-                    "ex:DHT22_4578_minimumMeasureableRelativeHumidity",
-                    "ex:DHT22_4578_TemperatureMeasurementFrequency"
+                    "ex:nominalOperatingInputVoltage/sosa:hasSimpleResult",
+                    "ex:mimimalOperatingInputVoltage/sosa:hasSimpleResult",
+                    "ex:maximumOperatingInputVoltage/sosa:hasSimpleResult",
+                    "ex:minimumOperatingTemperature/sosa:hasSimpleResult"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
                   "nodes": [
-                    "ex:nominalOperatingInputVoltage",
-                    "ex:minimumOperatingTemperature",
-                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
-                    "ex:mimimalOperatingInputVoltage",
-                    "ex:maximumOperatingHumidity",
-                    "ex:minimumOperatingHumidity",
-                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
-                    "ex:maximumOperatingInputVoltage",
-                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
-                    "ex:maximumOperatingTemperature",
-                    "ex:DHT22_4578_RelativeHumidityFrequency",
-                    "ex:DHT22_4578_maximumMeasureableTemperature",
-                    "ex:DHT22_4578_minimumMeasureableTemperature",
-                    "ex:DHT22_4578_minimumMeasureableRelativeHumidity",
-                    "ex:DHT22_4578_TemperatureMeasurementFrequency"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
-                  "nodes": [
-                    "ex:nominalOperatingInputVoltage",
-                    "ex:minimumOperatingTemperature",
-                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
-                    "ex:mimimalOperatingInputVoltage",
-                    "ex:maximumOperatingHumidity",
-                    "ex:minimumOperatingHumidity",
-                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
-                    "ex:maximumOperatingInputVoltage",
-                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
-                    "ex:maximumOperatingTemperature",
-                    "ex:DHT22_4578_RelativeHumidityFrequency",
-                    "ex:DHT22_4578_maximumMeasureableTemperature",
-                    "ex:DHT22_4578_minimumMeasureableTemperature",
-                    "ex:DHT22_4578_minimumMeasureableRelativeHumidity",
-                    "ex:DHT22_4578_TemperatureMeasurementFrequency"
+                    "ex:DHT22_4578_TemperatureSensorNormalOperatingConditions",
+                    "ex:DHT22_4578_HumiditySensorNormalOperatingConditions",
+                    "ex:DHT22_4578_TemperatureSensorCapabilities",
+                    "ex:DHT22_4578_HumiditySensorCapabilities"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:mimimalOperatingInputVoltage/sosa:hasSimpleResult,ex:minimumOperatingTemperature/sosa:hasSimpleResult,ex:nominalOperatingInputVoltage/sosa:hasSimpleResult,ex:maximumOperatingInputVoltage/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:DHT22_4578_TemperatureSensorNormalOperatingConditions,ex:DHT22_4578_HumiditySensorNormalOperatingConditions,ex:DHT22_4578_HumiditySensorCapabilities,ex:DHT22_4578_TemperatureSensorCapabilities\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:DHT22_4578_TemperatureSensorNormalOperatingConditions,ex:DHT22_4578_HumiditySensorNormalOperatingConditions,ex:DHT22_4578_HumiditySensorCapabilities,ex:DHT22_4578_TemperatureSensorCapabilities\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:nominalOperatingInputVoltage,ex:minimumOperatingTemperature,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:mimimalOperatingInputVoltage,ex:maximumOperatingHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:maximumOperatingInputVoltage,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:maximumOperatingTemperature,ex:DHT22_4578_RelativeHumidityFrequency,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_minimumMeasureableTemperature,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:nominalOperatingInputVoltage,ex:minimumOperatingTemperature,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:mimimalOperatingInputVoltage,ex:maximumOperatingHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:maximumOperatingInputVoltage,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:maximumOperatingTemperature,ex:DHT22_4578_RelativeHumidityFrequency,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_minimumMeasureableTemperature,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:nominalOperatingInputVoltage,ex:minimumOperatingTemperature,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:mimimalOperatingInputVoltage,ex:maximumOperatingHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:maximumOperatingInputVoltage,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:maximumOperatingTemperature,ex:DHT22_4578_RelativeHumidityFrequency,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_minimumMeasureableTemperature,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency\n"
+              "message": "Focus nodes for _sources/properties/execution/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: ex:DHT22_4578_minimumMeasureableTemperature,ex:maximumOperatingInputVoltage,ex:minimumOperatingTemperature,ex:mimimalOperatingInputVoltage,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:nominalOperatingInputVoltage,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency,ex:DHT22_4578_RelativeHumidityFrequency,ex:maximumOperatingTemperature,ex:maximumOperatingHumidity\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: ex:DHT22_4578_minimumMeasureableTemperature,ex:maximumOperatingInputVoltage,ex:minimumOperatingTemperature,ex:mimimalOperatingInputVoltage,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:nominalOperatingInputVoltage,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency,ex:DHT22_4578_RelativeHumidityFrequency,ex:maximumOperatingTemperature,ex:maximumOperatingHumidity\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: ex:DHT22_4578_minimumMeasureableTemperature,ex:maximumOperatingInputVoltage,ex:minimumOperatingTemperature,ex:mimimalOperatingInputVoltage,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:nominalOperatingInputVoltage,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency,ex:DHT22_4578_RelativeHumidityFrequency,ex:maximumOperatingTemperature,ex:maximumOperatingHumidity\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: ex:DHT22_4578_TemperatureSensorNormalOperatingConditions,ex:DHT22_4578_HumiditySensorNormalOperatingConditions,ex:DHT22_4578_TemperatureSensorCapabilities,ex:DHT22_4578_HumiditySensorCapabilities\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: ex:nominalOperatingInputVoltage/sosa:hasSimpleResult,ex:mimimalOperatingInputVoltage/sosa:hasSimpleResult,ex:maximumOperatingInputVoltage/sosa:hasSimpleResult,ex:minimumOperatingTemperature/sosa:hasSimpleResult\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: ex:DHT22_4578_TemperatureSensorNormalOperatingConditions,ex:DHT22_4578_HumiditySensorNormalOperatingConditions,ex:DHT22_4578_TemperatureSensorCapabilities,ex:DHT22_4578_HumiditySensorCapabilities\n"
             },
             {
               "op": "shacl-report",
@@ -1999,39 +1999,39 @@
             {
               "shaclFile": "_sources/properties/observation/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
+                  "nodes": [
+                    "ex:DHT22_4578_TemperatureSensorCapabilities",
+                    "ex:DHT22_4578_HumiditySensorCapabilities",
+                    "ex:DHT22_4578_TemperatureSensorNormalOperatingConditions",
+                    "ex:DHT22_4578_HumiditySensorNormalOperatingConditions"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
                   "nodes": [
-                    "ex:nominalOperatingInputVoltage",
-                    "ex:minimumOperatingTemperature",
-                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
-                    "ex:mimimalOperatingInputVoltage",
-                    "ex:maximumOperatingHumidity",
-                    "ex:minimumOperatingHumidity",
-                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
-                    "ex:maximumOperatingInputVoltage",
-                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
-                    "ex:maximumOperatingTemperature",
-                    "ex:DHT22_4578_RelativeHumidityFrequency",
-                    "ex:DHT22_4578_maximumMeasureableTemperature",
                     "ex:DHT22_4578_minimumMeasureableTemperature",
+                    "ex:maximumOperatingInputVoltage",
+                    "ex:minimumOperatingTemperature",
+                    "ex:mimimalOperatingInputVoltage",
+                    "ex:DHT22_4578_maximumMeasureableRelativeHumidity",
+                    "ex:minimumOperatingHumidity",
+                    "ex:DHT22_4578_maximumMeasureableTemperature",
+                    "ex:DHT22_4578_TemperatureMeasurementSensitivity",
+                    "ex:DHT22_4578_TemperatureMeasurementAccuracy",
+                    "ex:nominalOperatingInputVoltage",
                     "ex:DHT22_4578_minimumMeasureableRelativeHumidity",
-                    "ex:DHT22_4578_TemperatureMeasurementFrequency"
+                    "ex:DHT22_4578_TemperatureMeasurementFrequency",
+                    "ex:DHT22_4578_RelativeHumidityFrequency",
+                    "ex:maximumOperatingTemperature",
+                    "ex:maximumOperatingHumidity"
                   ]
                 },
-                "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
-                  "nodes": [
-                    "ex:DHT22_4578_TemperatureSensorNormalOperatingConditions",
-                    "ex:DHT22_4578_HumiditySensorNormalOperatingConditions",
-                    "ex:DHT22_4578_TemperatureSensorCapabilities",
-                    "ex:DHT22_4578_HumiditySensorCapabilities"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:nominalOperatingInputVoltage,ex:minimumOperatingTemperature,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:mimimalOperatingInputVoltage,ex:maximumOperatingHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:maximumOperatingInputVoltage,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:maximumOperatingTemperature,ex:DHT22_4578_RelativeHumidityFrequency,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_minimumMeasureableTemperature,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:DHT22_4578_TemperatureSensorNormalOperatingConditions,ex:DHT22_4578_HumiditySensorNormalOperatingConditions,ex:DHT22_4578_TemperatureSensorCapabilities,ex:DHT22_4578_HumiditySensorCapabilities\n"
+              "message": "Focus nodes for _sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: ex:DHT22_4578_TemperatureSensorCapabilities,ex:DHT22_4578_HumiditySensorCapabilities,ex:DHT22_4578_TemperatureSensorNormalOperatingConditions,ex:DHT22_4578_HumiditySensorNormalOperatingConditions\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: ex:DHT22_4578_minimumMeasureableTemperature,ex:maximumOperatingInputVoltage,ex:minimumOperatingTemperature,ex:mimimalOperatingInputVoltage,ex:DHT22_4578_maximumMeasureableRelativeHumidity,ex:minimumOperatingHumidity,ex:DHT22_4578_maximumMeasureableTemperature,ex:DHT22_4578_TemperatureMeasurementSensitivity,ex:DHT22_4578_TemperatureMeasurementAccuracy,ex:nominalOperatingInputVoltage,ex:DHT22_4578_minimumMeasureableRelativeHumidity,ex:DHT22_4578_TemperatureMeasurementFrequency,ex:DHT22_4578_RelativeHumidityFrequency,ex:maximumOperatingTemperature,ex:maximumOperatingHumidity\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         }

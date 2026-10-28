@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.features.samplingCollection - SamplingCollection Feature
-Generated 2026-10-26T22:06:57.871161+00:00
+Generated 2026-10-28T04:53:57.144924+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -17,11 +17,11 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:LinkShape: *none*
- - Shape geojson:FeatureShape: *none*
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
   Validation Report
@@ -29,23 +29,23 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
  - Shape geojson:FeatureCollectionShape: *none*
- - Shape geojson:LinkShape: *none*
- - Shape geojson:FeatureShape: *none*
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: *none*
 
 Validation result for _sources/properties/execution/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: <https://example.org/data/AirSampling_StE2>,<https://example.org/data/AirSampling_StE>
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: <https://example.org/data/AirSampling_StE2>,<https://example.org/data/AirSampling_StE>
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: <https://example.org/data/AirSampling_StE2>,<https://example.org/data/AirSampling_StE>
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: _:Na8b7bb1c1252449e91f49b4614de3731
  - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: _:Nff2e6e1879ce40208b31863cb09090cc
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: _:Nff2e6e1879ce40208b31863cb09090cc
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: <https://example.org/data/AirSampling_StE>,<https://example.org/data/AirSampling_StE2>
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: <https://example.org/data/AirSampling_StE>,<https://example.org/data/AirSampling_StE2>
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: <https://example.org/data/AirSampling_StE>,<https://example.org/data/AirSampling_StE2>
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: _:Na8b7bb1c1252449e91f49b4614de3731
 
 === End SHACL ===
 

@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.deployment - Deployment Properties
-Generated 2026-10-26T22:06:58.155060+00:00
+Generated 2026-10-28T04:53:57.531473+00:00
 === Files ===
 Using LocatedDeployment.ttl-to-jsonld.json from transform outputs
 JSON-LD context is present - uplifting

@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.properties.observation-owa - Observation Properties (SOSA OWA)
-Generated 2026-10-26T22:06:04.927925+00:00
+Generated 2026-10-28T04:52:47.256198+00:00
 === Files ===
 Using example_3_1.json from examples
 JSON-LD context is present - uplifting
@@ -17,12 +17,12 @@ Validation result for _sources/properties/execution/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/properties/execution/shapes.shacl:
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N15235f6f78f944f4a6fab9b1e979a8a5
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N15235f6f78f944f4a6fab9b1e979a8a5
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N15235f6f78f944f4a6fab9b1e979a8a5
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
  - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: 33
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:Nda265771ebb8428c9f22f93f34443897
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:Nda265771ebb8428c9f22f93f34443897
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:Nda265771ebb8428c9f22f93f34443897
 
 === End SHACL ===
 
